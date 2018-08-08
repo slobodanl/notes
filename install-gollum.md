@@ -1,4 +1,9 @@
-# Install ubuntu
+# Install Gollum
+
+Install Gollum
+==============
+
+## ubuntu
 
 ``` bash
 sudo apt-get install ruby ruby-dev make zlib1g-dev libicu-dev build-essential git cmake
@@ -16,7 +21,7 @@ s gem install omniauth-ldap
 
 ```
 
-# Install latest version of ruby
+### Install latest version of ruby
 ```
 curl -L https://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
@@ -29,9 +34,9 @@ gem pristine --all
 s gem pristine --all
 ```
 
-zzcpz57pf899
 
-# Gollum installation
+
+### Gollum installation
 
 ```bash
 depending on the ruby version installed:
@@ -51,7 +56,7 @@ sudo gem install github-markdown
 
 ```
 
-# Intresting pain points
+### Intresting pain points
 /home/rezasa/.rvm/gems/ruby-2.4.1/gems/net-ldap-0.16.1/lib/net/ldap/connection.rb
 /home/rezasa/.rvm/gems/ruby-2.4.1/gems/net-ldap-0.16.1/lib/net/ldap.rb
 
