@@ -1,3 +1,5 @@
+# Firefox not saving toolbar
+
 Firefox not saving toolbar
 ======================
 Try to reset the browser.uiCustomization.state pref on the 
