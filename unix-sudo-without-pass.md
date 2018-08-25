@@ -18,6 +18,18 @@ or to enable it just for one user, add:
 existme ALL=(ALL:ALL) NOPASSWD: ALL
 ```
 
+Incase none of the above worked, try this:
+``` sh
+%sudo ALL=(ALL:ALL) NOPASSWD: ALL
+```
+
+To add a user to sudo group use:
+``` sh
+usermod -aG sudo username
+
+usermod -aG admin username
+```
+
 to remove the need of entering password for certain applications in `sudo visudo` add:
 
 ``` bash
@@ -26,5 +38,6 @@ existme ALL = (root) NOPASSWD: /home/existme/bini3/i3exit
 existme ALL = (root) NOPASSWD: /usr/bin/torguard                                 
 existme ALL = (root) NOPASSWD: /usr/bin/htop
 ```
+
 -----------------------------------------
 2018-04-15 00:40:51
