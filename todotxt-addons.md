@@ -1,10 +1,40 @@
 # Todotxt.Md
 # Todotxt.Md
 * * *
+
+#internal commands:
+
+``` sh
+t lsa
+t ls
+
+t rm item#
+t del item#
+
+```
 #[Addons](https://github.com/todotxt/todo.txt-cli/wiki/Todo.sh-Add-on-Directory):
 List your Todo.sh add-ons here. Include a short description and a link to the 
 GitHub repository or other location.
 
+## [inkarkat](https://github.com/inkarkat/todo.txt-cli-ex/tree/master/actions): inkarkat actions
+
+### browse: Searches for URLs of web resources in the task text and
+``` sh
+t browse
+t browse 17
+```
+### latest: Displays the last added open (all with -a) tasks"
+Tasks without a date are ignored.
+``` sh
+t latest
+t latest wiki
+``` 
+### projectview/pv: Show taks grouped by projects
+``` sh
+t pv
+t projectview
+t pv read
+```
 ## [addp](https://github.com/todotxt/todo.txt-cli/tree/addons/.todo.actions.d): add with priority or marked as done
 It allows to add an item with priority, aa, ab, ac, ad aliases are added as
 shortcuts to addp:
