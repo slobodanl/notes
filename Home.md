@@ -1,7 +1,4 @@
-# My development notes
-# My development notes
+# Development notes
+# Development notes
 
-Testing first push through the service
-
-
-![gollum.png](/img/gollum.png)
+Default landing page for daily notes
