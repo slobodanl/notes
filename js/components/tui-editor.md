@@ -1,6 +1,6 @@
-# tu editor
+# tui editor
 _Written by: Reza Shams Amiri_
-# tu editor
+# tui editor
 
 Here there is a nice overview for tui-editor after latest refactoring:
 
