@@ -11,7 +11,8 @@ npm config set https-proxy http://<proxy>:<port>
 ## To remove the proxy for npm
 
 ``` bash
-npm config rm proxy 
+npm config rm proxy
+npm config rm https.proxy
 npm config rm https-proxy 
 ```
 
