@@ -4,8 +4,11 @@ Default landing page for daily notes
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
-| Vision | Innovation | Mind | Research | Process |
+| Vision | Innovation | Process | Research | Mind |
 | Time | Growth | Development |  | Target |
-| Attitude | Perspective | Define |  |  |
-| Optimistic | Progress |  |  |  |
-| Vision board | Brainstorm |  |  |  |
+| Attitude |  | Define | Inspiration |  |
+| Optimistic | Ideas | Breakout | Theory |  |
+| Vision board | Brainstorm | Direction |  |  |
+| Perspective |  | Progress | Science |  |
+| Curiosity |  |  |  |  |
+|  |  |  |  |  |
