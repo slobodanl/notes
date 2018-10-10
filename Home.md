@@ -2,7 +2,7 @@
 
 Default landing page for daily notes
 
-|  |  |  |  |  |
+|   |  |  | 什 |  |
 | --- | --- | --- | --- | --- |
 | Vision | Innovation | Process | Research | Mind |
 | Time | Growth | Development |  | Target |
