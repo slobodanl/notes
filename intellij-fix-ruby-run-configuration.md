@@ -1,7 +1,7 @@
 _Written by: Reza Shams Amiri_
 # Intellij - fix Ruby run configuration
 
-To be able to run Ruby files from intelliJ, make sure that first both these folders are writable? ([ ref][RNGFEIRCFIRPSO])
+To be able to run Ruby projects from intelliJ and enabling debuging, make sure that first both these folders are writable? ([ ref][RNGFEIRCFIRPSO])
 
 ``` sh
 s chmod -R a+rw /var/lib/gems/2.5.0 
