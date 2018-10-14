@@ -1,6 +1,5 @@
 # Firefox Small Font
 
------------------------------------------ 
 Goto your firefox font folder:
 (Create the folder if it doesn't exists)
 
