@@ -1,6 +1,5 @@
 # Firefox-Custom-Chrome.Md
 
------------------------------------------
 ## Firefox chrome:
 
 Go to Firefox:
