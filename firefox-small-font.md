@@ -1,6 +1,6 @@
 # Firefox Small Font
 
-Goto your firefox font folder:
+Goto your firefox font folder [][FCCM]:
 (Create the folder if it doesn't exists)
 
 ```bash
@@ -50,3 +50,5 @@ menu.bookmark-item {
 
 -----------------------------------------
 2017-10-24 11:02:07
+
+[FCCM]: /firefox-custom-chrome
