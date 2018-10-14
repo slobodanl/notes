@@ -47,7 +47,17 @@ menu.bookmark-item {
 }
 
 ```
+## if you only want to use nerd fonts, you might be able to use the following `css` in `userChrome.css`:
+``` css
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
 
+menubar, menubutton, menulist, menu, menuitem ,toolbar{
+  font-family: "InconsolitaGo Nerd Font" !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-size: 5mm !important;
+  font-style: Retina !important;
+}
+```
 -----------------------------------------
 2017-10-24 11:02:07
 
