@@ -1,7 +1,7 @@
 _Written by: Reza Shams Amiri_
 
 # 03 Lambdas
-1. Limitations  
+- Limitations  
 
 | Resource Limitations |  |
 | -------------------- | --- |
@@ -13,7 +13,13 @@ _Written by: Reza Shams Amiri_
     1. Load and store files in S3
     2. Chain functions together
     3. Ask for increasing limits
-1. s
+- Considerations:
+    1. Event driven code
+    2. Code size limitations
+    3. Lambda as a component
+    4. Performance limitations (1.5 GB Memory)
+
+1. 
 
 
 - - -
