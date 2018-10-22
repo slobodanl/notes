@@ -16,10 +16,11 @@ _Written by: Reza Shams Amiri_
         > - Find the Security Group that your instance is apart of Click on `Inbound Rules`
         > - Use the drop down and add HTTP (port 80), click Apply
         
-    1. 
+    1. Amazon Policy Generator [AWS Policy Generator][APG]
 
 * * *
 Creation date: _2018/10/11_
 
 [LI]: https://sects.axis.com/adfs/ls/IdpInitiatedSignOn.aspx
 [ITACLIACLI]: https://docs.aws.amazon.com/cli/latest/userguide/installing.html
+[APG]: https://awspolicygen.s3.amazonaws.com/policygen.html
