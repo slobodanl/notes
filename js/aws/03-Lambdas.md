@@ -9,12 +9,11 @@ _Written by: Reza Shams Amiri_
 | Maximum execution duration | < 300 Seconds |
 | Concurrent Lambda functions | < 100 |
 
-Mitigations:
+- Mitigations:  
     1. Load and store files in S3
     2. Chain functions together
     3. Ask for increasing limits
-
-1.
+1. s
 
 
 - - -
