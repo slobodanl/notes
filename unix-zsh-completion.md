@@ -56,8 +56,9 @@ zstyle ':completion:*:*:rm:*' file-patterns \
     '*.o:object-files' '%p:all-files'
 ```
 
-## 2- 
------------------------------------------
+## References:  
+1- [Writing zsh completion scripts][WZCS]
+* * *
 2017-10-04 23:41:19
 
 [padrino]: https://wikimatze.de/writing-zsh-completion-for-padrino/
@@ -67,10 +68,4 @@ zstyle ':completion:*:*:rm:*' file-patterns \
 [zsh3]: https://manned.org/zshcompwid 
 [zshexpn]: https://manned.org/zshexpn
 [zshcompsys]: https://linux.die.net/man/1/zshcompsys
-# Local Variables:
-# mode: Shell-Script
-# sh-indentation: 2
-# indent-tabs-mode: nil
-# sh-basic-offset: 2
-# End:
-# vim: ft=markdown sw=2 ts=2 et
+[WZCS]: https://mads-hartmann.com/2017/08/06/writing-zsh-completion-scripts.html
