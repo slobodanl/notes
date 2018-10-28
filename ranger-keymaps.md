@@ -22,6 +22,16 @@ g                               | press g and then press one of the presented ke
 <kbd>Ctrl</kbd>+<kbd>w</kbd>    | close tab
 <kbd>tt</kbd>                   | close tab
 <kbd>tab</kbd>                  | Switch tabs
+**Function Keys :**             | 
+<kbd>F1</kbd>                   | help
+<kbd>F2</kbd>                   | 
+<kbd>F3</kbd>                   | display file
+<kbd>F4</kbd>                   | 
+<kbd>F5</kbd>                   | copy
+<kbd>F6</kbd>                   | cut
+<kbd>F7</kbd>                   | console `mkdir `
+<kbd>F8</kbd>                   | console `delete `
+<kbd>F10</kbd>                  | exit
 **Console :**                   | 
 <kbd>!</kbd>                    | Shell ( run normal bash commands )
 <kbd>:</kbd>                    | Console ( run ranger commands )
