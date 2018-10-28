@@ -44,6 +44,21 @@ _takenote.zsh
 also to find out what is binded to a function press <alt-x> and then
 type `where-is` and then type the function name.
 
+To see what services are available:
+``` sh
+locate zcompdump
+vim ~/.zcompdump
+```
+or run:
+``` sh
+for k in "${(@k)_comps}"; do       
+  echo "$k -> $_comps[$k]"
+done 
+```
+this function is provided in git repo to run it just run:
+``` sh
+source ~/bin/,print_comparr
+```
 ### Assigning new scripts or function to use already existing services:
 Let's assume that we have a script named `,pkg-graph`, which will draw the package dependencies of an installed/not installed package using `graphviz`.
 
@@ -58,7 +73,10 @@ By locating `_apt` we will realize that it is located in `/usr/share/zsh/functio
 Oneway to use the services provided is by issuing the following command:
 
 ``` sh
-compdef ,pkg-graph='_apt'
+compdef _apt ,pkg-graph
+
+# you can use service directly as well using the following
+# compdef ,pkg-graph='apt-get'
 ```
 
 Now, if you type `,pkg-graph <tab>`, you will get:
