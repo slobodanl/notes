@@ -4,9 +4,11 @@ _Written by: Reza Shams Amiri_
 ## Help Pages
 | aliases | Desc |
 | ------- | ---- |
-| help | Displays this help page. |
-| h | Grep history for a specific keyword |
-| zdoc | Opens zsh pdf document. |
+| help      | Displays this help page. |
+| h         | Grep history for a specific keyword |
+| zdoc      | Opens zsh pdf document. |
+| y         | uses `yelp` for displaying man page |
+|           | `y i3` |
 
 ## App Openers
 | aliases | Desc |
@@ -54,6 +56,8 @@ _Written by: Reza Shams Amiri_
 | ------------- | ---- |
 | ,dpkg-graph   |  Visualizes  thedependency graph for a package |
 |               | `,dpkg-graph ssh` |
+| asf           | Uses `fzf` to list all files installed by packages |
+|               | `asf ` and search for `_apt` |
 
 
 * * *
