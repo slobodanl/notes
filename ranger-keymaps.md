@@ -7,6 +7,10 @@ cmd/key                         | description
 **Jump To :**                   | 
 <kbd>cd</kbd>                   | console cd
 g                               | press g and then press one of the presented keys
+**Selections :**                | 
+<kbd>V</kbd>                    | toggle visual editing mode
+<kbd>v</kbd>                    | select all
+<kbd>SPACE</kbd>                | toggle marking
 **Line modes :**                | 
 <kbd>Mf</kbd>                   | File line mode: `filename+size`
 <kbd>Mi</kbd>                   | Info line mode: `filename+fileTypeinfo`
