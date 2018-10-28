@@ -11,6 +11,9 @@ g                               | press g and then press one of the presented ke
 <kbd>Ctrl</kbd>+<kbd>w</kbd>    | close tab
 <kbd>tt</kbd>                   | close tab
 <kbd>tab</kbd>                  | Switch tabs
+**Console :**                   | 
+<kbd>!</kbd>                    | Shell
+<kbd>:</kbd>                    | Console
 **Misc :**                      | 
 <kbd>~</kbd>                    | Toggle view mode
 mkd                             | create folder
