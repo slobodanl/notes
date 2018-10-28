@@ -54,7 +54,7 @@ _Written by: Reza Shams Amiri_
 | image     | Search images.google.com for a specific term |
 
 
-## Scripts
+##  Commands for working with Packages! 
 | Command       | Desc |
 | ------------- | ---- |
 | ,dpkg-graph   |  Visualizes  thedependency graph for a package |
