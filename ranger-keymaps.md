@@ -3,7 +3,7 @@
 # keybindings                                                                     
 cmd/key                         | description       
 --------------------------------|-------------------------------
-zh                              | toggle showing hidden files
+<kbd>zh</kbd>                   | toggle showing hidden files
 **Jump To :**                   | 
 <kbd>cd</kbd>                   | console cd
 g                               | press g and then press one of the presented keys
