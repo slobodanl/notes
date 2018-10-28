@@ -32,6 +32,7 @@ g                               | press g and then press one of the presented ke
 <kbd>F6</kbd>                   | cut
 <kbd>F7</kbd>                   | console `mkdir `
 <kbd>F8</kbd>                   | console `delete `
+<kbd>F9</kbd>                   | console `touch `, create new file
 <kbd>F10</kbd>                  | exit
 **Console :**                   | 
 <kbd>!</kbd>                    | Shell ( run normal bash commands )
