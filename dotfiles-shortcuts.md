@@ -54,7 +54,7 @@ _Written by: Reza Shams Amiri_
 | image     | Search images.google.com for a specific term |
 
 
-##  Commands for working with Packages! 
+##  Commands for working with Packages!
 | Command       | Desc |
 | ------------- | ---- |
 | ,dpkg-graph   |  Visualizes  thedependency graph for a package |
@@ -63,6 +63,17 @@ _Written by: Reza Shams Amiri_
 |               | `asf ` and search for `_apt` |
 | dq            | query installed packages and list their files |
 |               | **Usage:** `dq yelp` |
+
+
+## Misc commands
+| Command       | Desc |
+| ------------- | ---- |
+| ,fonts          |  Show all installed fonts in a rofi dialog |
+|                 |  **Usage:** `,fonts i3` |
+| ,font-test      |  Print out all supported codepages for the current font |
+| ,font-c2u       |  Converts a character to it's unicode equivalent |
+|                 |  **Usage:** `,font-c2u ` |
+| ,emoji          |  Show emojis in a rofi dialog |
 
 * * *
 
