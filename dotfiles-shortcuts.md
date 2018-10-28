@@ -17,7 +17,8 @@ _Written by: Reza Shams Amiri_
 ## App Openers
 | aliases | Desc |
 | ------- | ---- |
-| idea | Opens a file or folder in IntelliJ Idea |
+| ~~idea~~ | Opens a file or folder in IntelliJ Idea |
+| ii   | Opens a file or folder in IntelliJ Idea |
 | subl | Opens a file or folder in sublime texteditor |
 | atom | Opens a file or folder in atom texteditor |
 
@@ -35,8 +36,6 @@ _Written by: Reza Shams Amiri_
 | rfind     |  |
 |           | **Usage:** `$ rfind mac.sh` |
 |           | **EQ:** `find . -iname "*$1*" | grep -i "$1" --color=always` |
-| dq        | query installed packages and list their files |
-|           | **Usage:** $ dq ls |
 | extract   | extracts a file into the destination folder using `tar` |
 |           | **Usage:** `$ extract x.tar "/your/destination"` |
 |           | **EQ:Usage:** `tar xf $1 -C $2;` |
@@ -62,7 +61,8 @@ _Written by: Reza Shams Amiri_
 |               | `,dpkg-graph ssh` |
 | asf           | Uses `fzf` to list all files installed by packages |
 |               | `asf ` and search for `_apt` |
-
+| dq            | query installed packages and list their files |
+|               | **Usage:** `dq yelp` |
 
 * * *
 
