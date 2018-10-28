@@ -1,6 +1,6 @@
 _Written by: Reza Shams Amiri_
 
-# dotfiles shortcuts
+# Existme-dotfiles scripts, aliases and shortcuts
 ## Help Pages
 | aliases | Desc |
 | ------- | ---- |
@@ -9,6 +9,10 @@ _Written by: Reza Shams Amiri_
 | zdoc      | Opens zsh pdf document. |
 | y         | uses `yelp` for displaying man page |
 |           | `y i3` |
+| mann      | uses `https://www.manned.org/$1` |
+| mank      | uses `https://www.mankier.com/1/$1` |
+| manm      | uses `https://manpages.org/$1/$page` |
+| manc      | uses `https://linux.cn/man$page/$1.$page.html` |
 
 ## App Openers
 | aliases | Desc |
