@@ -5,6 +5,7 @@ cmd/key                         | description
 --------------------------------|-------------------------------
 zh                              | toggle showing hidden files
 **Jump To :**                   | 
+<kbd>cd</kbd>                   | console cd
 g                               | press g and then press one of the presented keys
 **Tabs :**                      | 
 <kbd>Ctrl</kbd>+<kbd>n</kbd>    | New tab
@@ -14,6 +15,8 @@ g                               | press g and then press one of the presented ke
 **Console :**                   | 
 <kbd>!</kbd>                    | Shell ( run normal bash commands )
 <kbd>:</kbd>                    | Console ( run ranger commands )
+<kbd>@</kbd>                    | run shell  `<filename>`
+<kbd>#</kbd>                    | run shell -p  , wait for prompt
 **Misc :**                      | 
 <kbd>~</kbd>                    | Toggle view mode
 mkd                             | create folder
