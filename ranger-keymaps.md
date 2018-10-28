@@ -12,8 +12,8 @@ g                               | press g and then press one of the presented ke
 <kbd>tt</kbd>                   | close tab
 <kbd>tab</kbd>                  | Switch tabs
 **Console :**                   | 
-<kbd>!</kbd>                    | Shell
-<kbd>:</kbd>                    | Console
+<kbd>!</kbd>                    | Shell ( run normal bash commands )
+<kbd>:</kbd>                    | Console ( run ranger commands )
 **Misc :**                      | 
 <kbd>~</kbd>                    | Toggle view mode
 mkd                             | create folder
