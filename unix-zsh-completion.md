@@ -78,7 +78,10 @@ function pkg_install(){
 
 compdef pkg_install ,pkg_graph
 ```
-
+which will result for `,pkg-graph i3<tab>` in:
+``` sh
+i3            i3blocks      i3lock        i3lock-fancy  i3status      i3-wm         i3-wm-dbg
+```
 # Examples: 
 
 ## 1- First list all object files then other files (for rm)
