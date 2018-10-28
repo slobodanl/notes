@@ -8,8 +8,11 @@ zh                              | toggle showing hidden files
 g                               | press g and then press one of the presented keys
 **Tabs :**                      | 
 <kbd>Ctrl</kbd>+<kbd>n</kbd>    | New tab
+<kbd>Ctrl</kbd>+<kbd>w</kbd>    | close tab
+<kbd>tt</kbd>                   | close tab
 <kbd>tab</kbd>                  | Switch tabs
 **Misc :**                      | 
+<kbd>~</kbd>                    | Toggle view mode
 mkd                             | create folder
 tig                             | run tig against the current directory
 st                              | run tig status in the current directory
