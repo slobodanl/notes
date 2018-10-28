@@ -48,6 +48,15 @@ _Written by: Reza Shams Amiri_
 | map       | Search Google maps for a specific term |
 | image     | Search images.google.com for a specific term |
 
-- - -
+
+## Scripts
+| Command       | Desc |
+| ------------- | ---- |
+| ,dpkg-graph   |  Visualizes  thedependency graph for a package |
+|               | `,dpkg-graph ssh` |
+
+
+* * *
+
 
 Creation date: _2018-10-28_
