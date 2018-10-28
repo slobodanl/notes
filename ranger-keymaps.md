@@ -10,6 +10,7 @@ g                               | press g and then press one of the presented ke
 **Selections :**                | 
 <kbd>V</kbd>                    | toggle visual editing mode
 <kbd>v</kbd>                    | select all
+<kbd>uv</kbd>                   | unselect all
 <kbd>SPACE</kbd>                | toggle marking
 **Line modes :**                | 
 <kbd>Mf</kbd>                   | File line mode: `filename+size`
