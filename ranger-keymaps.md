@@ -7,6 +7,11 @@ cmd/key                         | description
 **Jump To :**                   | 
 <kbd>cd</kbd>                   | console cd
 g                               | press g and then press one of the presented keys
+**Line modes :**                | 
+<kbd>Mf</kbd>                   | File line mode: filename+size
+<kbd>Mi</kbd>                   | Info line mode: filename+fileType info
+<kbd>Mm</kbd>                   | Time line mode: filename+Timestamp info
+<kbd>Mp</kbd>                   | Time line mode: permissions+filename
 **Tabs :**                      | 
 <kbd>Ctrl</kbd>+<kbd>n</kbd>    | New tab
 <kbd>Ctrl</kbd>+<kbd>w</kbd>    | close tab
