@@ -101,6 +101,7 @@ which will result for `,pkg-graph i3<tab>` in:
 ``` sh
 i3            i3blocks      i3lock        i3lock-fancy  i3status      i3-wm         i3-wm-dbg
 ```
+An elegant way is provided by `.oh-my-zsh` to facilitate this kind of functionality. Basically it provides an `apt_pref_compdef()` function in `~/.oh-my-zsh/plugins/debian/debian.plugin.zsh` that can be used by just issuing: `apt_pref_compdef ,pkg-graph "install"`.{.note}
 # Examples: 
 
 ## 1- First list all object files then other files (for rm)
