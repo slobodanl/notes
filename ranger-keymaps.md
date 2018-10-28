@@ -12,6 +12,7 @@ g                               | press g and then press one of the presented ke
 <kbd>v</kbd>                    | select all
 <kbd>uv</kbd>                   | unselect all
 <kbd>SPACE</kbd>                | toggle marking
+<kbd>Insert</kbd>               | toggle marking
 **Line modes :**                | 
 <kbd>Mf</kbd>                   | File line mode: `filename+size`
 <kbd>Mi</kbd>                   | Info line mode: `filename+fileTypeinfo`
