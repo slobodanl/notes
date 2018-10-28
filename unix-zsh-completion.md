@@ -59,6 +59,7 @@ this function is provided in git repo to run it just run:
 ``` sh
 source ~/bin/,print_comparr
 ```
+_You need to source it_{.note}
 ### Assigning new scripts or function to use already existing services:
 Let's assume that we have a script named `,pkg-graph`, which will draw the package dependencies of an installed/not installed package using `graphviz`.
 
