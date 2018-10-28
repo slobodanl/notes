@@ -44,12 +44,45 @@ _takenote.zsh
 also to find out what is binded to a function press <alt-x> and then
 type `where-is` and then type the function name.
 
+### Assigning new scripts or function to use already existing services:
+Let's assume that we have a script named `,pkg-graph`, which will draw the package dependencies of an installed/not installed package using `graphviz`.
+
+This script needs autocompletion exactly the same way as it is provided in `apt-get install <tab>`. To do this we, we can find that `apt-get` is using `_apt`:
+
+``` sh
+print $_comps[apt-get]
+_apt
+```
+
+By locating `_apt` we will realize that it is located in `/usr/share/zsh/functions/Completion/Debian/_apt`. So far so good!
+Oneway to use the services provided is by issuing the following command:
+
+``` sh
+compdef ,pkg-graph='_apt'
+```
+
+Now, if you type `,pkg-graph <tab>`, you will get:
+``` sh
+autoclean        build-dep        check            dist-upgrade     dselect-upgrade  install          purge            source           update                          
+autoremove       changelog        clean            download         help             markauto         remove           unmarkauto       upgrade
+```
+But this is the first level provided service by `_apt` service. We need the second level service. That is more complicated! Oneway is to define the following function:
+
+``` sh
+function pkg_install(){
+  service='apt-get';
+  words=('apt-get' 'install');
+  ((CURRENT++))  # this will increase the level of service!
+  _apt
+}
+
+compdef pkg_install ,pkg_graph
+```
 
 # Examples: 
 
 ## 1- First list all object files then other files (for rm)
-For example, to make the rm command first complete only names of object files 
-and then the names of all files if there is no matching object file:
+For example, to make the rm command first complete only names of object files and then the names of all files if there is no matching object file:
 
 ```bash
 zstyle ':completion:*:*:rm:*' file-patterns \
