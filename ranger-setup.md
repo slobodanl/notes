@@ -8,6 +8,16 @@
 sudo apt install highlight atool w3m poppler-utils caca-utils
 ```
 
+## Jump folders:
+In `rc.conf` there is a section that defines `# Jump folders`. There you have mappings like:
+``` md
+map gd cd ~/Downloads
+map gD cd ~/Dropbox
+map gh cd ~
+map ge cd /etc
+```
+You can add additional jumping nodes there.
+
 ## References
 
 1. [ranger cheatsheet](http://ranger.nongnu.org/cheatsheet.svg)
