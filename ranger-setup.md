@@ -21,6 +21,9 @@ You can add additional jumping nodes there.
 ## References
 
 1. [ranger cheatsheet](http://ranger.nongnu.org/cheatsheet.svg)
+2. [ranger - ArchWiki][RA]
 
 -----------------------------------------
 2018-01-22 20:04:09
+
+[RA]: https://wiki.archlinux.org/index.php/Ranger
