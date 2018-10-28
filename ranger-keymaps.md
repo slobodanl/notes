@@ -1,4 +1,4 @@
-# Ranger-Keys.Md
+# Ranger-keys.Md
 
 # keybindings                                                                     
 cmd/key  | description       
