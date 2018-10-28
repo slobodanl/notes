@@ -43,6 +43,7 @@ g                               | press g and then press one of the presented ke
 <kbd>~</kbd>                    | Toggle view mode
 mkd                             | create folder
 tig                             | run tig against the current directory
+<kbd>Ctrl</kbd>+<kbd>d</kbd>    | run `git dl` on the selected file
 st                              | run tig status in the current directory
 
 
