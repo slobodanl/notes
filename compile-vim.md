@@ -1,6 +1,5 @@
 # Compile-Vim.Md
 
------------------------------------------ 
 ## Alternative for installation
 s apt install vim-gtk
 s apt install vim-nox
@@ -46,5 +45,5 @@ sudo make VIMRUNTIMEDIR=/usr/share/vim/vim80/
 sudo apt install checkinstall
 sudo checkinstall
 ```
------------------------------------------
+* * *
 2017-12-23 15:38:29

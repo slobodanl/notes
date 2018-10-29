@@ -1,5 +1,4 @@
 # android bootloop
-# android bootloop
 
 ## Connect to the device
 Boot to the custom recovery, wait a few seconds until `adb devices` shows your device, then:

@@ -1,6 +1,5 @@
 # Compile-Twmn.Md
 
------------------------------------------ 
 The binaries are included in bin folder, but inorder them to be runnable
 we need to install the following libraries.
 
@@ -20,5 +19,5 @@ s mv ~/.icons/Paper /usr/share/icons/
 s chown root /usr/share/icons/Paper
 s ln -s /usr/share/icons/Paper ~/.icons
 ```
------------------------------------------
-2018-01-25 21:02:49
+* * *
+# 2018-01-25 21:02:49

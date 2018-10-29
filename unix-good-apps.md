@@ -197,7 +197,11 @@ then you can use `<your-preferred-player> "$(yturl 'http://www.youtube.com/watch
 1. [bat][https://github.com/sharkdp/bat]
    bat supports syntax highlighting for a large number of programming and markup languages
    ![](https://camo.githubusercontent.com/9d3d89364f2cc83ace8f29646a6236bc15ea1da0/68747470733a2f2f696d6775722e636f6d2f724773646e44652e706e67)
-   
+
+# Desktop Markdown editor:
+
+1. typora
+
 # Documentation
 
 1. [sphinx](http://www.sphinx-doc.org)

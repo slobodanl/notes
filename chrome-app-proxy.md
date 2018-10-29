@@ -1,6 +1,4 @@
-#Chrome app proxy
-
------------------------------------------
+# Chrome app proxy
 
 ~~~bash
 man google-chrome
@@ -13,5 +11,5 @@ Edit this part:
 Exec=/opt/mattermost/mattermost-desktop --proxy-server=http://wwwproxy.axis.com:3128
 ~~~
 
------------------------------------------
+* * *
 Wednesday 30 August 2017, 13:28:53
