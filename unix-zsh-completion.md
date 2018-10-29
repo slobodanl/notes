@@ -119,6 +119,7 @@ zstyle ':completion:*:*:rm:*' file-patterns \
 
 ## References:  
 1- [Writing zsh completion scripts][WZCS]
+2- compadd man: `help compadd`
 * * *
 2017-10-04 23:41:19
 
