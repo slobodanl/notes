@@ -79,7 +79,7 @@ Here are some good unix apps:
    ```bash
    s apt install xfce4-appfinder
    ```
-# Image editors
+# Paint, Image/Graphic applications
 
 1. Krita
 2. Gimp
