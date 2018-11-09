@@ -10,7 +10,11 @@ _Written by: Reza Shams Amiri_
 1. **PICK**  
    Install it from [Pick: a colour picker for Ubuntu][PACPFU]  
    ![pick.png](/img/unix-good-apps/pick.png)
-
+1. **kcolorchooser**  
+    ![kcolorchooser.png](/img/unix-good-apps/kcolorchooser.png)
+    ``` sh
+    sudo apt install kcolorchooser
+    ```
 * * *
 Creation date: _2018-11-09_
 
