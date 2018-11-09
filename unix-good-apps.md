@@ -17,7 +17,7 @@ Here are some good unix apps:
    ```
 
 - [ArchLinux - List of applications](https://wiki.archlinux.org/index.php/List_of_applications)
-   ```bash
+   ``` yaml
    See what's available at https://wiki.archlinux.org/index.php/List_of_applications
    ```
 - [The really big list of really interesting Open Source projects.](https://medium.com/@likid.geimfari/the-list-of-interesting-open-source-projects-2daaa2153f7c)
@@ -27,7 +27,7 @@ Here are some good unix apps:
 
    ![](https://cdn-images-1.medium.com/max/1500/0*cTQWHAgxA1ikNujZ.png)
 
-   ```bash
+   ``` yaml
    See what's available at https://medium.com/@likid.geimfari/the-list-of-interesting-open-source-projects-2daaa2153f7c
    ```
 ---
@@ -36,7 +36,7 @@ Here are some good unix apps:
 
 - [ShellCheck][shellcheck]
    lint tool for shell scripts
-   ```bash
+   ``` yaml
    s apt install shellcheck
    ```
 
@@ -158,16 +158,16 @@ then you can use `<your-preferred-player> "$(yturl 'http://www.youtube.com/watch
 
    ![](https://github.com/jaspervdj/patat/raw/master/extra/screenshot.png?raw=true)
 
-   ```bash
-   s apt install patat
+   ``` sh
+   sudo apt install patat
    ```
 
 1. [mdv][mdv]: Markdown viewer
 
    ![](https://github.com/axiros/terminal_markdown_viewer/raw/master/samples/5.png)
 
-   ```bash
-   s -H pip3.6 install mdv
+   ``` sh
+   sudo -H pip3.6 install mdv
    ```
 
 1. [mdless](https://github.com/ttscoff/mdless):
@@ -175,8 +175,8 @@ then you can use `<your-preferred-player> "$(yturl 'http://www.youtube.com/watch
 
    ![](https://github.com/ttscoff/mdless/raw/develop/screenshots/mdless.png)
 
-   ```bash
-   s gem install mdless
+   ``` sh
+   sudo gem install mdless
    ```
 
 1. [mdp](https://github.com/visit1985/mdp): Markdown presentations tool
@@ -188,9 +188,8 @@ then you can use `<your-preferred-player> "$(yturl 'http://www.youtube.com/watch
 1. [CommonMark-py][cmpy]
 
    Python markdown parser and renderer
-   ```bash
+   ``` sh
    pip install commonmark
-
    ```
    Either use it in python scripts or use the cli by `cmark`
 
