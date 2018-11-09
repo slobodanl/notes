@@ -21,9 +21,13 @@ _Written by: Reza Shams Amiri_
     ![coolors.png](/img/unix-good-apps/coolors.png)
 2. [Sphere: Color Theory Visualizer][SCTV]  
     ![galactic.png](/img/unix-good-apps/galactic.png)
+3. [Site Palette – Get the essential colours from a website][SPGTECFAW]  
+    ![site-pallete.png](/img/unix-good-apps/site-pallete.png)
+4. 
 * * *
 Creation date: _2018-11-09_
 
 [PACPFU]: https://www.kryogenix.org/code/pick/
 [CCTSFCSG]: https://coolors.co/
 [SCTV]: https://galactic.ink/sphere/#
+[SPGTECFAW]: http://palette.site/?ref=maqtoob
