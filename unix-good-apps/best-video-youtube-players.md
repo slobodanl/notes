@@ -14,7 +14,7 @@ mplayer, mpv, vlc, and mpsyt(mps-youtube)
 1. vlc
     Use `cvlc --no-video <URL>` or `cvlc --vout none <URL>`
 1. mplayer and mpv [see ref][audio-youtube]
-    `yturl` gets direct media URLs to YouTube media, freeing you having to view them in your browser.
+    `yturl` gets direct media URLs to YouTube media, freeing you having to view them in your browser.  
     First install `yturl` using:
 
     ``` sh
@@ -28,10 +28,14 @@ mplayer, mpv, vlc, and mpsyt(mps-youtube)
     ``` sh
     <your-preferred-player> "$(yturl 'http://www.youtube.com/watch?v=8TCxE0bWQeQ')"
     ```
-1. mplayer**:
-    `mplayer -novideo "$(yturl <url>)"`
-    **mpv**:
-    `mpv --no-video "$(yturl <url>)"`
+    **mplayer**:  
+    ``` sh
+    mplayer -novideo "$(yturl <url>)"
+    ```
+    **mpv**:  
+    ``` sh
+    mpv --no-video "$(yturl <url>)"
+    ```
 
 * * *
 Creation date: _2018-11-09_
