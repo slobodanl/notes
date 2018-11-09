@@ -15,7 +15,15 @@ _Written by: Reza Shams Amiri_
     ``` sh
     sudo apt install kcolorchooser
     ```
+    
+## Best webbased color pickers / generators
+1. [Coolors.co - The super fast color schemes generator][CCTSFCSG]  
+    ![coolors.png](/img/unix-good-apps/coolors.png)
+2. [Sphere: Color Theory Visualizer][SCTV]  
+    ![galactic.png](/img/unix-good-apps/galactic.png)
 * * *
 Creation date: _2018-11-09_
 
 [PACPFU]: https://www.kryogenix.org/code/pick/
+[CCTSFCSG]: https://coolors.co/
+[SCTV]: https://galactic.ink/sphere/#
