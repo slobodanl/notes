@@ -6,13 +6,13 @@ Here are some good unix apps:
 
 - [awesome-cli-apps][awsome-cli]
    A curated list of command line apps.
-   ```bash
+   ``` yaml
    See what's available at https://github.com/agarrharr/awesome-cli-apps
    ```
 
 - [Awesome Linux Software][awsome-linux]
    A list of awesome applications, software, tools and other materials for Linux distros.
-   ```bash
+   ``` yaml
    See what's available at https://github.com/LewisVo/Awesome-Linux-Software
    ```
 
