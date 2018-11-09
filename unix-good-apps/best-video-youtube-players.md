@@ -11,27 +11,27 @@ mplayer, mpv, vlc, and mpsyt(mps-youtube)
    ```
    then `mpsyt playurl <url>`
 
-    1. vlc
-        Use `cvlc --no-video <URL>` or `cvlc --vout none <URL>`
-    1. mplayer and mpv [see ref][audio-youtube]
-        `yturl` gets direct media URLs to YouTube media, freeing you having to view them in your browser.
-        First install `yturl` using:
+1. vlc
+    Use `cvlc --no-video <URL>` or `cvlc --vout none <URL>`
+1. mplayer and mpv [see ref][audio-youtube]
+    `yturl` gets direct media URLs to YouTube media, freeing you having to view them in your browser.
+    First install `yturl` using:
 
-        ``` sh
-        sudo pip install -U yturl
+    ``` sh
+    sudo pip install -U yturl
 
-        # Or for installing latest github version:
+    # Or for installing latest github version:
 
-        sudo pip install -U git+https://github.com/cdown/yturl.git@develop
-        ```
-        then you can use 
-        ``` sh
-        <your-preferred-player> "$(yturl 'http://www.youtube.com/watch?v=8TCxE0bWQeQ')"
-        ```
-    1. mplayer**:
-        `mplayer -novideo "$(yturl <url>)"`
-        **mpv**:
-        `mpv --no-video "$(yturl <url>)"`
+    sudo pip install -U git+https://github.com/cdown/yturl.git@develop
+    ```
+    then you can use 
+    ``` sh
+    <your-preferred-player> "$(yturl 'http://www.youtube.com/watch?v=8TCxE0bWQeQ')"
+    ```
+1. mplayer**:
+    `mplayer -novideo "$(yturl <url>)"`
+    **mpv**:
+    `mpv --no-video "$(yturl <url>)"`
 
 * * *
 Creation date: _2018-11-09_
