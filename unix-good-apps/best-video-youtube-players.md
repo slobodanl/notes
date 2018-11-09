@@ -13,7 +13,7 @@ mplayer, mpv, vlc, and mpsyt(mps-youtube)
 
 1. **VLC**  
    Use `cvlc --no-video <URL>` or `cvlc --vout none <URL>`
-1. **mplayer** and **mpv** [see ref][audio-youtube]  
+1. **mplayer** and **mpv** [see audio only youtube playback][audio-youtube]  
    `yturl` gets direct media URLs to YouTube media, freeing you having to view them in your browser.  
    First install `yturl` using:
     ``` sh
@@ -38,3 +38,5 @@ mplayer, mpv, vlc, and mpsyt(mps-youtube)
 
 * * *
 Creation date: _2018-11-09_
+
+[audio-youtube]: https://unix.stackexchange.com/questions/229787/audio-only-youtube-player
