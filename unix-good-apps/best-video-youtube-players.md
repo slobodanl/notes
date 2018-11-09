@@ -11,12 +11,11 @@ mplayer, mpv, vlc, and mpsyt(mps-youtube)
    ```
    then `mpsyt playurl <url>`
 
-1. vlc
-    Use `cvlc --no-video <URL>` or `cvlc --vout none <URL>`
-1. mplayer and mpv [see ref][audio-youtube]
-    `yturl` gets direct media URLs to YouTube media, freeing you having to view them in your browser.  
-    First install `yturl` using:
-
+1. **VLC**  
+   Use `cvlc --no-video <URL>` or `cvlc --vout none <URL>`
+1. **mplayer** and **mpv** [see ref][audio-youtube]  
+   `yturl` gets direct media URLs to YouTube media, freeing you having to view them in your browser.  
+   First install `yturl` using:
     ``` sh
     sudo pip install -U yturl
 
