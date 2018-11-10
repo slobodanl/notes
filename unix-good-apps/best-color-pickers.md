@@ -54,7 +54,6 @@ _Written by: Reza Shams Amiri_
     ![Selection_053.png](/img/unix-good-apps/Selection_053.png)
 2. [Color Trends + Palettes :: COLOURlovers][CTPC]  
     ![colorlover.png](/img/unix-good-apps/colorlover.png)
-    
 
 
 * * *
