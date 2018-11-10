@@ -37,8 +37,19 @@ _Written by: Reza Shams Amiri_
     ![paletton-wheel.png](/img/unix-good-apps/paletton-wheel.png)  
     ![paletton-example.png](/img/unix-good-apps/paletton-example.png)
 1. [Adobe Color CC][ACC]  
-     ![adobe-color.png](/img/unix-good-apps/adobe-color.png)
-    
+    ![adobe-color.png](/img/unix-good-apps/adobe-color.png)
+1. [Colorable][C]  
+    ![colorable.png](/img/unix-good-apps/colorable.png)
+1. [Colormind - Material Dashboard Color Generator][CMDCG]  
+    ![colormind.png](/img/unix-good-apps/colormind.png)
+1. [Google Art & Culture Experiment - Art Palette][GACEAP]  
+    ![google-color.png](/img/unix-good-apps/google-color.png)
+1. [Pigment by ShapeFactory | Simple Color Palette Generator][PBSSCPG]  
+    ![pigment.png](/img/unix-good-apps/pigment.png)
+1. [ColorSpace - Color Palettes Generator and Color Gradient Tool][CCPGACGT]  
+    ![gradient-generator.png](/img/unix-good-apps/gradient-generator.png)
+1. [Cohesive Colors | A tool for creating more cohesive color schemes.][CCATFCMCCS]  
+    ![cohesive.png](/img/unix-good-apps/cohesive.png)
 * * *
 Creation date: _2018-11-09_
 
@@ -53,3 +64,9 @@ Creation date: _2018-11-09_
 [CTMD]: https://material.io/tools/color/#!/?view.left=0&view.right=0
 [PTCSD]: http://paletton.com
 [ACC]: https://color.adobe.com
+[C]: https://colorable.jxnblk.com
+[CMDCG]: http://colormind.io/template/material-dashboard/
+[GACEAP]: https://artsexperiments.withgoogle.com/artpalette/colors/805433-4f6676-76b0c3-a0c0e0-d9d9f1
+[PBSSCPG]: https://pigment.shapefactory.co/
+[CCPGACGT]: https://mycolor.space/?hex=%230E1610&sub=1
+[CCATFCMCCS]: https://javier.xyz/cohesive-colors/
