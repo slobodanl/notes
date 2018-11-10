@@ -1,5 +1,5 @@
 _Written by: Reza Shams Amiri_
-# unix apt
+# Unix Package information
 
 1. **List all files** of an **installed** package  
     ``` sh
@@ -8,6 +8,14 @@ _Written by: Reza Shams Amiri_
 1. **Find a package** which provides a **file**   
     ``` sh
     dpkg -S klauncher
+    ```
+1. **Show** package information for an **installed package**
+    ``` sh
+    dpkg -s kinit
+    ```
+1. **Show** package information for an **installed/not installed package**
+    ``` sh
+    aptitude show viruskiller
     ```
 
 * * *
