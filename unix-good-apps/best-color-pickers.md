@@ -50,6 +50,13 @@ _Written by: Reza Shams Amiri_
     ![gradient-generator.png](/img/unix-good-apps/gradient-generator.png)
 1. [Cohesive Colors | A tool for creating more cohesive color schemes.][CCATFCMCCS]  
     ![cohesive.png](/img/unix-good-apps/cohesive.png)
+1. [Color Picker — HTML Color Codes][CPHCC]  
+    ![Selection_053.png](/img/unix-good-apps/Selection_053.png)
+2. [Color Trends + Palettes :: COLOURlovers][CTPC]  
+    ![colorlover.png](/img/unix-good-apps/colorlover.png)
+    
+
+
 * * *
 Creation date: _2018-11-09_
 
@@ -70,3 +77,5 @@ Creation date: _2018-11-09_
 [PBSSCPG]: https://pigment.shapefactory.co/
 [CCPGACGT]: https://mycolor.space/?hex=%230E1610&sub=1
 [CCATFCMCCS]: https://javier.xyz/cohesive-colors/
+[CPHCC]: https://htmlcolorcodes.com/color-picker/
+[CTPC]: https://www.colourlovers.com/
