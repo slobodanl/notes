@@ -37,7 +37,7 @@ _Written by: Reza Shams Amiri_
     ![paletton-wheel.png](/img/unix-good-apps/paletton-wheel.png)  
     ![paletton-example.png](/img/unix-good-apps/paletton-example.png)
 1. [Adobe Color CC][ACC]  
-     
+     ![adobe-color.png](/img/unix-good-apps/adobe-color.png)
     
 * * *
 Creation date: _2018-11-09_
