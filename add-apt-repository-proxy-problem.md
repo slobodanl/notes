@@ -4,11 +4,11 @@
 
 find the signiture online for ppa in this case: ppa:nilarimogard/webupd8
 
-
+``` sh
 sudo apt-key adv --keyserver-options http-proxy=http://wwwproxy.axis.com:3128/ \
 --keyserver keyserver.ubuntu.com \
 --recv-keys 1DB29AFFF6C70907B57AA31F531EE72F4C9D234C
-
+```
 ## Updated solution
 
 The following solution worked perfectly, although I can do some more digging to
@@ -16,10 +16,10 @@ see how it can be done without modifying the file
 
 I managed to workaround this by editing /usr/lib/python3/dist-packages/softwareproperties/ppa.py and adding
 
-"--keyserver-options", "http-proxy=<proxy_url>",
+`--keyserver-options", "http-proxy=<proxy_url>`,
 under the following line
 
-"--keyserver", self.keyserver,
+`--keyserver`, self.keyserver,
 
 More background information
 
