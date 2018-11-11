@@ -1,10 +1,15 @@
 _Written by: Reza Shams Amiri_
-# utils mutt
+# Mutt
 
-Start your content here...
+## Mutt Configuration
 
+## Mutt Command Line Interface
+
+_mutt flags_{.ct}
 ``` sh
-code placeholder
+-s subject
+-c cc_addresses
+-b bcc_addresses
 ```
 
 * * *
