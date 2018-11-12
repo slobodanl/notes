@@ -14,4 +14,4 @@ Default landing page for daily notes
 |  |  |  |  |  |
 
 
-Created: **2018-11-12**
+Created at: **2018-11-12**
