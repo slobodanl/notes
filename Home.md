@@ -12,3 +12,6 @@ Default landing page for daily notes
 | Perspective |  | Progress | Science |  |
 | Curiosity |  |  |  |  |
 |  |  |  |  |  |
+
+
+2018-11-12
