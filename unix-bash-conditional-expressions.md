@@ -1,7 +1,3 @@
-# Unix-Bash-Conditional-Expressions.Md
-
------------------------------------------ 
-
 ## [Bash Conditional Expressions][bash-conditionals]
 
 Conditional expressions are used by the `[[` compound command and the test and `[` builtin commands.
