@@ -12,5 +12,13 @@ _mutt flags_{.ct}
 -b bcc_addresses
 ```
 
+## Mutt shortcuts
+
+
+| Key | Desc |
+| --- | --- |
+| <kbd>m</kbd> | new message |
+
+
 * * *
 Creation date: _2018-11-11_
