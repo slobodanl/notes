@@ -26,5 +26,16 @@ repo.checkout_index(origin_master.resolve)
 repo.checkout_tree(origin_master.target)
 repo.reset(origin_master.target,:hard)
 ```
+
+Or in `config.rb`:  
+``` ruby
+Gollum::Hook.register(:post_commit, :hook_id) do |committer, sha1|
+    # look at git_layer_rugged.rb
+    # wiki.repo.git.pull('origin',wiki_options[:ref])
+    # committer.wiki.repo.git.pull('origin', committer.wiki.ref)
+    # committer.wiki.repo.git.push('origin', committer.wiki.ref)
+    system(gpath + '/assets/hooks/post-commit "' + Precious::App.settings.gollum_path + '"')
+end
+```
 * * *
 Creation date: _2018-11-13_
