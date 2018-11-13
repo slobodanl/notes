@@ -1,5 +1,5 @@
 _Written by: Reza Shams Amiri_
-# scratch
+# Scratch Pad
 
 ## Hacking rugged adapter
 
