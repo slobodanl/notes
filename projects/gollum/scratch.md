@@ -11,7 +11,7 @@ last_commit = origin_master.target
 gitrepo.reset(origin_master.target, :hard)
 ```
 
-more
+Some other thigs that were tried:
 
 ``` ruby
 repo.checkout(repo.head.name,:strategy => :force)
