@@ -1,7 +1,6 @@
 # I3-Commands
 
------------------------------------------ 
-taken from: https://github.com/cornerman/i3-completion/blob/master/_i3_commands_list
+taken from: [https://github.com/cornerman/i3-completion/blob/master/_i3_commands_list][HGCCICBM_]
 ```bash
 # i3 version: 4.14.1
 move window to workspace next_on_output
@@ -696,3 +695,5 @@ bar mode toggle <word>
 
 -----------------------------------------
 2017-11-28 20:13:29
+
+[HGCCICBM_]: https://github.com/cornerman/i3-completion/blob/master/_i3_commands_list
