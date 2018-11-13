@@ -8,7 +8,7 @@ gitrepo = wiki.repo.git.instance_variable_get(:@repo)
 gitrepo.fetch('origin','master')
 origin_master = gitrepo.branches['origin/master']
 last_commit = origin_master.target
-gitrepo.reset(origin_master.target, :hard)
+gitrepo.reset(origin_master.target, :soft)
 ```
 
 Some other thigs that were tried:
