@@ -10,8 +10,8 @@ Default landing page for daily notes
 | Optimistic | Ideas | Breakout | Theory |  |
 | Vision board | Brainstorm | Direction |  |  |
 | Perspective |  | Progress | Science |  |
-| Curiosity | finite |  |  |  |
-|  |  |  |  | |
+| Curiosity | finite |  |  | test |
+|  |  |  |  | test2 |
 
 
 Created at: **2018-11-13**
