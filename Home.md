@@ -11,7 +11,7 @@ Default landing page for daily notes
 | Vision board | Brainstorm | Direction |  |  |
 | Perspective |  | Progress | Science |  |
 | Curiosity |  |  |  |  |
-|  |  |  |  |  |
+|  |  |  |  | test |
 
 
 Created at: **2018-11-12**
