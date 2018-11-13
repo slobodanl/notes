@@ -2,6 +2,7 @@ _Written by: Reza Shams Amiri_
 # Scratch Pad
 
 ## Hacking rugged adapter
+The rugged adapter is tricky to work with, since it's a wrapper around a `c` library.
 
 ``` ruby
 gitrepo = wiki.repo.git.instance_variable_get(:@repo)
