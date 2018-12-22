@@ -1,7 +1,7 @@
 _Written by: Reza Shams Amiri_
 # entr
 
-`ntre` [man pageS(1)][E1]
+`ntre` [man page(1)][E1]
 
 Samples:
 
