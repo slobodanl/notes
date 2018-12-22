@@ -23,7 +23,7 @@ java -cp src com.test.Main
 _main.java invokation_{.ct}
 ```
 cat >> main.java <<EOF
-import java.util.Arrays
+import java.util.Arrays;
 public class main {
 
     public static void main(String[] args) {
