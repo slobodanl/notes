@@ -30,9 +30,9 @@ Keybinding           |  Action
 <kbd>Mod</kbd> + <kbd>Control</kbd> + <kbd>r</kbd>   | Rename workspace
 -------------------- | -----------------------
 <kbd>Mod</kbd> + <kbd>tab</kbd>            | Next workspace
-<kbd>Mod</kbd> + <kbd>Control</kbd> + <kbd>``</kbd> | Next workspace
+<kbd>Mod</kbd> + <kbd>Control</kbd> + <kbd></kbd> | Next workspace
 <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>tab</kbd>    | Previous workspace
-<kbd>Mod</kbd> + <kbd>Control</kbd> + <kbd>``</kbd> | Previous workspace
+<kbd>Mod</kbd> + <kbd>Control</kbd> + <kbd></kbd> | Previous workspace
 -------------------- | -----------------------
 Mod + Shift + F1     | Move window to output $DP0
 Mod + Shift + F2     | Move window to output $DP1
