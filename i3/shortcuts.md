@@ -17,6 +17,7 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>a</kbd> | Focus parent container |
 | <kbd>Mod</kbd> + <kbd>h</kbd> | Split **H**orizontaly |
 | <kbd>Mod</kbd> + <kbd>v</kbd> | Split **V**ertically |
+| <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>w</kbd> | Rename panel |
 |  Custom actions |  |
 | <kbd>Mod</kbd> + <kbd>Home</kbd> | Run `~/bini3/tempscript` |
 | <kbd>Mod</kbd> + <kbd>Pause</kbd> | Show system dmenu |
@@ -24,7 +25,6 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>F10</kbd> | Decrease Volume - |
 | <kbd>Mod</kbd> + <kbd>F11</kbd> | Increase Volume + |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>F12</kbd> | Toggle loud volume for chrome |
-| <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>w</kbd> | Rename panel |
 | <kbd>Mod</kbd> + <kbd>PageUp</kbd> | Run `rofi -combi-modi` |
 | <kbd>Mod</kbd> + <kbd>d</kbd> | Run `rofi -show run` |
 | <kbd>Mod</kbd> + <kbd>l</kbd> | Run `~/bini3/i3colorlock` |
