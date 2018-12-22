@@ -23,6 +23,8 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>Home</kbd> | Run `~/bini3/tempscript` |
 | <kbd>Mod</kbd> + <kbd>Pause</kbd> | Show system dmenu |
 | <kbd>Mod</kbd> + <kbd>Printscreen</kbd> | Grab screenshot by Shutter |
+| <kbd>Mod</kbd> + <kbd>Return</kbd> | Terminal "Tilix" |
+| <kbd>Mod</kbd> + <kbd>`</kbd> | Tilix Quake |
 | <kbd>Mod</kbd> + <kbd>F1</kbd> | Run `htop` |
 | <kbd>Mod</kbd> + <kbd>F10</kbd> | Decrease Volume - |
 | <kbd>Mod</kbd> + <kbd>F11</kbd> | Increase Volume + |
