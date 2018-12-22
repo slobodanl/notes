@@ -19,6 +19,7 @@ or jusr run the following command:
 dconf write /org/mate/desktop/peripherals/keyboard/indicator/show-flags true
 ```
 
-[flag-mate]: https://winaero.com/blog/flags-mate-keyboard-layout-indicator/
 -----------------------------------------
 2018-06-10 23:58:38
+
+[flag-mate]: https://winaero.com/blog/flags-mate-keyboard-layout-indicator/
