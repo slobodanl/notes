@@ -24,14 +24,15 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>F10</kbd> | Decrease Volume - |
 | <kbd>Mod</kbd> + <kbd>F11</kbd> | Increase Volume + |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>F12</kbd> | Toggle loud volume for chrome |
+| <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>w</kbd> | Rename panel |
 | <kbd>Mod</kbd> + <kbd>PageUp</kbd> | Run `rofi -combi-modi` |
 | <kbd>Mod</kbd> + <kbd>d</kbd> | Run `rofi -show run` |
 | <kbd>Mod</kbd> + <kbd>l</kbd> | Run `~/bini3/i3colorlock` |
-| <kbd>Mod</kbd> + <kbd>u</kbd> | Youtube trick (only works with chrome) |
 | <kbd>Mod</kbd> + <kbd>q</kbd> | Kill focused window |
 | <kbd>Mod</kbd> + <kbd>x</kbd> | Dump i3 window layout in a graph |
 | <kbd>Mod</kbd> + <kbd>y</kbd> | Toggle border |
 | <kbd>Mod</kbd> + <kbd>x</kbd> | "Mouse-Key" Mode |
+| <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>a</kbd> | Thunderbird addressbook |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>z</kbd> | "Mouse" Mode (easy scroll) |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>n</kbd> | Run `Thunar` |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>d</kbd> | Run `xfce4-appfinder` |
@@ -53,6 +54,9 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>``</kbd> | Move window 100 pixel to the top |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>``</kbd> | Move window 100 pixel to the bottom |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> | Sticky toggle |
+| <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> | Move window to `scratchpad` |
+| <kbd>Mod</kbd> + <kbd>-</kbd> | Toggle `scratchpad` |
+| <kbd>Mod</kbd> + <kbd>u</kbd> | Youtube trick (only works with chrome) |
 
 - - -
 
