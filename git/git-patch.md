@@ -1,6 +1,5 @@
 # Git-Patch.Md
 
------------------------------------------ 
 
 ## Create patch from uncommitted but staged changes (See [src][r1])
 
@@ -20,6 +19,7 @@ then you can later apply the patch:
 git apply /tmp/my.patch
 ```
 
-[r1]: https://stackoverflow.com/a/15438863/161312
 -----------------------------------------
 2018-05-14 21:58:38
+
+[r1]: https://stackoverflow.com/a/15438863/161312
