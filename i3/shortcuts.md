@@ -1,6 +1,6 @@
 _Written by: Reza Shams Amiri_
 
-# shortcuts
+# i3 Shortcuts
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -15,6 +15,8 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>f</kbd> | Fullscreen toggle |
 | <kbd>Mod</kbd> + <kbd>g</kbd> | Fullscreen toggle global |
 | <kbd>Mod</kbd> + <kbd>a</kbd> | Focus parent container |
+| <kbd>Mod</kbd> + <kbd>h</kbd> | Split **H**orizontaly |
+| <kbd>Mod</kbd> + <kbd>v</kbd> | Split **V**ertically |
 |  Custom actions |  |
 | <kbd>Mod</kbd> + <kbd>Home</kbd> | Run `~/bini3/tempscript` |
 | <kbd>Mod</kbd> + <kbd>Pause</kbd> | Show system dmenu |
@@ -43,6 +45,7 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>F3</kbd> | Move window to output $DP2 |
 | <kbd>Mod</kbd> + <kbd>Control</kbd> + <kbd>r</kbd> | Rename workspace |
 |  **Popup Window** actions |  |
+| <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd> | Toggle floating |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>PageUp</kbd> | Increase size of window by 100 |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>PageDown</kbd> | Decrease size of window by 100 |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>``</kbd> | Move window 100 pixel to the left |
