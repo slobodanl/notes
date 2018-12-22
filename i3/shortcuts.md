@@ -18,9 +18,11 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>h</kbd> | Split **H**orizontaly |
 | <kbd>Mod</kbd> + <kbd>v</kbd> | Split **V**ertically |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>w</kbd> | Rename panel |
+| <kbd>Mod</kbd> + <kbd>t</kbd> | Rename title |
 |  Custom actions |  |
 | <kbd>Mod</kbd> + <kbd>Home</kbd> | Run `~/bini3/tempscript` |
 | <kbd>Mod</kbd> + <kbd>Pause</kbd> | Show system dmenu |
+| <kbd>Mod</kbd> + <kbd>Printscreen</kbd> | Grab screenshot by Shutter |
 | <kbd>Mod</kbd> + <kbd>F1</kbd> | Run `htop` |
 | <kbd>Mod</kbd> + <kbd>F10</kbd> | Decrease Volume - |
 | <kbd>Mod</kbd> + <kbd>F11</kbd> | Increase Volume + |
