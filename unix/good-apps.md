@@ -56,6 +56,7 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 
   fill your console with Hollywood melodrama technobabble  
   ![](http://2.bp.blogspot.com/-o0ExO2Cmf84/VJGdBu72YKI/AAAAAAAA5vI/9uL8xWRCpRY/s1600/Screenshot%2Bfrom%2B2014-12-17%2B09%3A10%3A47.png)
+
   ``` sh
   s apt install hollywood wallstreet
   ```
@@ -63,13 +64,13 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 
 ## Desktop
 
-- [Kupfer][kupfer]
+- [Kupfer][kupfer]  
 
-  Kupfer a dmenu replacement
+  Kupfer a dmenu replacement  
 
   ![](https://kupferlauncher.github.io/kupfer-launch.png)  
   
-  ```bash
+  ``` sh
   sudo install kupfer
   ```
 
