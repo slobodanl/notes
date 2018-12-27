@@ -46,58 +46,56 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 ## Ascii / Ascii Art / Ansi
 - [termpix](https://github.com/hopey-dishwasher/termpix)
 
-   Display images in an ANSI terminal
-
+   Display images in an ANSI terminal  
    ![](https://cloud.githubusercontent.com/assets/4640028/13419797/fa51cb88-dfd4-11e5-87c3-f8620cd67557.png)
-   ```bash
+   ``` bash
    cargo install --git https://github.com/hopey-dishwasher/termpix
    ```
 
 - [Hollywood][hollywood]
 
-   fill your console with Hollywood melodrama technobabble
-
-   ![](http://2.bp.blogspot.com/-o0ExO2Cmf84/VJGdBu72YKI/AAAAAAAA5vI/9uL8xWRCpRY/s1600/Screenshot%2Bfrom%2B2014-12-17%2B09%3A10%3A47.png)
-   ```bash
-   s apt install hollywood wallstreet
-   ```
-   also have a look at [Command Line Fu][cmdfu] site.
+  fill your console with Hollywood melodrama technobabble  
+  ![](http://2.bp.blogspot.com/-o0ExO2Cmf84/VJGdBu72YKI/AAAAAAAA5vI/9uL8xWRCpRY/s1600/Screenshot%2Bfrom%2B2014-12-17%2B09%3A10%3A47.png)
+  ``` sh
+  s apt install hollywood wallstreet
+  ```
+  also have a look at [Command Line Fu][cmdfu] site.
 
 ## Desktop
 
 - [Kupfer][kupfer]
 
-   Kupfer a dmenu replacement
+  Kupfer a dmenu replacement
 
-   ![](https://kupferlauncher.github.io/kupfer-launch.png)
-   ```bash
-   s apt install kupfer
-   ```
+  ![](https://kupferlauncher.github.io/kupfer-launch.png)  
+  
+  ```bash
+  sudo install kupfer
+  ```
 
-- [XFCE app finder][appfinder]
-   XFCE App finder replacing start menu
-
-   ```bash
-   s apt install xfce4-appfinder
-   ```
+- [XFCE app finder][appfinder]  
+  XFCE App finder replacing start menu  
+  
+  ``` sh
+  sudo apt install xfce4-appfinder
+  ```
 # Paint, Image/Graphic applications
 
-1. Krita
-2. Gimp
+    1. Krita
+    2. Gimp
 
 # Image previewers
 
-1. [hiptext](https://github.com/jart/hiptext)
-1. [libsixel](https://github.com/saitoha/libsixel)
-1. [w3mimgdisplay](/usr/lib/w3m/w3mimgdisplay)
+    1. [hiptext](https://github.com/jart/hiptext)
+    2. [libsixel](https://github.com/saitoha/libsixel)
+    3. [w3mimgdisplay](/usr/lib/w3m/w3mimgdisplay)
 
+# Utilities  
 
-# Utilities
-
-1. peco : quickly filter the output of commands. Consider it to be the interactive version of grep
-1. ncdu : terminal storage analyzer 
-1. hub  : [hub](https://hub.github.com/) Avoid going to GitHub for pull requests and forks! Perform most of GitHub’s operations from the comfort of the command line.
-1. tldr : Simplified man pages. Usage: `tldr wget`
+    1. **peco** : quickly filter the output of commands. Consider it to be the interactive version of grep
+    2. **ncdu** : terminal storage analyzer 
+    3. **hub**  : [hub](https://hub.github.com/) Avoid going to GitHub for pull requests and forks! Perform most of GitHub’s operations from the comfort of the command line.
+    4. **tldr** : Simplified man pages. Usage: `tldr wget`
 
 
 # Font previewers
@@ -109,11 +107,10 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 1. [Linux font preview applications](https://cweiske.de/tagebuch/Linux%20font%20preview%20applications.htm)
 
 # Notification Daemons
-
-1. [dunst]
-1. [twmn]
-1. [eventd](https://www.eventd.org/)
-1. [State of the art](https://www.eventd.org/state-art.html)
+  1. [dunst]
+  2. [twmn]
+  3. [eventd](https://www.eventd.org/)
+  4. [State of the art](https://www.eventd.org/state-art.html)
 
 # Terminal Markdown Viewer
 
