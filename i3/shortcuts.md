@@ -34,7 +34,6 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>l</kbd> | Run `~/bini3/i3colorlock` |
 | <kbd>Mod</kbd> + <kbd>q</kbd> | Kill focused window |
 | <kbd>Mod</kbd> + <kbd>x</kbd> | Dump i3 window layout in a graph |
-| <kbd>Mod</kbd> + <kbd>y</kbd> | Toggle border |
 | <kbd>Mod</kbd> + <kbd>x</kbd> | "Mouse-Key" Mode |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>a</kbd> | Thunderbird addressbook |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>z</kbd> | "Mouse" Mode (easy scroll) |
@@ -57,11 +56,11 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>``</kbd> | Move window 100 pixel to the right |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>``</kbd> | Move window 100 pixel to the top |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>``</kbd> | Move window 100 pixel to the bottom |
-| <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> | Sticky toggle |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> | Move window to `scratchpad` |
 | <kbd>Mod</kbd> + <kbd>-</kbd> | Toggle `scratchpad` |
 | <kbd>Mod</kbd> + <kbd>u</kbd> | Youtube trick (only works with chrome) |
-
+| <kbd>Mod</kbd> + <kbd>y</kbd> | Toggle border |
+| <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> | Sticky toggle |
 - - -
 
 Creation date: _2018-12-22_
