@@ -110,52 +110,41 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
   3. [eventd](https://www.eventd.org/)
   4. [State of the art](https://www.eventd.org/state-art.html)
 
-# Terminal Markdown Viewer
-
-1. [patat][patat]: Terminal-based presentations using Pandoc
-
-   resentations Atop The ANSI Terminal
-
-   ![](https://github.com/jaspervdj/patat/raw/master/extra/screenshot.png?raw=true)
-
+# Terminal Markdown Viewer  
+1. [patat][patat]: Terminal-based presentations using Pandoc  
+   resentations Atop The ANSI Terminal  
+   ![](https://github.com/jaspervdj/patat/raw/master/extra/screenshot.png?raw=true)  
    ``` sh
    sudo apt install patat
    ```
 
-1. [mdv][mdv]: Markdown viewer
-
-   ![](https://github.com/axiros/terminal_markdown_viewer/raw/master/samples/5.png)
-
+1. [mdv][mdv]: Markdown viewer  
+   ![](https://github.com/axiros/terminal_markdown_viewer/raw/master/samples/5.png)  
    ``` sh
    sudo -H pip3.6 install mdv
    ```
 
-1. [mdless](https://github.com/ttscoff/mdless):
-   mdless is a utility that provides a formatted and highlighted view of Markdown files in Terminal.
-
-   ![](https://github.com/ttscoff/mdless/raw/develop/screenshots/mdless.png)
-
+1. [mdless](https://github.com/ttscoff/mdless):  
+   mdless is a utility that provides a formatted and highlighted view of Markdown files in Terminal.  
+   ![](https://github.com/ttscoff/mdless/raw/develop/screenshots/mdless.png)  
    ``` sh
    sudo gem install mdless
    ```
 
-1. [mdp](https://github.com/visit1985/mdp): Markdown presentations tool
+1. [mdp](https://github.com/visit1985/mdp): Markdown presentations tool  
+   A command-line based markdown presentation tool.  
+   ![](https://cloud.githubusercontent.com/assets/2237222/5810237/797c494c-a043-11e4-9dbd-959cab4055fa.gif)  
 
-   A command-line based markdown presentation tool.
-
-   ![](https://cloud.githubusercontent.com/assets/2237222/5810237/797c494c-a043-11e4-9dbd-959cab4055fa.gif)
-
-1. [CommonMark-py][cmpy]
-
-   Python markdown parser and renderer
+1. [CommonMark-py][cmpy]  
+   Python markdown parser and renderer  
    ``` sh
    pip install commonmark
    ```
    Either use it in python scripts or use the cli by `cmark`
 
-1. [bat][https://github.com/sharkdp/bat]
-   bat supports syntax highlighting for a large number of programming and markup languages
-   ![](https://camo.githubusercontent.com/9d3d89364f2cc83ace8f29646a6236bc15ea1da0/68747470733a2f2f696d6775722e636f6d2f724773646e44652e706e67)
+1. [bat][https://github.com/sharkdp/bat]  
+   bat supports syntax highlighting for a large number of programming and markup languages  
+   ![](https://camo.githubusercontent.com/9d3d89364f2cc83ace8f29646a6236bc15ea1da0/68747470733a2f2f696d6775722e636f6d2f724773646e44652e706e67)  
 
 # Desktop Markdown editor:
 
@@ -163,21 +152,20 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 
 # Documentation
 
-1. [sphinx](http://www.sphinx-doc.org)
+1. [sphinx](http://www.sphinx-doc.org)  
    Sphinx is a tool that makes it easy to create intelligent and beautiful documentation
    It was originally created for the Python documentation, and it has excellent 
    facilities for the documentation of software projects in a range of languages. 
    Of course, this site is also created from reStructuredText sources using Sphinx! 
 
-   ![](http://www.milos.curuvija.com/_images/sphinx_google_analytics_verify1.png)
+   ![](http://www.milos.curuvija.com/_images/sphinx_google_analytics_verify1.png)  
+   ![](https://i.github-camo.com/f3321d2404e853746ba2bc978bc13537feb14634/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f646c646c2f737068696e782d707265766965772f6d61737465722f646f63732f64656d6f2e676966)  
 
-   ![](https://i.github-camo.com/f3321d2404e853746ba2bc978bc13537feb14634/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f646c646c2f737068696e782d707265766965772f6d61737465722f646f63732f64656d6f2e676966)
+# Download manager  
 
-# Download manager
+1. uget  
 
-1. uget
-
-# Keyboard - keycode
+# Keyboard - keycode  
 
 ## finding symbols definition
 
@@ -188,16 +176,16 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 
 ## finding keycode by pressing them
 1. screenkey: shows on screen what keys have been pressed
-1. xev:
-   - xev -input keyboard
-   - xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
-1. showkey:
-   - showkey -a
-1. xinput:
-   - xinput list  # then using the ids
-     xinput test 14
-1. sudo evtest # lists all your devices
-1. xmodmap -pke # list all keycodes
+1. xev:  
+   - xev -input keyboard  
+   - xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'  
+1. showkey:  
+   - showkey -a  
+1. xinput:  
+   - xinput list  # then using the ids  
+     xinput test 14  
+1. sudo evtest # lists all your devices  
+1. xmodmap -pke # list all keycodes  
 
 -----------------------------------------
 2017-11-07 01:18:46
