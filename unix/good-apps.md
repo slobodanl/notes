@@ -65,11 +65,8 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 ## Desktop
 
 - [Kupfer][kupfer]  
-
   Kupfer a dmenu replacement  
-
-  ![](https://kupferlauncher.github.io/kupfer-launch.png)  
-  
+  ![](https://kupferlauncher.github.io/kupfer-launch.png)    
   ``` sh
   sudo install kupfer
   ```
