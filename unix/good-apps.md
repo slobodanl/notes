@@ -25,11 +25,12 @@ Here are some good unix apps:
    projects on language such as Elixir, Erlang, Haskell, Clojure, Python, Ruby,
    Lua, JS, Go, C++, Swift, Bash, R and etc.
 
-   ![](https://cdn-images-1.medium.com/max/1500/0*cTQWHAgxA1ikNujZ.png)
 
-   ``` yaml
-   See what's available at https://medium.com/@likid.geimfari/the-list-of-interesting-open-source-projects-2daaa2153f7c
-   ```
+![](https://cdn-images-1.medium.com/max/1500/0*cTQWHAgxA1ikNujZ.png)
+
+``` yaml
+See what's available at https://medium.com/@likid.geimfari/the-list-of-interesting-open-source-projects-2daaa2153f7c
+```
 ---
 
 ## Shell
@@ -203,6 +204,8 @@ Here are some good unix apps:
 1. sudo evtest # lists all your devices
 1. xmodmap -pke # list all keycodes
 
+-----------------------------------------
+2017-11-07 01:18:46
 
 [awsome-linux]: https://github.com/LewisVo/Awesome-Linux-Software
 [awsome-cli]: https://github.com/agarrharr/awesome-cli-apps
@@ -214,5 +217,3 @@ Here are some good unix apps:
 [kupfer]: https://github.com/kupferlauncher/kupfer
 [appfinder]: http://docs.xfce.org/xfce/xfce4-appfinder/usage
 [patat]: https://github.com/jaspervdj/patat
------------------------------------------
-2017-11-07 01:18:46
