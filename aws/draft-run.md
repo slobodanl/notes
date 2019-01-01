@@ -1,6 +1,7 @@
 _Written by: Reza Shams Amiri_
 # draft: setup serverless
-Follwing [Serverless Framework - AWS Lambda Guide - Credentials][SFALGC]
+Follwing [Serverless Framework - AWS Lambda Guide - Credentials][SFALGC], to run [aws-python-rest-api-with-dynamodb][EAPRAWDAMSEG]: 
+
 1. Login page: [Logga in to AWS Management Console][LI]
 2.  `Identity & Access Management (IAM)` page  `Users`  `Add user`
 3. Enter a `name` in the first field, to remind you this User is the Framework, use like serverless-**agent**
@@ -46,3 +47,4 @@ Creation date: _2018-12-26_
 [IY]: https://yarnpkg.com/en/docs/install#debian-stable
 [SFALGC]: https://serverless.com/framework/docs/providers/aws/guide/credentials/?utm_source=cli&utm_medium=cli&utm_campaign=cli_helper_links
 [MCSFSFG]: https://gist.github.com/ServerlessBot/7618156b8671840a539f405dea2704c8
+[EAPRAWDAMSEG]: https://github.com/serverless/examples/tree/master/aws-python-rest-api-with-dynamodb
