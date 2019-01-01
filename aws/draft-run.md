@@ -5,6 +5,10 @@ Follwing [Serverless Framework - AWS Lambda Guide - Credentials][SFALGC]
 2.  `Identity & Access Management (IAM)` page  `Users`  `Add user`
 3. Enter a `name` in the first field, to remind you this User is the Framework, use like serverless-**agent**
     1. Enable `Programmatic access` by clicking the checkbox. Click `Next` to go through to the Permissions page
+    2. Click on `Attach existing policies directly`
+    3. Click on `Create policy`.   
+        ![create-policy.png](/img/aws/create-policy.png)
+    4. Select the `JSON` tab, add the following JSON file you'll find in this gist
 # draft run
 
 - Install yarn: [Installation | Yarn][IY]
