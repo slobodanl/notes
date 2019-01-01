@@ -18,6 +18,15 @@ Follwing [Serverless Framework - AWS Lambda Guide - Credentials][SFALGC]
     9. Click `Next: Tags`  `Next: Review`  `Next: Create user`
     10. You will endup on a page like this:  
         ![create-user-success.png](/img/aws/create-user-success.png)
+1. Add the following lines to your `.bashrc`  
+    ``` sh
+    export AWS_ACCESS_KEY_ID=<your-key-here>
+    export AWS_SECRET_ACCESS_KEY=<your-secret-key-here>
+    ```
+2. To deploy run:  
+    ``` sh
+    serverless deploy
+    ```
 
 # draft run
 
