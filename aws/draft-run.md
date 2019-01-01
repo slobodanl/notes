@@ -15,6 +15,10 @@ Follwing [Serverless Framework - AWS Lambda Guide - Credentials][SFALGC]
     7. Choose `Create Policy`
     8. Go back to the user creation page and click on the button below:  
         ![create-user-2.png](/img/aws/create-user-2.png)
+    9. Click `Next: Tags`  `Next: Review`  `Next: Create user`
+    10. You will endup on a page like this:  
+        ![create-user-success.png](/img/aws/create-user-success.png)
+
 # draft run
 
 - Install yarn: [Installation | Yarn][IY]
