@@ -8,7 +8,13 @@ Follwing [Serverless Framework - AWS Lambda Guide - Credentials][SFALGC]
     2. Click on `Attach existing policies directly`
     3. Click on `Create policy`.   
         ![create-policy.png](/img/aws/create-policy.png)
-    4. Select the `JSON` tab, add the following JSON file you'll find in this gist
+    4. Select the `JSON` tab, add the following JSON file you'll find in this [gist][MCSFSFG]  
+        ![policy-json.png](/img/aws/policy-json.png)
+    5. When you are finished, select `Review policy`
+    6. Assign a name to the policy, like agent-**policy**
+    7. Choose `Create Policy`
+    8. Go back to the user creation page and click on the button below:  
+        ![create-user-2.png](/img/aws/create-user-2.png)
 # draft run
 
 - Install yarn: [Installation | Yarn][IY]
@@ -26,3 +32,4 @@ Creation date: _2018-12-26_
 
 [IY]: https://yarnpkg.com/en/docs/install#debian-stable
 [SFALGC]: https://serverless.com/framework/docs/providers/aws/guide/credentials/?utm_source=cli&utm_medium=cli&utm_campaign=cli_helper_links
+[MCSFSFG]: https://gist.github.com/ServerlessBot/7618156b8671840a539f405dea2704c8
