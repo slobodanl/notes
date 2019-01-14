@@ -1,5 +1,5 @@
 _Written by: Reza Shams Amiri_
-# ubuntu upgrade
+# Ubuntu Release Upgrade
 
 See the following page [How To Upgrade Ubuntu To 18.10 Cosmic Cuttlefish - LinuxConfig.org][HTUUT11CCLO]
 
