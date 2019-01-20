@@ -69,6 +69,7 @@ If you want the change to be persistence, you need to issue `:save` to save your
 5. Press <kbd>b</kbd> for next item in the queue
 
 _If your song stops after each item and you need to manually start the next song, probably you haved turned off the `Continue` option. To set it press <kbd>c</kbd> and you should see a 'C' in the lower right corner of the screen close to `S` if shuffle mode is on_{.note}
+
 ## Adding new music to a new playlist:
 
 1. goto playlist view: press <kbd>3</kbd>
