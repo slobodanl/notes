@@ -4,6 +4,11 @@ Here are some good unix apps:
 
 ## Bundles
 
+- [75 Most Used Essential Linux Applications of 2018][7MUELAO2]
+    Among them I found these useful:
+        1. **stacer**: for cleaning up cache and hard
+        2. [bleachbit][GBBBSCFWAL]: BleachBit system cleaner for Windows and Linux
+        3. [Taskwarrior][TUE]: Manages your TODO list from the command line.
 - [awesome-cli-apps][awsome-cli]
    A curated list of command line apps.
    ``` yaml
@@ -200,3 +205,6 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 [kupfer]: https://github.com/kupferlauncher/kupfer
 [appfinder]: http://docs.xfce.org/xfce/xfce4-appfinder/usage
 [patat]: https://github.com/jaspervdj/patat
+[7MUELAO2]: https://www.fossmint.com/most-used-linux-applications/
+[GBBBSCFWAL]: https://github.com/bleachbit/bleachbit
+[TUE]: https://taskwarrior.org/docs/examples.html
