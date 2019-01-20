@@ -6,9 +6,9 @@ Here are some good unix apps:
 
 - [75 Most Used Essential Linux Applications of 2018][7MUELAO2]
     Among them I found these useful:
-        1. **stacer**: for cleaning up cache and hard
-        2. [bleachbit][GBBBSCFWAL]: BleachBit system cleaner for Windows and Linux
-        3. [Taskwarrior][TUE]: Manages your TODO list from the command line.
+    1. **stacer**: for cleaning up cache and hard
+    2. [bleachbit][GBBBSCFWAL]: BleachBit system cleaner for Windows and Linux
+    3. [Taskwarrior][TUE]: Manages your TODO list from the command line.
 - [awesome-cli-apps][awsome-cli]
    A curated list of command line apps.
    ``` yaml
