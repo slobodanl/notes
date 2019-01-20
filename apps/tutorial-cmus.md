@@ -1,6 +1,4 @@
-# Tutorial-Cmus.Md
-
-- - -
+# Cmus Tutorial
 
 ## Change view:
 
@@ -41,22 +39,24 @@ Use number row 0 - 9 to change the view:
 
 ## Add/Remove tracks:
 
-a - add track/folder from Browser view
-e - appened track to Queue
-shift-e - prepend track to Queue
-y - add track to playlist
-shift-d - remove track from the current view
+| key | description |
+| --- | --- |
+| <kbd>a</kbd> | add track/folder from Browser view |
+| <kbd>e</kbd> | appened track to Queue |
+| <kbd>shift</kbd> + <kbd>e</kbd> | prepend track to Queue |
+| <kbd>y</kbd> | add track to playlist |
+| <kbd>shift</kbd> +<kbd>d</kbd> | remove track from the current view |
 
-## adding new music to a new playlist:
+## Adding new music to a new playlist:
 
-* goto playlist view: press `3`
-* create playlist: `:pl-create <name>`
-* select playlist by arrow-keys then press `space` to activate it
-* switch to filebrowser: press `5`
-* change folder to your music folder: `:cd <folder>`
-* select music files by pressing `space`
-* add the selected files to your active playlist by pressing: `y`
+1. goto playlist view: press <kbd>3</kbd>
+1. create playlist: `:pl-create <name>`
+1. select playlist by arrow-keys then press <kbd>space</kbd> to activate it
+1. switch to filebrowser: press <kbd>5</kbd>
+1. change folder to your music folder: `:cd <folder>`
+1. select music files by pressing <kbd>space</kbd>
+1. add the selected files to your active playlist by pressing: <kbd>y</kbd>
 
-- - -
 
+* * *
 2018-06-06 12:14:35
