@@ -12,6 +12,7 @@ Here are some good unix apps:
 
 - [awesome-cli-apps][awsome-cli]
    A curated list of command line apps.
+
    ``` yaml
    See what's available at https://github.com/agarrharr/awesome-cli-apps
    ```
