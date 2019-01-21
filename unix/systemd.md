@@ -1,4 +1,5 @@
 _Written by: Reza Shams Amiri_
+
 # unix systemd
 
 ## systemctl
@@ -10,11 +11,36 @@ _Written by: Reza Shams Amiri_
     ``` sh
     sudo systemctl daemon-reload
     ```
-1. **journalctl**:
+    
+##  journalctl  
+1. **Show logs for a specific unit**:
+    1. to follow the logs:
     ``` sh
     sudo journalctl -f -u wiki-private.service
     ```
-
+    1. to follow and pass it to lnav
+    ``` sh
+    sudo journalctl -f -u wiki-private.service | lnav
+    ```
+1. **Rotate logs**:
+    1. for all units:
+    ``` sh
+    sudo journalctl --rotate
+    ```
+    1. for a specific unit:
+    ``` sh
+    sudo journalctl --rotate -u wiki-notes.service
+    ```
+1. **Bruteforce flush**
+    ``` sh
+    sudo journalctl --flush
+    sudo journalctl --vacuum-time=1seconds
+    ```
+2. **List all units**:
+    1. List units that we have log for them 
+    ```
+    journalctl --field _SYSTEMD_UNIT
+    ```
 
 
 * * *
