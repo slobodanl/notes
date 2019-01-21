@@ -1,4 +1,5 @@
 _Written by: Reza Shams Amiri_
+
 # lnav
 
 ## Support for other formats:
