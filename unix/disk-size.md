@@ -16,8 +16,12 @@ _Written by: Reza Shams Amiri_
     /dev/sda1       1.9T  1.5T  365G  81% /mnt/mybook-2t
     tmpfs           3.2G   36K  3.2G   1% /run/user/1000
     ```
-2. `ncdu`:   
+2. **ncdu**:   
     ![ncdu.png](/img/unix/ncdu.png)
-    
+3. **du**   
+    1. Find the biggest file from the current directory   
+    ```
+    du --max-depth 4 -xm|sort -rn|head -n 30
+    ```
 * * *
 Creation date: _2019-01-23_
