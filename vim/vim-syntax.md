@@ -1,7 +1,5 @@
-# vim: set filetype=markdown :tw=14 
 # Vim-Syntax.Md
 
------------------------------------------ 
 ## Location of existing mappings:
 ```bash
 vim /usr/share/vim/vim80/filetype.vim
