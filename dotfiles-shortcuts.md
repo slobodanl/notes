@@ -15,6 +15,11 @@ _Written by: Reza Shams Amiri_
 | mank      | uses `https://www.mankier.com/1/$1` |
 | manm      | uses `https://manpages.org/$1/$page` |
 | manc      | uses `https://linux.cn/man$page/$1.$page.html` |
+| cht       | cheat sheet from [https://cht.sh](https://cht.sh) |
+|           |  `cht tar` |
+|           |  `cht python read json from file` |
+|           |  `cht python random list elements` |
+|           |  `cht --shell` <kbd>enter</kbd> `cd python` <kbd>enter</kbd> |
 
 ## App Openers
 
@@ -62,6 +67,15 @@ _Written by: Reza Shams Amiri_
 |           |  `,speed` <kbd>enter</kbd> |
 | ,switch-prompt | Switch the shell prompt to a new theme |
 | ,theme    | Switch GTK theme |
+| hh        | Hacker news rss |
+| kk        | Filter process based on a keyword and let you kill them |
+|           |  `kk dunst` <kbd>enter</kbd> |
+| latestAccessedFiles | least latest accessed files (can be used for debugging)|
+|           |  `latestAccessedFiles -m 40 /var/log`    # latest modified files in /var/log within 40 mins |
+| list-desktop-files | search in *.desktop for `categories` and `exec`|
+| mem       | Shows free memory |
+| net-listout | Shows outgoing connections |
+| net-listout | Shows outgoing connections |
 
 ## Configuration
 
