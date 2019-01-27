@@ -50,6 +50,9 @@ _Written by: Reza Shams Amiri_
 | extract   | extracts a file into the destination folder using `tar` |
 |           |  `$ extract x.tar "/your/destination"` |
 |           | **EQ:** `tar xf $1 -C $2;` |
+| ,ls       | Show the file permission in numerical format|
+| ,lv       | Locate a file, show found files as selection, edit with vim|
+
 
 ## Configuration
 
