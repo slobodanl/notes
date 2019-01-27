@@ -56,7 +56,7 @@ _Written by: Reza Shams Amiri_
 | aliases | Desc |
 | ------- | ---- |
 | ,install-config   | Copy the MyDotFiles to a remote machine |
-|                   | **EQ:** to `du -hd 1` |
+|                   |  `,install-config myserver:` |
 
 ## Web Search
 
