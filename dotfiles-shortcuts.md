@@ -52,8 +52,14 @@ _Written by: Reza Shams Amiri_
 |           | **EQ:** `tar xf $1 -C $2;` |
 | ,ls       | Show the file permission in numerical format|
 | ,lv       | Locate a file, show found files as selection, edit with vim|
-
-
+| ,s        | Show systemctl services in rofi menu and lets see the logs or|
+|           | do other stuff with them|
+|           |  `,s NetworkManager.service lnav` |
+|           |  `,s` <kbd>enter</kbd> |
+|,scan-local| Use nmap to scan local network |
+|           | **EQ:** `sudo nmap -sn 192.168.0.0/24` |
+| ,speed    | use `aria2c` for speedtest |
+|           |  `,speed` <kbd>enter</kbd> |
 ## Configuration
 
 | aliases | Desc |
