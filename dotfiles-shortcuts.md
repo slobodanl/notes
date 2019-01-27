@@ -55,7 +55,7 @@ _Written by: Reza Shams Amiri_
 
 | aliases | Desc |
 | ------- | ---- |
-| ,install-config   | Copy the MyDotFiles to a remote machine |
+| ,deploy-config   | Copy the MyDotFiles to a remote machine |
 |                   |  `,install-config myserver:` |
 
 ## Web Search
@@ -78,10 +78,14 @@ _Written by: Reza Shams Amiri_
 | ------- | ---- |
 | ,pkg-graph    | Visualizes the dependency graph for a package |
 |               |  `,dpkg-graph ssh` |
-| ,pkg-info     | Shows information about a not installed package |
+| ,pkg-info     | Shows information about a **not installed** package |
 |               |  `,pkg-info wmpinboard` |
 |               |  `,pkg-info` <kbd>enter</kbd> |
-| asf           | Uses `fzf` to list all files installed by packages |
+| ,pkg-info{.hl}| Tries to find a file within **not installed** packages |
+|               |  `,pkg-find otfinfo` |
+|               |  `,pkg-find` <kbd>enter</kbd> (very slow) |
+|               | **EQ:** `apt-file search $1` |
+| asf           | Uses `fzf` to list all files **installed** by packages |
 |               |  `asf` <kbd>Enter</kbd> and search for `_apt` |
 | aps         | Alias for `aptitude search`, searches in not installed packages |
 |               |  `aps pinboard`|
