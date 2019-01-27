@@ -71,6 +71,8 @@ _Written by: Reza Shams Amiri_
 | ------- | ---- |
 | ,pkg-graph |  Visualizes thedependency graph for a package |
 |  | `,dpkg-graph ssh` |
+| ,pkg-info |  Shows information about a not installed package |
+|  | `,pkg-info wmpinboard` |
 | asf | Uses `fzf` to list all files installed by packages |
 |  | `asf` and search for `_apt` |
 | aps | Alias for `aptitude search`, can search in package names |
