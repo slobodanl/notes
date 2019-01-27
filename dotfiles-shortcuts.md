@@ -60,6 +60,9 @@ _Written by: Reza Shams Amiri_
 |           | **EQ:** `sudo nmap -sn 192.168.0.0/24` |
 | ,speed    | use `aria2c` for speedtest |
 |           |  `,speed` <kbd>enter</kbd> |
+| ,switch-prompt | Switch the shell prompt to a new theme |
+| ,theme    | Switch GTK theme |
+
 ## Configuration
 
 | aliases | Desc |
@@ -129,7 +132,7 @@ _Written by: Reza Shams Amiri_
 | ,font-c2u     | Converts a character to it's unicode equivalent |
 |               |  `,font-c2u ` |
 | ,emoji        | Show emojis in a rofi dialog |
-
+| ,symbol-delimeter | Shows the shell prompt with several delimiters |
 - - -
 
 Creation date: _2018-10-28_
