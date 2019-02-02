@@ -17,6 +17,8 @@ _Written by: Reza Shams Amiri_
     ```
     
 ## Best webbased color pickers / generators
+1. [Color - Cloudflare Design][CCD]   
+    ![cloudflare.png](/img/unix-good-apps/cloudflare.png)
 1. [Coolors.co - The super fast color schemes generator][CCTSFCSG]  
     ![coolors.png](/img/unix-good-apps/coolors.png)
 1. [Sphere: Color Theory Visualizer][SCTV]  
@@ -78,3 +80,4 @@ Creation date: _2018-11-09_
 [CCATFCMCCS]: https://javier.xyz/cohesive-colors/
 [CPHCC]: https://htmlcolorcodes.com/color-picker/
 [CTPC]: https://www.colourlovers.com/
+[CCD]: https://cloudflare.design/color/?utm_source=phplist601&utm_medium=email&utm_content=HTML&utm_campaign=Free+eCommerce+Icon+Pack%2C+Color+Palettes+%26+Combinations+Generator%2C+Free+Transactional+Email+Templates%2C+Free+Business+WP+Themes+%26+1100%2B+Retro%2FVintage+Designs+Bundle
