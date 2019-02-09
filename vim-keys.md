@@ -19,6 +19,13 @@ to enable plugin docs (help), you need to run
 `:helptags ALL`
 
 Commands
+## Normal vim keys
+| command | description |
+| ------- | ----------- |
+| b | Goto the begining of the previouse word |
+| B | Goto the begining of the previouse word (space separated) |
+| w | Goto the begining of the next word |
+| W | Goto the begining of the next word (space separated)|
 
 ## Files and Buffers
 | command | description |
@@ -136,17 +143,14 @@ Commands
 ## visual block mode 
 | command | description |
 | ------- | ----------- |
-| ctrl + v | By pressing ctrl+v you can enter visual block mode, when you are in |
-| ════════╕ | visual block mode you can do the following actions: |
-| │ | |
-| ├─ shift+i | goto insert mode. Any character typed will be inserted at top |
-| │ | of the selection and when pressing it would be applied to all |
-
-| │ | |
-| ├─ c | change the selected area |
-| ├─ r | change the current character |
-| ├─ o | move to the begining of the selected box |
-| | |
+| <kbd>ctrl</kbd> + <kbd>v</kbd> | By pressing ctrl+v you can enter visual block mode, when you are in|
+| | visual block mode you can do the following actions: |
+|  | |
+| <kbd>shift</kbd>+<kbd>i</kbd> | goto insert mode. Any character typed will be inserted at top |
+|  | of the selection and when pressing it would be applied to all |
+|  <kbd>c</kbd> | change the selected area |
+|  <kbd>r</kbd> | change the current character |
+|  <kbd>o</kbd> | move to the begining of the selected box |
 
 ## vim-neosnippets
 | command | description |
@@ -167,14 +171,14 @@ Commands
 | | |
 | **normal mode**||
 | | |
-| `cs'"` | Change Sorround ' -> " (do it inside 'test') |
-| `cs'` then <q>| Change Sorround ' -> <q>(do it inside 'test') |</q></q>
-| `ds'` | Remove delimiter sorrounding of ' (do it inside 'test') |
-| `di'` | Remove inside sorrounfing of ' (do it inside 'test') |
-| `vllllllls'` | Sorround virtual selection with ' (go to V then 4left and s) |
+| <kbd>c</kbd><kbd>s</kbd><kbd>'</kbd><kbd>"</kbd> | Change Sorround ' -> " (do it inside 'test') |
+| <kbd>c</kbd><kbd>s</kbd><kbd>'</kbd> then <kbd>q</kbd>| Change Sorround ' -> <q>(do it inside 'test') |</q></q>
+| <kbd>d</kbd><kbd>s</kbd><kbd>'</kbd> | Remove delimiter sorrounding of ' (do it inside 'test') |
+| <kbd>d</kbd><kbd>i</kbd><kbd>'</kbd> | Remove inside sorrounfing of ' (do it inside 'test') |
+| <kbd>v</kbd><kbd>l</kbd><kbd>l</kbd><kbd>l</kbd><kbd>l</kbd><kbd>s</kbd><kbd>'</kbd> | Sorround virtual selection with ' (go to V then 4left and s) |
 | | |
 | **insert mode** ||
-| | #sorround |
+| | **sorround** |
 | ysiw( | Sorround word with ( ex: ( sneak ) |
 | ysiW( | Sorround whole word with ( ex: ( g:sneak#s-next = 1 ) |
 | ysw( | Sorround word with ( ex: ( sneak ) |
@@ -192,14 +196,13 @@ Commands
 | | and idents the current line |
 | | |
 | | In insert mode starts writing in a block |
-
-| | |
 | vS | In visual mode a capital S will result in sorrounding lines |
 | vS" | Sorround selection with " |
-╠═════╣ miscellaneous ╠════════╬═════════════════════════════════════════════════════════════════════╣
-| | |
-| / | Toggle comment for the selected text or block #comment #toggle |
 
+| command | description |
+| ------- | ----------- |
+| **miscellaneous** | |
+| / | Toggle comment for the selected text or block #comment #toggle |
 | gc | Toggle comment for the selected text or block |
 | g> | Toggle comment for the selected text or block |
 | | |
@@ -211,29 +214,25 @@ Commands
 | . | Auto compilation |
 | :w!! | Vim sudo trick or :w !sudo tee > /dev/null % |
 | o | Vim sudo trick or :w !sudo tee > /dev/null % #force #write |
-
 | :red | Redo #redo |
 | r | Reload (notifies if file has been changed) #reload |
-
 | r | Force reload :e! #force #reload |
-
 | gx | In normal mode, if you stand on a link and enter `g` then `x` |
 | | the link will be opened in a browser window #browser #link |
-| | |
-╠════╣ installing plugins ╠════╬═════════════════════════════════════════════════════════════════════╣
-| | |
-| vim ~/.vimrc | edit vimrc and in the section which begins with: (circa 338) |
-| | call plug#begin('~/.vim/plugged') |
+
+| command | description |
+| ------- | ----------- |
+| **installing plugins** | |
+| vim ~/.vimrc | edit `vimrc` and in the section which begins with: (circa 338) |
+| | `call plug#begin('~/.vim/plugged')` |
 | | --> Plug 'https://github.com/PotatoesMaster/i3-vim-syntax.git'|
 | | or --> Plug 'PotatoesMaster/i3-vim-syntax.git' 					 |
 | | |
 | | then inside vim run: |
 | | |
-| | :PlugInstall or |
-| | :PlugUpdate |
+| | `:PlugInstall` or |
+| | `:PlugUpdate` |
 | | |
-╚══════════════════════════════╩═════════════════════════════════════════════════════════════════════╝
-
 
 - - -
 
