@@ -27,6 +27,8 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 ## Adding user the group
+if you run `docker info` you will not get an answer if your user is not in the `docker` group. To add your user to the group use:
+
 ``` sh
 sudo usermod -aG docker your-user
 ```
