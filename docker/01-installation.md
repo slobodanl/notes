@@ -14,6 +14,12 @@ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
+   
+# Install Docker CE
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+# Verify that Docker CE is installed
+sudo docker run hello-world
 ```
 
 * * *
