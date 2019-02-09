@@ -26,6 +26,12 @@ sudo docker run hello-world
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
+## Adding user the group
+``` sh
+sudo usermod -aG docker your-user
+```
+You should logout and logback to see the changes.
+
 # Install Compose
 
 Following is an example, check [GitHub][RDCG] repo for the latest version.
