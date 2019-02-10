@@ -30,7 +30,7 @@ docker exec -it 4a8a022cfd8e bash
 ## Get the IP of a container
 
 ``` sh
-docker exec -it 4a8a022cfd8e ip addr
+docker exec -it kafka-docker_kafka_1 ip addr show eth0 | grep inet
 
 # or
 
