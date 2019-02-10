@@ -31,6 +31,10 @@ docker exec -it 4a8a022cfd8e bash
 
 ``` sh
 docker exec -it 4a8a022cfd8e ip addr
+
+# or
+
+docker inspect 4a8a022cfd8e | grep IPAddress
 ```
 
 - - -
