@@ -53,9 +53,15 @@ _Written by: Reza Shams Amiri_
     1. List all the available units       
     ``` sh
     systemctl list-unit-files
+    
+    # you can use different types
+    # systemctl --type=help
     systemctl list-unit-files --type=service
     systemctl list-unit-files --type=mount
+    
     systemctl list-unit-files --type=socket
+    systemctl list-sockets --all
+    
     ```
     1. List all running units    
     ``` sh
