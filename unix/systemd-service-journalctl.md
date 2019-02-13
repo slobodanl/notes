@@ -11,13 +11,44 @@ _Written by: Reza Shams Amiri_
     ``` sh
     sudo systemctl daemon-reload
     ```
+1. **List units**:
+    1. List all the available units       
+    ``` sh
+    systemctl list-unit-files
+    
+    # you can use different types
+    # systemctl --type=help
+    systemctl list-unit-files --type=service
+    systemctl list-unit-files --type=mount
+    
+    systemctl list-unit-files --type=socket
+    systemctl list-sockets --all
+    
+    systemctl list-units --all --state=inactive
+    
+    ```
+    1. List all running units    
+    ``` sh
+    systemctl list-units    
+    ```
+    1. List units that we have log for them 
+    ``` sh
+    journalctl --field _SYSTEMD_UNIT
+    ```
+    1. List all failed units
+    ``` sh
+    systemctl --failed
+    ```
 1. **Mask**/**Unmask** (imposible to start)
     ``` sh
-    # systemctl mask httpd.service
-    ln -s '/dev/null' '/etc/systemd/system/httpd.service'
+    systemctl mask httpd.service
+    # ln -s '/dev/null' '/etc/systemd/system/httpd.service'    
 
-    # systemctl unmask httpd.service
-    rm '/etc/systemd/system/httpd.service'
+    systemctl unmask httpd.service
+    # rm '/etc/systemd/system/httpd.service'
+    
+    $ systemctl list-unit-files    
+    httpd.service                          masked
     ```
 1. Enable/disable:
     ``` sh
@@ -25,6 +56,23 @@ _Written by: Reza Shams Amiri_
     # systemctl enable tmp.mount
     # systemctl disable  tmp.mount
     ```
+1. Display a unit file:
+    ``` sh
+    systemctl cat atd.service
+    ```
+1. Checking Unit Properties   
+    ``` sh
+    systemctl show sshd.service
+    ```
+1. Editing a unit file
+    ``` sh
+    sudo systemctl edit wiki-notes.service --full
+    ```
+1. Displaying Dependencies   
+    ``` sh
+    systemctl list-dependencies sshd.service
+    ```
+    
 ##  journalctl  
 1. **Show logs for a specific unit**:
     1. to follow the logs:
@@ -48,32 +96,6 @@ _Written by: Reza Shams Amiri_
     ``` sh
     sudo journalctl --flush
     sudo journalctl --vacuum-time=1seconds
-    ```
-2. **List units**:
-    1. List all the available units       
-    ``` sh
-    systemctl list-unit-files
-    
-    # you can use different types
-    # systemctl --type=help
-    systemctl list-unit-files --type=service
-    systemctl list-unit-files --type=mount
-    
-    systemctl list-unit-files --type=socket
-    systemctl list-sockets --all
-    
-    ```
-    1. List all running units    
-    ``` sh
-    systemctl list-units    
-    ```
-    1. List units that we have log for them 
-    ``` sh
-    journalctl --field _SYSTEMD_UNIT
-    ```
-    1. List all failed units
-    ``` sh
-    systemctl --failed
     ```
 ## Analyse
 
@@ -133,8 +155,10 @@ _Written by: Reza Shams Amiri_
 
 References:
 1. [How to Manage 'Systemd' Services and Units Using 'Systemctl' in Linux][HTMSSAUUSIL]
+2. [How To Use Systemctl to Manage Systemd Services and Units | DigitalOcean][HTUSTMSSAUD]
 
 * * *
 Creation date: _2018-10-29_
 
 [HTMSSAUUSIL]: https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/
+[HTUSTMSSAUD]: https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
