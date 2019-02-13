@@ -11,7 +11,20 @@ _Written by: Reza Shams Amiri_
     ``` sh
     sudo systemctl daemon-reload
     ```
-    
+1. **Mask**/**Unmask** (imposible to start)
+    ``` sh
+    # systemctl mask httpd.service
+    ln -s '/dev/null' '/etc/systemd/system/httpd.service'
+
+    # systemctl unmask httpd.service
+    rm '/etc/systemd/system/httpd.service'
+    ```
+1. Enable/disable:
+    ``` sh
+    # systemctl is-active tmp.mount
+    # systemctl enable tmp.mount
+    # systemctl disable  tmp.mount
+    ```
 ##  journalctl  
 1. **Show logs for a specific unit**:
     1. to follow the logs:
@@ -36,18 +49,25 @@ _Written by: Reza Shams Amiri_
     sudo journalctl --flush
     sudo journalctl --vacuum-time=1seconds
     ```
-2. **List all units**:
+2. **List units**:
     1. List all the available units       
     ``` sh
     systemctl list-unit-files
+    systemctl list-unit-files --type=service
+    systemctl list-unit-files --type=mount
+    systemctl list-unit-files --type=socket
     ```
-    3. List all running units    
+    1. List all running units    
     ``` sh
-    systemctl list-units
+    systemctl list-units    
     ```
-    2. List units that we have log for them 
+    1. List units that we have log for them 
     ``` sh
     journalctl --field _SYSTEMD_UNIT
+    ```
+    1. List all failed units
+    ``` sh
+    systemctl --failed
     ```
 ## Analyse
 
@@ -105,5 +125,10 @@ _Written by: Reza Shams Amiri_
 
     ```
 
+References:
+1. [How to Manage 'Systemd' Services and Units Using 'Systemctl' in Linux][HTMSSAUUSIL]
+
 * * *
 Creation date: _2018-10-29_
+
+[HTMSSAUUSIL]: https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/
