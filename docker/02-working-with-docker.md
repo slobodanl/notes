@@ -53,7 +53,7 @@ docker ps
 
     docker exec -it 4a8a022cfd8e bash
     ```
-1. For containers that doesn't stay online:   
+1. For containers that doesn't stay online ([ref][LSASITDACSO]):   
     ``` sh
     docker run -it --rm gollum /bin/ash
     
@@ -76,3 +76,5 @@ docker inspect 4a8a022cfd8e | grep IPAddress
 
 - - -
 Creation date: _2019-02-09_
+
+[LSASITDACSO]: https://stackoverflow.com/a/35689633/161312
