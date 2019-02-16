@@ -15,6 +15,17 @@ docker ps
 | 4a8a022cfd8e | wurstmeister/zookeeper | "/bin/sh -c '/usr/sb…" | 4 hours ago | Up 4 hours | 22/tcp, 2888/tcp, 3888/tcp, 0.0.0.0:2181->2181/tcp | kafka\-docker\_zookeeper\_1 |
 | 6d283af313d4 | kafka-docker_kafka | "start-kafka.sh" | 4 hours ago | Up 3 hours | 0.0.0.0:32772->9092/tcp | kafka\-docker\_kafka\_1 |
 
+## Images
+
+1. Get the list of all images   
+    ``` sh
+    docker image ls
+    ```
+1. Get the list of all containers   
+    ``` sh
+    docker container ls --all
+    ```
+
 ## Run a command on a container
 
 This can be achieved either by `CONTAINER ID` or it's `NAMES`, so for the above example, you can use both of the following commands to go to the shell prompt:
