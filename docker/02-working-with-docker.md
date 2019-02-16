@@ -45,15 +45,24 @@ docker ps
 
 ## Run a command on a container
 
-This can be achieved either by `CONTAINER ID` or it's `NAMES`, so for the above example, you can use both of the following commands to go to the shell prompt:
+1. This can be achieved either by `CONTAINER ID` or it's `NAMES`, so for the above example, you can use both of the following commands to go to the shell prompt:  
+    ``` sh
+    docker exec -it kafka-docker_zookeeper_1 bash
 
-``` sh
-docker exec -it kafka-docker_zookeeper_1 bash
+    # or
 
-# or
+    docker exec -it 4a8a022cfd8e bash
+    ```
+1. For containers that doesn't stay online:   
+    ``` sh
+    docker run -it --rm gollum /bin/ash
+    
+    # /bin/ash is Ash (Almquist Shell) provided by BusyBox
+    # --rm Automatically remove the container when it exits (docker run --help)
+    # -i Interactive mode (Keep STDIN open even if not attached)
+    # -t Allocate a pseudo-TTY
+    ```
 
-docker exec -it 4a8a022cfd8e bash
-```
 
 ## Get the IP of a container
 
