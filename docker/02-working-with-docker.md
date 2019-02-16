@@ -35,6 +35,14 @@ docker ps
     docker container ls --all
     ```
 
+## Build
+
+1. Building the docker image:   
+    ``` sh
+    docker build -t <image-name> .
+    docker run <image-name>
+    ```
+
 ## Run a command on a container
 
 This can be achieved either by `CONTAINER ID` or it's `NAMES`, so for the above example, you can use both of the following commands to go to the shell prompt:
