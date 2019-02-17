@@ -13,6 +13,7 @@ s chmod -R a+rw /usr/local/lib/site_ruby/2.5.0
 You might also need to uninstall `debase-0.2.3.beta2` and installing `debase-0.2.2` by running the following command: ([ ref][IIDNFI6DDG])
 ``` sh
 gem uninstall --user-install debase
+gem install debase
 ```
 
 * * *
