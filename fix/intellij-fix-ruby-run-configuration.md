@@ -16,6 +16,10 @@ gem uninstall --user-install debase
 gem install debase
 ```
 
+Also make sure that running using bundler is checked to avoid conflicts:   
+
+![run-with-bundler.png](/img/fix/run-with-bundler.png)
+
 * * *
 Creation date: _2018/10/12_
 
