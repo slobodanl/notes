@@ -45,5 +45,14 @@ env XDG_CURRENT_DESKTOP=GNOME gnome-control-center
 System wide: `/usr/share/icons`
 User: `~/.icons`
 
+# Enable dark mode in Chrome
+
+Set `gtk-application-prefer-dark-theme` to `true` in `~/.config/gtk-3.0/settings.ini`:   
+
+_~/.config/gtk-3.0/settings.ini_{.ct}
+``` sh
+gtk-application-prefer-dark-theme=true
+```
+
 -----------------------------------------
 2017-12-26 09:53:49

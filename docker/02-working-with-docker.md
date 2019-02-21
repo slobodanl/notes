@@ -15,17 +15,54 @@ docker ps
 | 4a8a022cfd8e | wurstmeister/zookeeper | "/bin/sh -c '/usr/sb…" | 4 hours ago | Up 4 hours | 22/tcp, 2888/tcp, 3888/tcp, 0.0.0.0:2181->2181/tcp | kafka\-docker\_zookeeper\_1 |
 | 6d283af313d4 | kafka-docker_kafka | "start-kafka.sh" | 4 hours ago | Up 3 hours | 0.0.0.0:32772->9092/tcp | kafka\-docker\_kafka\_1 |
 
+## Info
+
+1. Display docker version and info   
+    ``` sh
+    docker --version
+    docker version
+    docker info
+    ```
+
+## Images
+
+1. Get the list of all images   
+    ``` sh
+    docker image ls
+    ```
+1. Get the list of all containers   
+    ``` sh
+    docker container ls --all
+    ```
+
+## Build
+
+1. Building the docker image:   
+    ``` sh
+    docker build -t <image-name> .
+    docker run <image-name>
+    ```
+
 ## Run a command on a container
 
-This can be achieved either by `CONTAINER ID` or it's `NAMES`, so for the above example, you can use both of the following commands to go to the shell prompt:
+1. This can be achieved either by `CONTAINER ID` or it's `NAMES`, so for the above example, you can use both of the following commands to go to the shell prompt:  
+    ``` sh
+    docker exec -it kafka-docker_zookeeper_1 bash
 
-``` sh
-docker exec -it kafka-docker_zookeeper_1 bash
+    # or
 
-# or
+    docker exec -it 4a8a022cfd8e bash
+    ```
+1. For containers that doesn't stay online ([ref][LSASITDACSO]):   
+    ``` sh
+    docker run -it --rm gollum /bin/ash
+    
+    # /bin/ash is Ash (Almquist Shell) provided by BusyBox
+    # --rm Automatically remove the container when it exits (docker run --help)
+    # -i Interactive mode (Keep STDIN open even if not attached)
+    # -t Allocate a pseudo-TTY
+    ```
 
-docker exec -it 4a8a022cfd8e bash
-```
 
 ## Get the IP of a container
 
@@ -39,3 +76,5 @@ docker inspect 4a8a022cfd8e | grep IPAddress
 
 - - -
 Creation date: _2019-02-09_
+
+[LSASITDACSO]: https://stackoverflow.com/a/35689633/161312
