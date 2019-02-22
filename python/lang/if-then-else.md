@@ -1,8 +1,7 @@
 _Written by: Reza Shams Amiri_
 # if then else
 
-
-1. if-then-elseif:  
+1. _IF-ELIF-ELSE:_{.ct}
     ``` python
     if a == b:
         print("equal")
