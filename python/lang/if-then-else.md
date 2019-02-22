@@ -10,6 +10,7 @@ _Written by: Reza Shams Amiri_
     else:
         print("a < b")
     ```
+1. _AND-OR_{.ct}
 
 * * *
 Creation date: _2019-02-22_
