@@ -6,8 +6,8 @@ _Written by: Reza Shams Amiri_
 ``` sh
 s -H pip install executor
 ```
-ﯙ Github page: [https://github.com/xolox/python-executor][GXPEPFSW]
- Documentation: [https://executor.readthedocs.io/en/latest/readme.html][EPFSWE23D]
+ﯙ Github page: [https://github.com/xolox/python-executor][GXPEPFSW]   
+ Documentation: [https://executor.readthedocs.io/en/latest/readme.html][EPFSWE23D]   
 
 
 ## Example: running and piping:
