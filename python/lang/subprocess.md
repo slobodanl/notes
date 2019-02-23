@@ -13,6 +13,7 @@ s -H pip install executor
 ## Example: running and piping:
 This examples reads files using `ls` and pipes the markdown files to `rofi`
 
+_subprocess with executor ex01_{.ct}
 ``` python
 import re
 from executor import execute
@@ -29,6 +30,23 @@ for file in rfiles:
 pipeIn = "|".join(files)
 res = execute("rofi -dmenu -sep '|' -p 'how are you' -theme Paper", input=pipeIn, check=False, capture=True)
 print(res)
+```
+
+## More examples
+
+_Providing input_{.ct}
+``` python
+execute('tr a-z A-Z', input='Hello world from Python!\n')
+```
+
+_Getting the output_{.ct}
+``` python
+execute('hostname', capture=True)
+```
+
+_Run command as sudo_{.ct}
+``` python
+execute('echo test > /etc/hostname', sudo=True)
 ```
 
 
