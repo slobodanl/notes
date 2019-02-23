@@ -14,6 +14,7 @@ This will be an on going investigation:
     ```
     which shows that dunst before was loaded without the correct configuration which is strange
 2. `dbus-monitor path=/org/freedesktop/Notifications` was correctly showing the received notifications
+3. The file `/usr/share/dbus-1/services/org.freedesktop.Notifications.service.disabled` was changed to `/usr/share/dbus-1/services/org.freedesktop.Notifications.service`
 
 
 * * *
