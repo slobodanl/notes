@@ -13,7 +13,7 @@ This will be an on going investigation:
     existme  22643  0.7  0.0 349824 18200 pts/5    SNl  15:05   0:00 dunst -config /home/existme/.config/dunst/dunstrc
     ```
     which shows that dunst before was loaded without the correct configuration which is strange
-2. 
+2. `dbus-monitor path=/org/freedesktop/Notifications` was correctly showing the received notifications
 
 
 * * *
