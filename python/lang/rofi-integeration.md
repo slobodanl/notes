@@ -52,7 +52,7 @@ Or just:
 r.status('Stuff is happening, please wait...', rofi_args=['--theme', 'Monokai'])
 ```
 Default installed themes are:
-```
+``` sh
 Adapta-Nokto, android_notification, Arc-Dark, Arc, arthur, blue, c64, DarkBlue, dmenu, glue_pro_blue, gruvbox-common, gruvbox-dark-hard, gruvbox-dark, gruvbox-dark-soft, gruvbox-light-hard, gruvbox-light, gruvbox-light-soft, Indego, lb, Monokai, paper-float, Paper, Pop-Dark, purple, sidebar, solarized_alternate, solarized
 ```
 * * *
