@@ -55,8 +55,8 @@ execute('echo test > /etc/hostname', sudo=True)
 ``` sh
 s -H pip install executor
 ```
-ﯙ Github page: [https://github.com/amoffat/sh][GASPPL]
- Documentation: [http://amoffat.github.io/sh][111S111D]
+ﯙ Github page: [https://github.com/amoffat/sh][GASPPL]   
+ Documentation: [http://amoffat.github.io/sh][111S111D]   
 
 ### Example: running and piping:
 _tail `/var/log/syslog` and pass it to tr_{.ct}
