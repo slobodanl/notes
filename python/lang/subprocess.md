@@ -81,6 +81,17 @@ try:
 except ErrorReturnCode:
     print("unknown error/canceled")
 ```
+_rofi cat_{.ct}
+``` python
+    from sh import rofi, find, cat, glob
+    res = rofi(find('/home/existme/git/gollum/', '-name', '*.md'), "-dmenu", "-sep", '\n')
+    # we should replace '\n' otherwise glob will fail to map and cat will fail too
+    selected = res.replace('\n', '')
+    print("[%s]" % selected)
+    print("[%s]" % res.stdout)
+    print(cat(glob(selected)))
+
+```
 
 
 * * *
