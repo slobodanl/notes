@@ -147,6 +147,8 @@ _Written by: Reza Shams Amiri_
 |               |  `,font-c2u ` |
 | ,emoji        | Show emojis in a rofi dialog |
 | ,symbol-delimeter | Shows the shell prompt with several delimiters |
+| ,toggle-notifications | Enable/disable desktop notifications |
+| toggle-loudness | Toggle override loudness for headphones |
 - - -
 
 Creation date: _2018-10-28_
