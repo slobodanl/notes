@@ -1,5 +1,5 @@
 _Written by: Reza Shams Amiri_
-# VSCode Ubuntu Repo
+# VSCode Ubuntu Repo 
 
 VSCode can be installed from Microsoft repo directly by following these instructions: ([REF][RVSCOL])
 
