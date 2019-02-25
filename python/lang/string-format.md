@@ -1,6 +1,6 @@
 _Written by: Reza Shams Amiri_
 
-# string format
+# String formats ([ref][61SCSOP349D])
 ``` 
 format_spec ::=  [[fill]align][sign][#][0][width][,][.precision][type]
 fill        ::=  <any character>
@@ -73,3 +73,4 @@ for num in range(5, 12):
 - - -
 
 Creation date: _2019-02-25_
+[61SCSOP349D]: https://docs.python.org/3.4/library/string.html
