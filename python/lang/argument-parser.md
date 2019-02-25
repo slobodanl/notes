@@ -8,12 +8,12 @@ import argparse
 parser = argparse.ArgumentParser(description='Webscraper')
 parser.add_argument('-u', '--url', metavar='URL', help='Site to scrap')
 parser.add_argument('-s', '--scrap', metavar='NAME:XPATH', help='Scraping pattern', required=True, nargs='+')
-parser.add_argument("-v", "--verbose", help="increase output verbosity", action="count", default=0)
+parser.add_argument('-v', '--verbose', help='increase output verbosity', action='count', default=0)
 
 args = parser.parse_args()
 
 if args.verbose:
-    print("verbosity turned on to %s" % args.verbose)
+    print('verbosity turned on to %s' % args.verbose)
 ```
 Sample outputs
 ```
