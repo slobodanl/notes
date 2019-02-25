@@ -73,4 +73,5 @@ for num in range(5, 12):
 - - -
 
 Creation date: _2019-02-25_
+
 [61SCSOP349D]: https://docs.python.org/3.4/library/string.html
