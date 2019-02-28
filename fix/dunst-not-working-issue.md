@@ -29,7 +29,7 @@ org.knopwob.dunst.service
 
 sudo vim org.freedesktop.Notifications.service
 Edit and set:
-sudo vim org.freedesktop.Notifications.service
+Exec=/usr/bin/dunst -config /home/existme/.config/dunst/dunstrc 
 
 ```
 * * *
