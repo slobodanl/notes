@@ -32,5 +32,9 @@ Edit and set:
 Exec=/usr/bin/dunst -config /home/existme/.config/dunst/dunstrc 
 
 ```
+
+[FAQ · Dunst][FD]
 * * *
 Creation date: _2019-02-23_
+
+[FD]: https://dunst-project.org/faq/
