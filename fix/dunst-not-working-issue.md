@@ -16,6 +16,21 @@ This will be an on going investigation:
 2. `dbus-monitor path=/org/freedesktop/Notifications` was correctly showing the received notifications
 3. The file `/usr/share/dbus-1/services/org.freedesktop.Notifications.service.disabled` was changed to `/usr/share/dbus-1/services/org.freedesktop.Notifications.service`
 
+```
+/usr/share/dbus-1/services
+ag dunst
 
+org.freedesktop.Notifications.service
+3:Exec=/usr/bin/dunst -config /home/existme/.config/dunst/dunstrc 
+
+org.knopwob.dunst.service
+3:Exec=/usr/local/bin/dunst
+4:SystemdService=dunst.service
+
+sudo vim org.freedesktop.Notifications.service
+Edit and set:
+sudo vim org.freedesktop.Notifications.service
+
+```
 * * *
 Creation date: _2019-02-23_
