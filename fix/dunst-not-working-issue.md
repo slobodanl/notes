@@ -33,6 +33,17 @@ Exec=/usr/bin/dunst -config /home/existme/.config/dunst/dunstrc
 
 ```
 
+``` sh
+BUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/bus"
+
+
+this was wrongly set in `/etc/X11/Xsession.d`
+sudo vim /etc/X11/Xsession.options
+add:
+use-session-dbus
+```
+
+
 [FAQ · Dunst][FD]
 * * *
 Creation date: _2019-02-23_
