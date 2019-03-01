@@ -33,16 +33,16 @@ Exec=/usr/bin/dunst -config /home/existme/.config/dunst/dunstrc
 
 ```
 
+**Solution**
+
+In `i3-startup.sh` I had added a line which said `export $(dbus-launch)`
+This was the source of all problems because as a result of running this the `BUS_SESSION_BUS_ADDRESS` was set to a wrong value. The correct value is:
+
 ``` sh
-BUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/bus"
-
-
-this was wrongly set in `/etc/X11/Xsession.d`
-sudo vim /etc/X11/Xsession.options
-add:
-use-session-dbus
+export BUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/bus"
 ```
 
+But that can not be set from the script and it will be empty at the end but it's better to be empty than set to a wrong value
 
 [FAQ · Dunst][FD]
 * * *
