@@ -49,8 +49,15 @@ _mutt flags_{.ct}
 |  |  |
 |  |  |
 
+
+## Some sample configurations:
+1. [ConfigList · Wiki · Mutt Project / mutt · GitLab][CWMPMG]
+1. [Luc Hermitte's Cygwin configuration][LHSCC]: tunnel section is intersting
+
 - - -
 
 Creation date: _2018-11-11_
 
 [CPTSMUAESS]: https://www.linode.com/docs/email/postfix/postfix-smtp-debian7/
+[LHSCC]: http://hermitte.free.fr/cygwin/#Mutt
+[CWMPMG]: https://gitlab.com/muttmua/mutt/wikis/ConfigList
