@@ -38,7 +38,7 @@ _mutt flags_{.ct}
 | <kbd>m</kbd> | new message |
 | <kbd>t</kbd> | tag messages, after tagging you can use `;c` to copy or `;d` to delete tagged messages |
 | <kbd>U</kbd> | Undelete messages. After the prompt write `~A` to undelete all |
-|  |  |
+| <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF]) |
 |  |  |
 |  |  |
 |  |  |
@@ -61,3 +61,4 @@ Creation date: _2018-11-11_
 [CPTSMUAESS]: https://www.linode.com/docs/email/postfix/postfix-smtp-debian7/
 [LHSCC]: http://hermitte.free.fr/cygwin/#Mutt
 [CWMPMG]: https://gitlab.com/muttmua/mutt/wikis/ConfigList
+[RMIOF]: http://therandymon.com/woodnotes/mutt/node15.html
