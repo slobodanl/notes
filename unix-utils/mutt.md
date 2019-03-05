@@ -3,7 +3,7 @@ _Written by: Reza Shams Amiri_
 # Mutt
 
 ## Mutt Configuration
-## Mutt smtp configuration
+## Mutt smtp configuration ([REF][CPTSMUAESS])
 Mutt uses postifix to send messages so for sending messages you need to configure postifix to use the correct smtp server, for example:
 
 ``` sh
@@ -52,3 +52,5 @@ _mutt flags_{.ct}
 - - -
 
 Creation date: _2018-11-11_
+
+[CPTSMUAESS]: https://www.linode.com/docs/email/postfix/postfix-smtp-debian7/
