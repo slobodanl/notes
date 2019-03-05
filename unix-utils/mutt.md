@@ -3,7 +3,24 @@ _Written by: Reza Shams Amiri_
 # Mutt
 
 ## Mutt Configuration
+## Mutt smtp configuration
+Mutt uses postifix to send messages so for sending messages you need to configure postifix to use the correct smtp server, for example:
 
+``` sh
+sudo vim /etc/postfix/main.cf
+
+# modify the following line
+relayhost = xmail.<company>.com:25
+
+# then restart postifix by:
+sudo service postfix restart
+```
+
+Testing postifix:   
+
+``` sh
+echo "body of your email" | mail -s "This is a Subject" -a "From: you@example.com" recipient@elsewhere.com
+```
 ## Mutt Command Line Interface
 
 _mutt flags_{.ct}
