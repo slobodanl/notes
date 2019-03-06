@@ -3,6 +3,7 @@ _Written by: Reza Shams Amiri_
 # Mutt
 ## Good references:
 1. [Mutt - ArchWiki][MA]
+1. [Mutt and HTML email - jasonwryan.com][MAHEJC]
 
 ## Mutt Configuration
 Install the following packages:
@@ -97,3 +98,4 @@ Creation date: _2018-11-11_
 [CWMPMG]: https://gitlab.com/muttmua/mutt/wikis/ConfigList
 [RMIOF]: http://therandymon.com/woodnotes/mutt/node15.html
 [MA]: https://wiki.archlinux.org/index.php/mutt
+[MAHEJC]: http://jasonwryan.com/blog/2012/05/12/mutt/
