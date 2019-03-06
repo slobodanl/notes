@@ -40,7 +40,7 @@ _mutt flags_{.ct}
 | <kbd>U</kbd> | Undelete messages. After the prompt write `~A` to undelete all |
 | <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF]) |
 | <kbd>s</kbd> | Incremental search |
-| <kbd>s</kbd>s |  |
+| <kbd>s</kbd><kbd>s</kbd> | Incremental search again |
 |  |  |
 |  |  |
 |  |  |
