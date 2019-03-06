@@ -21,6 +21,28 @@ Testing postifix:
 ``` sh
 echo "body of your email" | mail -s "This is a Subject" -a "From: you@example.com" recipient@elsewhere.com
 ```
+
+## Mutt important configuration lines:
+
+``` sh
+# View
+set pager_index_lines=20  # Split the view and show pager at line 20 
+## Sidebar
+set sidebar_width         = 30                                                   
+set sidebar_visible       = yes                                                  
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S" 
+
+# Sorting
+set sort=threads
+set sort_aux=reverse-last-date-received
+set sort_browser=reverse-date
+set sort_re # thread based on regex
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+
+# Composition config
+set signature="echo Reza|"  
+
+```
 ## Mutt Command Line Interface
 
 _mutt flags_{.ct}
