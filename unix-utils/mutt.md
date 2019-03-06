@@ -1,8 +1,15 @@
 _Written by: Reza Shams Amiri_
 
 # Mutt
+## Good references:
+1. [Mutt - ArchWiki][MA]
 
 ## Mutt Configuration
+Install the following packages:
+
+``` sh
+sudo apt install urlview 
+```
 ## Mutt smtp configuration ([REF][CPTSMUAESS])
 Mutt uses postifix to send messages so for sending messages you need to configure postifix to use the correct smtp server, for example:
 
@@ -89,3 +96,4 @@ Creation date: _2018-11-11_
 [LHSCC]: http://hermitte.free.fr/cygwin/#Mutt
 [CWMPMG]: https://gitlab.com/muttmua/mutt/wikis/ConfigList
 [RMIOF]: http://therandymon.com/woodnotes/mutt/node15.html
+[MA]: https://wiki.archlinux.org/index.php/mutt
