@@ -62,7 +62,7 @@ _mutt flags_{.ct}
 | <kbd>Shift+t</kbd> | ag pattern (use `.` pattern for tagging all) |
 | <kbd>Ctrl+t</kbd> | untag pattern (use `.` pattern for untagging all) |
 | <kbd>;</kbd> | tag operations - after pressing `;` you can press additional keys for commands<BR>`d` for delete tagged messages<BR>`c` for copy |
-| <kbd>U</kbd> | Undelete messages. After the prompt write `~A` to undelete all |
+| <kbd>shift U</kbd> | Undelete messages. After the prompt write `~A` or `.` to undelete all |
 | <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF]) |
 | <kbd>ctrl+s</kbd> | Incremental search |
 | <kbd>ctrl+s</kbd><kbd>ctrl+s</kbd> | Incremental search again |
