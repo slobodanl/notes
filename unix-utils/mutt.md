@@ -1,8 +1,16 @@
 _Written by: Reza Shams Amiri_
 
 # Mutt
+## Good references:
+1. [Mutt - ArchWiki][MA]
+1. [Mutt and HTML email - jasonwryan.com][MAHEJC]
 
 ## Mutt Configuration
+Install the following packages:
+
+``` sh
+sudo apt install urlview 
+```
 ## Mutt smtp configuration ([REF][CPTSMUAESS])
 Mutt uses postifix to send messages so for sending messages you need to configure postifix to use the correct smtp server, for example:
 
@@ -21,6 +29,28 @@ Testing postifix:
 ``` sh
 echo "body of your email" | mail -s "This is a Subject" -a "From: you@example.com" recipient@elsewhere.com
 ```
+
+## Mutt important configuration lines:
+
+``` sh
+# View
+set pager_index_lines=20  # Split the view and show pager at line 20 
+## Sidebar
+set sidebar_width         = 30                                                   
+set sidebar_visible       = yes                                                  
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S" 
+
+# Sorting
+set sort=threads
+set sort_aux=reverse-last-date-received
+set sort_browser=reverse-date
+set sort_re # thread based on regex
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+
+# Composition config
+set signature="echo Reza|"  
+
+```
 ## Mutt Command Line Interface
 
 _mutt flags_{.ct}
@@ -37,11 +67,18 @@ _mutt flags_{.ct}
 | --- | ---- |
 | <kbd>m</kbd> | new message |
 | <kbd>t</kbd> | tag messages, after tagging you can use `;c` to copy or `;d` to delete tagged messages |
-| <kbd>U</kbd> | Undelete messages. After the prompt write `~A` to undelete all |
-| <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF]) |
-|  |  |
-|  |  |
-|  |  |
+| <kbd>Shift+t</kbd> | ag pattern (use `.` pattern for tagging all) |
+| <kbd>Ctrl+t</kbd> | untag pattern (use `.` pattern for untagging all) |
+| <kbd>;</kbd> | tag operations - after pressing `;` you can press additional keys for commands<BR>`d` for delete tagged messages<BR>`c` for copy |
+| <kbd>shift+U</kbd> | Undelete messages. After the prompt write `~A` or `.` to undelete all |
+| <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF])<BR>Also if you press tab you can switch to subscribed folder view |
+| <kbd>ctrl+s</kbd> | Incremental search |
+| <kbd>ctrl+s</kbd><kbd>ctrl+s</kbd> | Incremental search again |
+| <kbd>w</kbd> | Set the flag for message |
+| <kbd>Shift+w</kbd> | Remove the flag for message |
+| **View** |  |
+| <kbd>b</kbd> | Toggle sidebar visibility |
+| <kbd></kbd> | View message in surf |
 |  |  |
 |  |  |
 |  |  |
@@ -53,7 +90,8 @@ _mutt flags_{.ct}
 ## Some sample configurations:
 1. [ConfigList · Wiki · Mutt Project / mutt · GitLab][CWMPMG]
 1. [Luc Hermitte's Cygwin configuration][LHSCC]: tunnel section is intersting
-
+1. [Dave's mutt config [/home/davep/.muttrc]][DSMCHDM]
+1. [Some handy mutt macros for this and that · GitHub][SHMMFTATG]
 - - -
 
 Creation date: _2018-11-11_
@@ -62,3 +100,7 @@ Creation date: _2018-11-11_
 [LHSCC]: http://hermitte.free.fr/cygwin/#Mutt
 [CWMPMG]: https://gitlab.com/muttmua/mutt/wikis/ConfigList
 [RMIOF]: http://therandymon.com/woodnotes/mutt/node15.html
+[MA]: https://wiki.archlinux.org/index.php/mutt
+[MAHEJC]: http://jasonwryan.com/blog/2012/05/12/mutt/
+[DSMCHDM]: http://www.davep.org/mutt/muttrc/
+[SHMMFTATG]: https://gist.github.com/pdxmph/cfc4dd675184c06e405e
