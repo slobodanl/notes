@@ -91,7 +91,7 @@ _mutt flags_{.ct}
 1. [ConfigList · Wiki · Mutt Project / mutt · GitLab][CWMPMG]
 1. [Luc Hermitte's Cygwin configuration][LHSCC]: tunnel section is intersting
 1. [Dave's mutt config [/home/davep/.muttrc]][DSMCHDM]
-
+1. [Some handy mutt macros for this and that · GitHub][SHMMFTATG]
 - - -
 
 Creation date: _2018-11-11_
@@ -103,3 +103,4 @@ Creation date: _2018-11-11_
 [MA]: https://wiki.archlinux.org/index.php/mutt
 [MAHEJC]: http://jasonwryan.com/blog/2012/05/12/mutt/
 [DSMCHDM]: http://www.davep.org/mutt/muttrc/
+[SHMMFTATG]: https://gist.github.com/pdxmph/cfc4dd675184c06e405e
