@@ -76,7 +76,9 @@ _mutt flags_{.ct}
 | <kbd>ctrl+s</kbd><kbd>ctrl+s</kbd> | Incremental search again |
 | <kbd>w</kbd> | Set the flag for message |
 | <kbd>Shift+w</kbd> | Remove the flag for message |
-|  |  |
+| **View** |  |
+| <kbd>b</kbd> | Toggle sidebar visibility |
+| <kbd></kbd> | View message in surf |
 |  |  |
 |  |  |
 |  |  |
