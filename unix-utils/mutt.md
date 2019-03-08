@@ -90,6 +90,7 @@ _mutt flags_{.ct}
 ## Some sample configurations:
 1. [ConfigList · Wiki · Mutt Project / mutt · GitLab][CWMPMG]
 1. [Luc Hermitte's Cygwin configuration][LHSCC]: tunnel section is intersting
+1. [Dave's mutt config [/home/davep/.muttrc]][DSMCHDM]
 
 - - -
 
@@ -101,3 +102,4 @@ Creation date: _2018-11-11_
 [RMIOF]: http://therandymon.com/woodnotes/mutt/node15.html
 [MA]: https://wiki.archlinux.org/index.php/mutt
 [MAHEJC]: http://jasonwryan.com/blog/2012/05/12/mutt/
+[DSMCHDM]: http://www.davep.org/mutt/muttrc/
