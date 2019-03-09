@@ -4,6 +4,7 @@ _Written by: Reza Shams Amiri_
 ## Good references:
 1. [Mutt - ArchWiki][MA]
 1. [Mutt and HTML email - jasonwryan.com][MAHEJC]
+2. [Tim Hentenaar's Blog][THSB]
 
 ## Mutt Configuration
 Install the following packages:
@@ -104,3 +105,4 @@ Creation date: _2018-11-11_
 [MAHEJC]: http://jasonwryan.com/blog/2012/05/12/mutt/
 [DSMCHDM]: http://www.davep.org/mutt/muttrc/
 [SHMMFTATG]: https://gist.github.com/pdxmph/cfc4dd675184c06e405e
+[THSB]: http://hentenaar.com/keeping-track-of-meetings-with-mutt-calcurse
