@@ -80,7 +80,7 @@ _mutt flags_{.ct}
 | **View** |  |
 | <kbd>b</kbd> | Toggle sidebar visibility |
 | <kbd></kbd> | View message in surf |
-|  |  |
+| <kbd>Ctrl+l</kbd> | Refresh the view |
 |  |  |
 |  |  |
 |  |  |
