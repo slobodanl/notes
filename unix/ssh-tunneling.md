@@ -24,13 +24,16 @@ ssh LNAX
 If you want to connect to a server which is only available through `<protectedhost>`. You can do the following:
 
 ``` sh
-ssh -f -N -L 1357:imap.example.com:993 LNAX
+ssh -f -N -M -S /tmp/ssh_tunnel_%h.sock -o ExitOnForwardFailure=yes -L 1357:imap.example.com:993 LNAX
 ```
 
 The above code will forward any request to `localhost:1357` to `imap.example.com:993` through `LNAX` tunnel that we set up in the previous seciotn. 
 1. The `-L` flag stands for: local port forwarding
 1. The `-N` flag stands for: do not execute remote commmand and just forward the port
 1. The `-f` flag stands for: Requests ssh to go to background just before command execution
+1. The `-M` flag stands for: Places the ssh client into “master” mode for connection sharing
+1. The `-S` flag stands for:  Specifies the location of a control socket for connection sharing
+
 
 
 
