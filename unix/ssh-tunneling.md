@@ -34,8 +34,14 @@ The above code will forward any request to `localhost:1357` to `imap.example.com
 1. The `-M` flag stands for: Places the ssh client into “master” mode for connection sharing
 1. The `-S` flag stands for:  Specifies the location of a control socket for connection sharing
 
+References:
+1. [ssh tunneling - How do I know if my ssh tunnel is created successfully? - Stack Exchange][STHDIKIMSTICSULSE]
+2. [An SSH tunnel via multiple hops - Super User][ASTVMHSU]
 
 
 
 * * *
 Creation date: _2019-03-09_
+
+[STHDIKIMSTICSULSE]: https://unix.stackexchange.com/a/29949/114816
+[ASTVMHSU]: https://superuser.com/a/170592/285113
