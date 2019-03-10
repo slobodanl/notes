@@ -93,6 +93,7 @@ _mutt flags_{.ct}
 1. [Luc Hermitte's Cygwin configuration][LHSCC]: tunnel section is intersting
 1. [Dave's mutt config [/home/davep/.muttrc]][DSMCHDM]
 1. [Some handy mutt macros for this and that · GitHub][SHMMFTATG]
+1. [PissedOffAdmins  » more mutt goodness][PMMG]
 - - -
 
 Creation date: _2018-11-11_
@@ -106,3 +107,4 @@ Creation date: _2018-11-11_
 [DSMCHDM]: http://www.davep.org/mutt/muttrc/
 [SHMMFTATG]: https://gist.github.com/pdxmph/cfc4dd675184c06e405e
 [THSB]: http://hentenaar.com/keeping-track-of-meetings-with-mutt-calcurse
+[PMMG]: http://pissedoffadmins.com/general/more-mutt-goodness.html
