@@ -10,6 +10,7 @@ __`~/.gcalclirc`__{.ct}
 --defaultCalendar=existme@gmail.com
 ```
 
+## arguments
 
 | Command | Description |
 | ------- | ----------- |
