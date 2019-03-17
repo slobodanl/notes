@@ -65,6 +65,10 @@ _mutt flags_{.ct}
 ## Finding escape sequence for bindings in terminal
 Inside mutt run `:exec what-key` and you get the equivalent sequence
 
+## Using markdown for email composition
+
+1. [Pandoc Tricks · jgm/pandoc Wiki · GitHub][PTJPWG]
+
 ## Mutt shortcuts
 
 | Key | Desc |
@@ -127,3 +131,4 @@ Creation date: _2018-11-11_
 [THSB]: http://hentenaar.com/keeping-track-of-meetings-with-mutt-calcurse
 [PMMG]: http://pissedoffadmins.com/general/more-mutt-goodness.html
 [DMBAMGDG]: https://github.com/gregf/dotfiles/blob/master/mutt/muttrc.bindings
+[PTJPWG]: https://github.com/jgm/pandoc/wiki/Pandoc-Tricks
