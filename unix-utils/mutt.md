@@ -81,7 +81,7 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>w</kbd> | Set the flag for message |
 | <kbd>Shift+w</kbd> | Remove the flag for message |
 | **Operations** |  |
-| <kbd>N</kbd> | Go to next new message |
+| <kbd>N</kbd> | ~~Go to next new message~~ not working! |
 | **View** |  |
 | <kbd>b</kbd> or <kbd>Ctrl + </kbd> | Toggle sidebar visibility |
 | <kbd>Ctrl + </kbd> | Previous item in sidebar |
@@ -89,10 +89,19 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>Ctrl + </kbd> | Open mailbox in sidebar |
 | <kbd></kbd> | View message in surf |
 | <kbd>Ctrl+l</kbd> | Refresh the view |
+| | |
+| <kbd>Shift + </kbd> | Tag/untag upward|
+| <kbd>Shift + </kbd> | Tag/untag downward |
+| <kbd>Shift + </kbd> | untag all |
+| **Mailbox Navigation** |  |
+| <kbd>g</kbd><kbd>i</kbd> | Goto inbox |
+| <kbd>g</kbd><kbd>s</kbd> | Goto sent messages |
+| <kbd>g</kbd><kbd>d</kbd> | Goto draft messages |
+| <kbd>g</kbd><kbd>t</kbd> | Goto trashed messages |
+| <kbd>g</kbd><kbd>a</kbd> | Goto starred messages (only gmail)|
 |  |  |
-|  |  |
-|  |  |
-|  |  |
+| <kbd>F1</kbd> | gmail |
+| <kbd>F2</kbd> | axis |
 |  |  |
 
 
