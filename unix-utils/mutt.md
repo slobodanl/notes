@@ -102,7 +102,7 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 1. [Dave's mutt config [/home/davep/.muttrc]][DSMCHDM]
 1. [Some handy mutt macros for this and that · GitHub][SHMMFTATG]
 1. [PissedOffAdmins  » more mutt goodness][PMMG]
-1. [dotfiles/muttrc.bindings at master · gregf/dotfiles · GitHub][DMBAMGDG]
+1. [dotfiles/muttrc.bindings at master · gregf/dotfiles · GitHub][DMBAMGDG]: Good commands
 - - -
 
 Creation date: _2018-11-11_
