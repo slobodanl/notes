@@ -81,7 +81,10 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>w</kbd> | Set the flag for message |
 | <kbd>Shift+w</kbd> | Remove the flag for message |
 | **View** |  |
-| <kbd>b</kbd> | Toggle sidebar visibility |
+| <kbd>b</kbd> or <kbd>Ctrl + </kbd> | Toggle sidebar visibility |
+| <kbd>Ctrl + </kbd> | Previous item in sidebar |
+| <kbd>Ctrl + </kbd> | Next item in sidebar |
+| <kbd>Ctrl + </kbd> | Open mailbox in sidebar |
 | <kbd></kbd> | View message in surf |
 | <kbd>Ctrl+l</kbd> | Refresh the view |
 |  |  |
