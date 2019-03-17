@@ -16,7 +16,8 @@ brew install git-crypt
 
 ## Adding encrypted files
 1. Inside repo: `vim .gitattributes`
-2. __.gitattributes__{.ct}
+2. Edit it as follows:   
+    __.gitattributes__{.ct}
     ``` sh
     .key filter=git-crypt diff=git-crypt
     ```
