@@ -86,6 +86,9 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>Shift+w</kbd> | Remove the flag for message |
 | **Operations** |  |
 | <kbd>N</kbd> | ~~Go to next new message~~ not working! |
+| <kbd>h</kbd> | Show headers |
+| <kbd>v</kbd> | View attachments |
+| <kbd>Esc</kbd><kbd>e</kbd> | Resend the message |
 | **View** |  |
 | <kbd>b</kbd> or <kbd>Ctrl + </kbd> | Toggle sidebar visibility |
 | <kbd>Ctrl + </kbd> | Previous item in sidebar |
@@ -116,6 +119,9 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 1. [Some handy mutt macros for this and that · GitHub][SHMMFTATG]
 1. [PissedOffAdmins  » more mutt goodness][PMMG]
 1. [dotfiles/muttrc.bindings at master · gregf/dotfiles · GitHub][DMBAMGDG]: Good commands
+
+## Cheet sheets
+1. [Mutt Cheat Sheet - Kapeli][MCSK]
 - - -
 
 Creation date: _2018-11-11_
@@ -132,3 +138,4 @@ Creation date: _2018-11-11_
 [PMMG]: http://pissedoffadmins.com/general/more-mutt-goodness.html
 [DMBAMGDG]: https://github.com/gregf/dotfiles/blob/master/mutt/muttrc.bindings
 [PTJPWG]: https://github.com/jgm/pandoc/wiki/Pandoc-Tricks
+[MCSK]: https://kapeli.com/cheat_sheets/Mutt.docset/Contents/Resources/Documents/index
