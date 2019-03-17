@@ -80,6 +80,8 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>ctrl+s</kbd><kbd>ctrl+s</kbd> | Incremental search again |
 | <kbd>w</kbd> | Set the flag for message |
 | <kbd>Shift+w</kbd> | Remove the flag for message |
+| **Operations** |  |
+| <kbd>N</kbd> | Go to next new message |
 | **View** |  |
 | <kbd>b</kbd> or <kbd>Ctrl + </kbd> | Toggle sidebar visibility |
 | <kbd>Ctrl + </kbd> | Previous item in sidebar |
@@ -100,6 +102,7 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 1. [Dave's mutt config [/home/davep/.muttrc]][DSMCHDM]
 1. [Some handy mutt macros for this and that · GitHub][SHMMFTATG]
 1. [PissedOffAdmins  » more mutt goodness][PMMG]
+1. [dotfiles/muttrc.bindings at master · gregf/dotfiles · GitHub][DMBAMGDG]
 - - -
 
 Creation date: _2018-11-11_
@@ -114,3 +117,4 @@ Creation date: _2018-11-11_
 [SHMMFTATG]: https://gist.github.com/pdxmph/cfc4dd675184c06e405e
 [THSB]: http://hentenaar.com/keeping-track-of-meetings-with-mutt-calcurse
 [PMMG]: http://pissedoffadmins.com/general/more-mutt-goodness.html
+[DMBAMGDG]: https://github.com/gregf/dotfiles/blob/master/mutt/muttrc.bindings
