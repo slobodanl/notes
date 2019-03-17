@@ -72,14 +72,14 @@ _mutt flags_{.ct}
 | <kbd>Ctrl+t</kbd> | untag pattern (use `.` pattern for untagging all) |
 | <kbd>;</kbd> | tag operations - after pressing `;` you can press additional keys for commands<BR>`d` for delete tagged messages<BR>`c` for copy |
 | <kbd>shift+U</kbd> | Undelete messages. After the prompt write `~A` or `.` to undelete all |
-| <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF])<BR>Also if you press tab you can switch to subscribed folder view |
+| <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF])<BR>Also if you press <kbd>tab</kbd> you can switch to subscribed folder view |
 | <kbd>ctrl+s</kbd> | Incremental search |
 | <kbd>ctrl+s</kbd><kbd>ctrl+s</kbd> | Incremental search again |
 | <kbd>w</kbd> | Set the flag for message |
 | <kbd>Shift+w</kbd> | Remove the flag for message |
 | **View** |  |
 | <kbd>b</kbd> | Toggle sidebar visibility |
-| <kbd></kbd> | View message in surf |
+| <kbd></kbd> | View message in surf |
 | <kbd>Ctrl+l</kbd> | Refresh the view |
 |  |  |
 |  |  |
