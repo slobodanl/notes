@@ -62,6 +62,9 @@ _mutt flags_{.ct}
 -b bcc_addresses
 ```
 
+## Finding escape sequence for bindings in terminal
+Inside mutt run `:exec what-key` and you get the equivalent sequence
+
 ## Mutt shortcuts
 
 | Key | Desc |
