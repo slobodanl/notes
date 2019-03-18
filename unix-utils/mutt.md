@@ -121,7 +121,8 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 1. [Some handy mutt macros for this and that · GitHub][SHMMFTATG]
 1. [PissedOffAdmins  » more mutt goodness][PMMG]
 1. [dotfiles/muttrc.bindings at master · gregf/dotfiles · GitHub][DMBAMGDG]: Good commands
-1. [wincent/wincent The VimCast guy][WRDFMAMWWG]
+1. [wincent/wincent][WRDFMAMWWG]: The VimCast guy
+1. [mutt-wizard/muttrc][MWMAMLMWG]: LukeSmithxyz/mutt-wizard
 
 ## Cheet sheets
 1. [Mutt Cheat Sheet - Kapeli][MCSK]
@@ -143,3 +144,4 @@ Creation date: _2018-11-11_
 [PTJPWG]: https://github.com/jgm/pandoc/wiki/Pandoc-Tricks
 [MCSK]: https://kapeli.com/cheat_sheets/Mutt.docset/Contents/Resources/Documents/index
 [WRDFMAMWWG]: https://github.com/wincent/wincent/tree/master/roles/dotfiles/files/.mutt
+[MWMAMLMWG]: https://github.com/LukeSmithxyz/mutt-wizard/blob/master/muttrc
