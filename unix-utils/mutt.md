@@ -62,6 +62,13 @@ _mutt flags_{.ct}
 -b bcc_addresses
 ```
 
+## Finding escape sequence for bindings in terminal
+Inside mutt run `:exec what-key` and you get the equivalent sequence
+
+## Using markdown for email composition
+
+1. [Pandoc Tricks · jgm/pandoc Wiki · GitHub][PTJPWG]
+
 ## Mutt shortcuts
 
 | Key | Desc |
@@ -72,19 +79,38 @@ _mutt flags_{.ct}
 | <kbd>Ctrl+t</kbd> | untag pattern (use `.` pattern for untagging all) |
 | <kbd>;</kbd> | tag operations - after pressing `;` you can press additional keys for commands<BR>`d` for delete tagged messages<BR>`c` for copy |
 | <kbd>shift+U</kbd> | Undelete messages. After the prompt write `~A` or `.` to undelete all |
-| <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF])<BR>Also if you press tab you can switch to subscribed folder view |
+| <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF])<BR>Also if you press <kbd>tab</kbd> you can switch to subscribed folder view |
 | <kbd>ctrl+s</kbd> | Incremental search |
 | <kbd>ctrl+s</kbd><kbd>ctrl+s</kbd> | Incremental search again |
 | <kbd>w</kbd> | Set the flag for message |
 | <kbd>Shift+w</kbd> | Remove the flag for message |
+| **Operations** |  |
+| <kbd>N</kbd> | ~~Go to next new message~~ not working! |
+| <kbd>h</kbd> | Show headers |
+| <kbd>v</kbd> | View attachments |
+| <kbd>I</kbd> | Mark as read |
+| <kbd>U</kbd> | Mark as unread |
+| <kbd>Esc</kbd><kbd>e</kbd> | Resend the message |
 | **View** |  |
-| <kbd>b</kbd> | Toggle sidebar visibility |
-| <kbd></kbd> | View message in surf |
+| <kbd>b</kbd> or <kbd>Ctrl + </kbd> | Toggle sidebar visibility |
+| <kbd>Ctrl + </kbd> | Previous item in sidebar |
+| <kbd>Ctrl + </kbd> | Next item in sidebar |
+| <kbd>Ctrl + </kbd> | Open mailbox in sidebar |
+| <kbd></kbd> | View message in surf |
 | <kbd>Ctrl+l</kbd> | Refresh the view |
+| | |
+| <kbd>Shift + </kbd> | Tag/untag upward|
+| <kbd>Shift + </kbd> | Tag/untag downward |
+| <kbd>Shift + </kbd> | untag all |
+| **Mailbox Navigation** |  |
+| <kbd>g</kbd><kbd>i</kbd> | Goto inbox |
+| <kbd>g</kbd><kbd>s</kbd> | Goto sent messages |
+| <kbd>g</kbd><kbd>d</kbd> | Goto draft messages |
+| <kbd>g</kbd><kbd>t</kbd> | Goto trashed messages |
+| <kbd>g</kbd><kbd>a</kbd> | Goto starred messages (only gmail)|
 |  |  |
-|  |  |
-|  |  |
-|  |  |
+| <kbd>F1</kbd> | gmail |
+| <kbd>F2</kbd> | axis |
 |  |  |
 
 
@@ -94,6 +120,12 @@ _mutt flags_{.ct}
 1. [Dave's mutt config [/home/davep/.muttrc]][DSMCHDM]
 1. [Some handy mutt macros for this and that · GitHub][SHMMFTATG]
 1. [PissedOffAdmins  » more mutt goodness][PMMG]
+1. [dotfiles/muttrc.bindings at master · gregf/dotfiles · GitHub][DMBAMGDG]: Good commands
+1. [wincent/wincent][WRDFMAMWWG]: The VimCast guy
+1. [mutt-wizard/muttrc][MWMAMLMWG]: LukeSmithxyz/mutt-wizard
+
+## Cheet sheets
+1. [Mutt Cheat Sheet - Kapeli][MCSK]
 - - -
 
 Creation date: _2018-11-11_
@@ -108,3 +140,8 @@ Creation date: _2018-11-11_
 [SHMMFTATG]: https://gist.github.com/pdxmph/cfc4dd675184c06e405e
 [THSB]: http://hentenaar.com/keeping-track-of-meetings-with-mutt-calcurse
 [PMMG]: http://pissedoffadmins.com/general/more-mutt-goodness.html
+[DMBAMGDG]: https://github.com/gregf/dotfiles/blob/master/mutt/muttrc.bindings
+[PTJPWG]: https://github.com/jgm/pandoc/wiki/Pandoc-Tricks
+[MCSK]: https://kapeli.com/cheat_sheets/Mutt.docset/Contents/Resources/Documents/index
+[WRDFMAMWWG]: https://github.com/wincent/wincent/tree/master/roles/dotfiles/files/.mutt
+[MWMAMLMWG]: https://github.com/LukeSmithxyz/mutt-wizard/blob/master/muttrc
