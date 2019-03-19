@@ -222,6 +222,22 @@ Commands
 
 | command | description |
 | ------- | ----------- |
+| **CLI** | **These can be used when calling vim from command line** |
+|         | **ex:** `vim +/^$ ++1 -c "noh" my-mail.txt`|
+| +/^$ | Search and jump to empty lines (will highlight them as well) |
+| ++1 |  move one line down|
+| -c "noh" | `:noh` or no highligh, removes already highlighted matches|
+|||
+
+| command | description |
+| ------- | ----------- |
+| **FILETYPES** | **This is how to set vim syntax highlighting** |
+|`# vim: fdm=marker`||
+|`# vim: filetype=muttrc`||
+|`set ft=bash`| temporary set filetype to `bash`|
+
+| command | description |
+| ------- | ----------- |
 | **installing plugins** | |
 | vim ~/.vimrc | edit `vimrc` and in the section which begins with: (circa 338) |
 | | `call plug#begin('~/.vim/plugged')` |
