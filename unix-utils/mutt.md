@@ -2,6 +2,7 @@ _Written by: Reza Shams Amiri_
 
 # Mutt
 ## Good references:
+1. [Configuration - NeoMutt](https://neomutt.org/guide/configuration.html)
 1. [Mutt - ArchWiki][MA]
 1. [Mutt and HTML email - jasonwryan.com][MAHEJC]
 2. [Tim Hentenaar's Blog][THSB]
