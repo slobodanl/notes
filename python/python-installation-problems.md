@@ -1,7 +1,8 @@
 # Python-Installation-Problems.Md                                               
 
-##  `s pip install pygobject --upgrade`                                          
+##  Installing pygobject
 ``` bash                                                                          
+sudo -H pip install pygobject --upgrade
 sudo apt install libgirepository1.0-dev
 sudo apt install python3-cairo-dev
 ```                                                                              
