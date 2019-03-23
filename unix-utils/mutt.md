@@ -69,6 +69,7 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 ## Using markdown for email composition
 
 1. [Pandoc Tricks · jgm/pandoc Wiki · GitHub][PTJPWG]
+2. [ mutt's secret sauce · No Substance ][MSSSNS]
 
 ## Mutt shortcuts
 
@@ -148,3 +149,4 @@ Creation date: _2018-11-11_
 [WRDFMAMWWG]: https://github.com/wincent/wincent/tree/master/roles/dotfiles/files/.mutt
 [MWMAMLMWG]: https://github.com/LukeSmithxyz/mutt-wizard/blob/master/muttrc
 [MGQ]: https://qiita.com/iorionda/items/c48355770ae689ca1896
+[MSSSNS]: http://nosubstance.me/post/mutt-secret-sauce/
