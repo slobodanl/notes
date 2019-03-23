@@ -66,6 +66,7 @@ Options:
 
 arguments = docopt(__doc__, version='1.0.0rc2')
 print(arguments)
+print(arguments['PATH']) # this would be a list because of ...
 
 ```
 
