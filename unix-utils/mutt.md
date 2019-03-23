@@ -124,6 +124,7 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 1. [dotfiles/muttrc.bindings at master · gregf/dotfiles · GitHub][DMBAMGDG]: Good commands
 1. [wincent/wincent][WRDFMAMWWG]: The VimCast guy
 1. [mutt-wizard/muttrc][MWMAMLMWG]: LukeSmithxyz/mutt-wizard
+1. [mutt + Gmailを使ってCUIでのメール環境を作る - Qiita][MGQ]
 
 ## Cheet sheets
 1. [Mutt Cheat Sheet - Kapeli][MCSK]
@@ -146,3 +147,4 @@ Creation date: _2018-11-11_
 [MCSK]: https://kapeli.com/cheat_sheets/Mutt.docset/Contents/Resources/Documents/index
 [WRDFMAMWWG]: https://github.com/wincent/wincent/tree/master/roles/dotfiles/files/.mutt
 [MWMAMLMWG]: https://github.com/LukeSmithxyz/mutt-wizard/blob/master/muttrc
+[MGQ]: https://qiita.com/iorionda/items/c48355770ae689ca1896
