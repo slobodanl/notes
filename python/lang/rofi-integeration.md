@@ -16,6 +16,7 @@ sudo -H /usr/bin/python2 -m pip install -U python-rofi
 ## Text Entry
 ``` python
 from rofi import Rofi
+r = Rofi()
 name = r.text_entry('What is your name? ')
 print(name)
 
