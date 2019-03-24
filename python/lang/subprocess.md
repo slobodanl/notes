@@ -53,7 +53,10 @@ execute('echo test > /etc/hostname', sudo=True)
 ## sh
 ### Install [sh][GASPPL]
 ``` sh
-s -H pip install executor
+s -H pip install sh
+
+# for python 2
+sudo -H python2 -m pip install sh
 ```
 ﯙ Github page: [https://github.com/amoffat/sh][GASPPL]   
  Documentation: [http://amoffat.github.io/sh][111S111D]   
