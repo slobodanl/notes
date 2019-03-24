@@ -13,7 +13,7 @@ sudo -H pip install git+https://github.com/bcbnz/python-rofi.git --upgrade
 sudo -H /usr/bin/python2 -m pip install -U python-rofi
 sudo -H /usr/bin/python2 -m pip install git+https://github.com/bcbnz/python-rofi.git --upgrade
 ```
-**Use the github version** (although they look like they are the same version), if you don't you can't use the rofi_args{.note .red}
+__**Use the github version** (although they look like they are the same version), if you don't you can't use the rofi_args__{.note .red}
 ## Text Entry
 ``` python
 from rofi import Rofi
