@@ -8,6 +8,9 @@ sudo -H pip install python-rofi
 
 # Or for the latest version installation, use: 
 sudo -H pip install git+https://github.com/bcbnz/python-rofi.git --upgrade
+
+# for python 2
+sudo -H /usr/bin/python2 -m pip install -U python-rofi
 ```
 
 ## Text Entry
