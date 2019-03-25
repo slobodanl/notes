@@ -69,6 +69,7 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 ## Using markdown for email composition
 
 1. [Pandoc Tricks · jgm/pandoc Wiki · GitHub][PTJPWG]
+2. [ mutt's secret sauce · No Substance ][MSSSNS]
 
 ## Mutt shortcuts
 
@@ -89,8 +90,8 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>N</kbd> | ~~Go to next new message~~ not working! |
 | <kbd>h</kbd> | Show headers |
 | <kbd>v</kbd> | View attachments |
-| <kbd>I</kbd> | Mark as read |
-| <kbd>U</kbd> | Mark as unread |
+| <kbd>i</kbd> | Mark as read |
+| <kbd>I</kbd> | Mark as unread |
 | <kbd>Esc</kbd><kbd>e</kbd> | Resend the message |
 | **View** |  |
 | <kbd>b</kbd> or <kbd>Ctrl + </kbd> | Toggle sidebar visibility |
@@ -124,6 +125,7 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 1. [dotfiles/muttrc.bindings at master · gregf/dotfiles · GitHub][DMBAMGDG]: Good commands
 1. [wincent/wincent][WRDFMAMWWG]: The VimCast guy
 1. [mutt-wizard/muttrc][MWMAMLMWG]: LukeSmithxyz/mutt-wizard
+1. [mutt + Gmailを使ってCUIでのメール環境を作る - Qiita][MGQ]
 
 ## Cheet sheets
 1. [Mutt Cheat Sheet - Kapeli][MCSK]
@@ -146,3 +148,5 @@ Creation date: _2018-11-11_
 [MCSK]: https://kapeli.com/cheat_sheets/Mutt.docset/Contents/Resources/Documents/index
 [WRDFMAMWWG]: https://github.com/wincent/wincent/tree/master/roles/dotfiles/files/.mutt
 [MWMAMLMWG]: https://github.com/LukeSmithxyz/mutt-wizard/blob/master/muttrc
+[MGQ]: https://qiita.com/iorionda/items/c48355770ae689ca1896
+[MSSSNS]: http://nosubstance.me/post/mutt-secret-sauce/
