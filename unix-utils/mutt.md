@@ -86,7 +86,10 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>ctrl+s</kbd><kbd>ctrl+s</kbd> | Incremental search again |
 | <kbd>w</kbd> | Set the flag for message |
 | <kbd>Shift+w</kbd> | Remove the flag for message |
+
+## Operations
 | **Operations** |  |
+|----------------|--|
 | <kbd>N</kbd> | ~~Go to next new message~~ not working! |
 | <kbd>h</kbd> | Show headers |
 | <kbd>v</kbd> | View attachments |
@@ -94,17 +97,22 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>I</kbd> | Mark as unread |
 | <kbd>Esc</kbd><kbd>e</kbd> | Resend the message |
 | **View** |  |
-| <kbd>b</kbd> or <kbd>Ctrl + </kbd> | Toggle sidebar visibility |
-| <kbd>Ctrl + </kbd> | Previous item in sidebar |
-| <kbd>Ctrl + </kbd> | Next item in sidebar |
-| <kbd>Ctrl + </kbd> | Open mailbox in sidebar |
-| <kbd></kbd> | View message in surf |
-| <kbd>Ctrl+l</kbd> | Refresh the view |
+| <kbd>b</kbd> or <kbd>Ctrl + </kbd> |  Toggle sidebar visibility |
+| <kbd>Ctrl + </kbd> | 玲 Previous item in sidebar |
+| <kbd>Ctrl + </kbd> | 怜 Next item in sidebar |
+| <kbd>Ctrl + </kbd> | ﱮ Open mailbox in sidebar |
+| <kbd></kbd> |  View message in surf|
+| <kbd>Shift </kbd> |  View message in netsurf|
+| <kbd>Alt </kbd> |  View message in google chrome |
+| <kbd>Ctrl+l</kbd> |  Refresh the view |
 | | |
 | <kbd>Shift + </kbd> | Tag/untag upward|
 | <kbd>Shift + </kbd> | Tag/untag downward |
 | <kbd>Shift + </kbd> | untag all |
+ﳀ
+## Mailbox Navigation
 | **Mailbox Navigation** |  |
+|----------------|--|
 | <kbd>g</kbd><kbd>i</kbd> | Goto inbox |
 | <kbd>g</kbd><kbd>s</kbd> | Goto sent messages |
 | <kbd>g</kbd><kbd>d</kbd> | Goto draft messages |
