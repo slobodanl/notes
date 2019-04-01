@@ -75,44 +75,55 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 
 | Key | Desc |
 | --- | ---- |
-| <kbd>m</kbd> | new message |
+| <kbd>m</kbd> |  new message |
 | <kbd>t</kbd> | tag messages, after tagging you can use `;c` to copy or `;d` to delete tagged messages |
 | <kbd>Shift+t</kbd> | ag pattern (use `.` pattern for tagging all) |
 | <kbd>Ctrl+t</kbd> | untag pattern (use `.` pattern for untagging all) |
 | <kbd>;</kbd> | tag operations - after pressing `;` you can press additional keys for commands<BR>`d` for delete tagged messages<BR>`c` for copy |
-| <kbd>shift+U</kbd> | Undelete messages. After the prompt write `~A` or `.` to undelete all |
-| <kbd>c</kbd> | Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF])<BR>Also if you press <kbd>tab</kbd> you can switch to subscribed folder view |
-| <kbd>ctrl+s</kbd> | Incremental search |
-| <kbd>ctrl+s</kbd><kbd>ctrl+s</kbd> | Incremental search again |
-| <kbd>w</kbd> | Set the flag for message |
-| <kbd>Shift+w</kbd> | Remove the flag for message |
+| <kbd>shift+U</kbd> |ﴗ Undelete messages. After the prompt write `~A` or `.` to undelete all |
+| <kbd>c</kbd> |  Change folder, use `=FOLDERNAME` or `?` for list ([ref][RMIOF])<BR>Also if you press <kbd>tab</kbd> you can switch to subscribed folder view |
+| <kbd>ctrl+s</kbd> |  Incremental search |
+| <kbd>ctrl+s</kbd><kbd>ctrl+s</kbd> |  Incremental search again |
+| <kbd>w</kbd> |  Set the flag for message |
+| <kbd>Shift+w</kbd> |  Remove the flag for message |
+
+## Operations
 | **Operations** |  |
+|----------------|--|
 | <kbd>N</kbd> | ~~Go to next new message~~ not working! |
-| <kbd>h</kbd> | Show headers |
-| <kbd>v</kbd> | View attachments |
-| <kbd>i</kbd> | Mark as read |
-| <kbd>I</kbd> | Mark as unread |
-| <kbd>Esc</kbd><kbd>e</kbd> | Resend the message |
+| <kbd>h</kbd> | ﯺ Show headers |
+| <kbd>v</kbd> |  View attachments |
+| <kbd>i</kbd> |  Mark as read |
+| <kbd>I</kbd> |  Mark as unread |
+| <kbd>Esc</kbd><kbd>e</kbd> | 凌 Resend the message |
 | **View** |  |
-| <kbd>b</kbd> or <kbd>Ctrl + </kbd> | Toggle sidebar visibility |
-| <kbd>Ctrl + </kbd> | Previous item in sidebar |
-| <kbd>Ctrl + </kbd> | Next item in sidebar |
-| <kbd>Ctrl + </kbd> | Open mailbox in sidebar |
-| <kbd></kbd> | View message in surf |
-| <kbd>Ctrl+l</kbd> | Refresh the view |
+| <kbd>b</kbd> or <kbd>Ctrl + </kbd> |  Toggle sidebar visibility |
+| <kbd>Ctrl + </kbd> | 玲 Previous item in sidebar |
+| <kbd>Ctrl + </kbd> | 怜 Next item in sidebar |
+| <kbd>Ctrl + </kbd> | ﱮ Open mailbox in sidebar |
+| <kbd></kbd> |  View message in surf|
+| <kbd>Shift </kbd> |  View message in netsurf|
+| <kbd>Alt </kbd> |  View message in google chrome |
+| <kbd>Ctrl+l</kbd> |  Refresh the view |
+| <kbd>,</kbd> <kbd>m</kbd> |  Add to calcurse |
+| <kbd>,</kbd> <kbd>u</kbd> |  List urls in url view |
+| <kbd>Esc</kbd> <kbd>5</kbd> |  Convert message to Markdown |
 | | |
-| <kbd>Shift + </kbd> | Tag/untag upward|
-| <kbd>Shift + </kbd> | Tag/untag downward |
-| <kbd>Shift + </kbd> | untag all |
+| <kbd>Shift + </kbd> |  Tag/untag upward|
+| <kbd>Shift + </kbd> |  Tag/untag downward |
+| <kbd>Shift + </kbd> | ﰡuntag all |
+ﳀ
+## Mailbox Navigation
 | **Mailbox Navigation** |  |
-| <kbd>g</kbd><kbd>i</kbd> | Goto inbox |
-| <kbd>g</kbd><kbd>s</kbd> | Goto sent messages |
-| <kbd>g</kbd><kbd>d</kbd> | Goto draft messages |
-| <kbd>g</kbd><kbd>t</kbd> | Goto trashed messages |
-| <kbd>g</kbd><kbd>a</kbd> | Goto starred messages (only gmail)|
+|----------------|--|
+| <kbd>g</kbd><kbd>i</kbd> |  Goto inbox |
+| <kbd>g</kbd><kbd>s</kbd> |  Goto sent messages |
+| <kbd>g</kbd><kbd>d</kbd> |  Goto draft messages |
+| <kbd>g</kbd><kbd>t</kbd> |  Goto trashed messages |
+| <kbd>g</kbd><kbd>a</kbd> | ﯍ Goto starred messages (only gmail)|
 |  |  |
-| <kbd>F1</kbd> | gmail |
-| <kbd>F2</kbd> | axis |
+| <kbd>F1</kbd> |  gmail |
+| <kbd>F2</kbd> |  axis |
 |  |  |
 
 
