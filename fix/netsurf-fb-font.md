@@ -7,7 +7,7 @@ _Written by: Reza Shams Amiri_
 In such a scenario, according to this [thread][N36WBREAB] there are fonts missing in your system, if you run:
 
 ``` sh
- $ strace netsurf-fb 2>&1 G font
+$ strace netsurf-fb 2>&1 G font
  
 stat("/usr/share/fonts/truetype/ttf-dejavu", 0x7fff8165f780) = -1 ENOENT (No such file or directory)
 stat("/usr/share/fonts/truetype/msttcorefonts", 0x7fff8165f780) = -1 ENOENT (No such file or directory)
