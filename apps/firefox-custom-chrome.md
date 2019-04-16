@@ -21,8 +21,7 @@ You can find where is your profile storage, somewhere like:
 Add the following script to `chrome/userContent.css`:
 
 
-=============[ userContent.css ]=================
-
+__userContent.css__{.ct}
 ```js
 #tabbrowser-tabs { visibility: collapse !important; }
 #TabsToolbar { visibility: collapse; }
