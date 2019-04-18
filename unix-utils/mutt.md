@@ -76,6 +76,8 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | Key | Desc |
 | --- | ---- |
 | <kbd>m</kbd> |  new message |
+| <kbd>r</kbd> | 陵 reply |
+| <kbd>g</kbd> | 讀 reply all / group reply |
 | <kbd>t</kbd> | tag messages, after tagging you can use `;c` to copy or `;d` to delete tagged messages |
 | <kbd>Shift+t</kbd> | ag pattern (use `.` pattern for tagging all) |
 | <kbd>Ctrl+t</kbd> | untag pattern (use `.` pattern for untagging all) |
