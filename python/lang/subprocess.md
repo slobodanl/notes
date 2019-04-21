@@ -71,6 +71,7 @@ with sh.contrib.sudo:
 ```
 
 ### Showing information of the running commands
+_information sample_{.ct}
 ``` python
 #!/usr/bin/python3
 import sh
@@ -81,12 +82,10 @@ res = rofi(_in=a.stdout)
 print(res)
 print(res.cmd)
 print(res.call_args)
-
-# Output:
-# --------------------------
-[b'/usr/local/bin/rofi', b'-dmenu', b'-sep', b"'\\n'"]
 ```
-``` json
+_output_{.ct}
+``` python
+[b'/usr/local/bin/rofi', b'-dmenu', b'-sep', b"'\\n'"]
 {
 	'fg': False, 
 	'bg': False, 
