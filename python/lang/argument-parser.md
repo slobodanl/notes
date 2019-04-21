@@ -33,6 +33,7 @@ Installation:
 sudo -H pip install docop
 ```
 Using
+__Sample 1__{.ct}
 ``` python
 """Example of program with many options using docopt.
 Usage:
@@ -74,7 +75,7 @@ print(arguments['PATH']) # this would be a list because of ...
 ```
 __Note that between `Usage:`, `Arguments:`, and `Options:` there is an empty line. If you forgot it the arguments will not match!__{.info .warn}
 
-__Another sample__{.ct}
+__Sample 2__{.ct}
 ``` python
 #!/usr/bin/python3
 """
