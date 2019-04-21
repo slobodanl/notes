@@ -69,6 +69,68 @@ with sh.contrib.sudo:
     for line in sh.tr(sh.tail("-f", "/var/log/syslog", _piped=True, ), "[:upper:]", "[:lower:]", _iter=True):
         print(line)
 ```
+
+### Showing information of the running commands
+``` python
+#!/usr/bin/python3
+import sh
+
+rofi = sh.rofi.bake('-dmenu', '-sep', "'\\n'", _bg_exc=False)
+git = sh.git.bake('--no-pager', )
+res = rofi(_in=a.stdout)
+print(res)
+print(res.cmd)
+print(res.call_args)
+
+# Output:
+# --------------------------
+[b'/usr/local/bin/rofi', b'-dmenu', b'-sep', b"'\\n'"]
+```
+``` json
+{
+	'fg': False, 
+	'bg': False, 
+	'bg_exc': False, 
+	'with': False, 
+	'in': b'989b7175 added docker images for running gollum\nd06daa2a bumped the version\nc0130d64 initial commit for Gollum custom template', 
+	'out': None, 
+	'err': None, 
+	'err_to_out': None, 
+	'in_bufsize': 0, 
+	'out_bufsize': 1, 
+	'err_bufsize': 1, 
+	'internal_bufsize': 3145728, 
+	'env': None, 
+	'piped': None, 
+	'iter': None, 
+	'iter_noblock': None, 
+	'ok_code': [
+		0
+	], 
+	'cwd': None, 
+	'long_sep': '=', 
+	'long_prefix': '--', 
+	'tty_in': False, 
+	'tty_out': True, 
+	'encoding': 'UTF-8', 
+	'decode_errors': 'strict', 
+	'timeout': None, 
+	'timeout_signal': <Signals.SIGKILL: 9>, 
+	'no_out': False, 
+	'no_err': False, 
+	'no_pipe': False, 
+	'tee': None, 
+	'done': None, 
+	'tty_size': (20,80), 
+	'truncate_exc': True, 
+	'preexec_fn': None, 
+	'uid': None, 
+	'new_session': True, 
+	'arg_preprocess': None, 
+	'log_msg': None
+}
+```
+
 ### rofi piping ( also see [Rofi integeration using sh][RIUSSAS] )
 _rofi piping_{.ct}
 ``` python
