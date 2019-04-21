@@ -16,9 +16,17 @@ git = sh.git.bake('--no-pager')
 
 revs = git.log('--no-color', "--format=format:%h %s", "build.sh")
 print(rofi(_in=revs.stdout))
+# Either the above or the following
+# print(rofi(revs))
 ```
+**Please make note that if you use **`stdout`** or a `String` for input, it's mandatory to use `_in=`. If you are using the instance of `RunningCommand` you can use both (in this case revs)**{.note .red}
 
-**Please make note that thre result of `git log` which is sent to `rofi` are accessed by **`stdout`**. If you don't use `stdout` you might risk creating a deadlock.<BR>Also pay attention to the `_in=` part, if you miss this part too you will risk to have a deadlock!**{.note .red}
+### Dealing with deadlocks
+If you are encountering deadlocks for no-reason one way to findout what's wrong is using `_timeout=<seconds>` within the `bake` or when running the command.
+``` python
+rofi = sh.rofi.bake('-dmenu', '-sep', "'\\n'", _timeout=1)
+```
+This will make sure if the process hanged your system after 1 second it will break and you are out of deadlock!
 
 # Rofi integeration using python-rofi
 
