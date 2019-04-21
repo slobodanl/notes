@@ -21,6 +21,7 @@ print(rofi(_in=revs.stdout))
 ```
 **Please make note that if you use **`stdout`** or a `String` for input, it's mandatory to use `_in=`. If you are using the instance of `RunningCommand` you can use both (in this case revs)**{.note .red}
 
+**If you process the results of a `RunningCommand` by for example iterating over it and then asking `rofi` to process them by `rofi(revs)` the process will hang and if you see the debug you will notice that `_in` is `None` in this scenario. To fix you should use `rofi(_in=revs.stdout)` after `revs` are iterated once!**{.info .warn}
 ### Dealing with deadlocks
 If you are encountering deadlocks for no-reason one way to findout what's wrong is using `_timeout=<seconds>` within the `bake` or when running the command.
 ``` python
