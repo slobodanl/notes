@@ -69,7 +69,7 @@ with sh.contrib.sudo:
     for line in sh.tr(sh.tail("-f", "/var/log/syslog", _piped=True, ), "[:upper:]", "[:lower:]", _iter=True):
         print(line)
 ```
-### rofi piping
+### rofi piping ( also see [Rofi integeration using sh][RIUSSAS] )
 _rofi piping_{.ct}
 ``` python
 import logging
@@ -105,3 +105,4 @@ Creation date: _2019-02-23_
 [EPFSWE23D]: https://executor.readthedocs.io/en/latest/readme.html
 [GASPPL]: https://github.com/amoffat/sh
 [111S111D]: http://amoffat.github.io/sh
+[RIUSSAS]: /python/lang/rofi-integeration
