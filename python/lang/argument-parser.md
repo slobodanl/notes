@@ -41,8 +41,10 @@ Usage:
                      [--statistics] [--count] [--benchmark] PATH...
   options_example.py (--doctest | --testsuite=DIR)
   options_example.py --version
+
 Arguments:
   PATH  destination path
+
 Options:
   -h --help            show this help message and exit
   --version            show version and exit
@@ -64,12 +66,29 @@ Options:
   --doctest            run doctest on myself
 """
 
+from docopt import docopt
 arguments = docopt(__doc__, version='1.0.0rc2')
 print(arguments)
 print(arguments['PATH']) # this would be a list because of ...
 
 ```
+__Note that between `Usage:`, `Arguments:`, and `Options:` there is an empty line. If you forgot it the arguments will not match!__{.info .warn}
 
+__Another sample__{.ct}
+``` python
+#!/usr/bin/python3
+"""
+Usage:
+   ,pgit <FILENAME> [-v]
+
+Options:
+   -v, --v     show verbose logs
+"""
+import sh
+from docopt import docopt
+arguments = docopt(__doc__, version='1.0.0rc2')
+print(arguments)
+```
 
 * * *
 Creation date: _2019-02-22_
