@@ -11,7 +11,8 @@ sudo -H python2 -m pip install sh
 ``` python
 #!/usr/bin/python3
 import sh
-rofi = sh.rofi.bake('-dmenu', '-sep', '\n')
+# use -i (case insensitive search) and return index (-format=i)
+rofi = sh.rofi.bake('-dmenu', '-i', '-format', 'i')
 git = sh.git.bake('--no-pager')
 
 revs = git.log('--no-color', "--format=format:%h %s", "build.sh")
