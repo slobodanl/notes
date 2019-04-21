@@ -1,5 +1,26 @@
 _Written by: Reza Shams Amiri_
-# rofi integeration
+# Rofi integeration using `sh` (See also [subprocess][S])
+
+## Installation
+``` python
+s -H pip install sh
+# for python 2
+sudo -H python2 -m pip install sh
+```
+## Important considerations:
+``` python
+#!/usr/bin/python3
+import sh
+rofi = sh.rofi.bake('-dmenu', '-sep', '\n')
+git = sh.git.bake('--no-pager')
+
+revs = git.log('--no-color', "--format=format:%h %s", "build.sh")
+print(rofi(_in=revs.stdout))
+```
+
+**Please make note that thre result of `git log` which is sent to `rofi` are accessed by **`stdout`**. If you don't use `stdout` you might risk creating a deadlock.<BR>Also pay attention to the `_in=` part, if you miss this part too you will risk to have a deadlock!**{.note .red}
+
+# Rofi integeration using python-rofi
 
 ## Install python-rofi ([][GBPRAPMTMSGWR])
 
@@ -64,3 +85,4 @@ Adapta-Nokto, android_notification, Arc-Dark, Arc, arthur, blue, c64, DarkBlue, 
 Creation date: _2019-02-23_
 
 [GBPRAPMTMSGWR]: https://github.com/bcbnz/python-rofi
+[S]: /python/lang/subprocess
