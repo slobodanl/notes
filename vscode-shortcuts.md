@@ -11,9 +11,9 @@ alt+1    |  focus on file explorer    | workbench.view.explorer
 alt+2    |  focus on editor           |
 
 ## Build & Run
-Keybinding|  Description|Command
----------------||                                           
-ctrl+shift+b   | Build default task | workbench.action.tasks.build
+Keybinding |  Description|Command
+----------|
+ctrl+shift+b | Build default task | workbench.action.tasks.build
                                         
 
 ## References:
