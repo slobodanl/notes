@@ -11,11 +11,14 @@ sudo -H python2 -m pip install sh
 ``` python
 #!/usr/bin/python3
 import sh
-# use -i (case insensitive search) and return index (-format=i)
-rofi = sh.rofi.bake('-dmenu', '-i', '-format', 'i')
-git = sh.git.bake('--no-pager')
 
+display = sh.Command(",query-current-display")().strip()
+# use -i (case insensitive search) and return index (-format=i)
+rofi = sh.rofi.bake('-dmenu', '-i', '-format', 'i', '-monitor', display)
+
+git = sh.git.bake('--no-pager')
 revs = git.log('--no-color', "--format=format:%h %s", "build.sh")
+
 print(rofi(_in=revs.stdout))
 # Either the above or the following
 # print(rofi(revs))
