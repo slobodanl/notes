@@ -2,21 +2,19 @@
 
 ----------------------------------------- 
 
-Keybinding           |  Description                                           |     Command
----------------------|--------------------------------------------------------|-----------------------------------------------
-                     |                                                        |                                           
-**Focus**                |                                                        |                                           
----------------------|                                                        |                                           
-ctrl+1               |  focus on 1st editor group                             |     workbench.action.focusFirstEditorGroup
-ctrl+2               |  focus on 2nd editor group                             |     workbench.action.focusSecondEditorGroup
-alt+1                |  focus on file explorer                                |     workbench.view.explorer                                      
-alt+2                |  focus on editor                                       |                                           
-                     |                                                        |                                           
-**Build & Run**          |                                                        |                                           
----------------------|                                                        |                                           
-ctrl+shift+b         |  Build default task                                    |     workbench.action.tasks.build
-                     |                                                        |                                           
-                     |                                                        |                                           
+## Focus
+Keybinding|  Description|Command
+----------|-------------|----------
+ctrl+1   |  focus on 1st editor group | workbench.action.focusFirstEditorGroup
+ctrl+2   |  focus on 2nd editor group | workbench.action.focusSecondEditorGroup
+alt+1    |  focus on file explorer    | workbench.view.explorer
+alt+2    |  focus on editor           |
+
+## Build & Run
+Keybinding|  Description|Command
+---------------||                                           
+ctrl+shift+b   | Build default task | workbench.action.tasks.build
+                                        
 
 ## References:
 
