@@ -5,16 +5,23 @@
 ## Focus
 Keybinding|  Description|Command
 ----------|-------------|----------
-ctrl+1   |  focus on 1st editor group | workbench.action.focusFirstEditorGroup
-ctrl+2   |  focus on 2nd editor group | workbench.action.focusSecondEditorGroup
-alt+1    |  focus on file explorer    | workbench.view.explorer
-alt+2    |  focus on editor           |
+<kbd>ctrl</kbd>+<kbd>1</kbd>   |  focus on 1st editor group | workbench.action.focusFirstEditorGroup
+<kbd>ctrl</kbd>+<kbd>2</kbd>   |  focus on 2nd editor group | workbench.action.focusSecondEditorGroup
+<kbd>alt</kbd>+<kbd>1</kbd>    |  focus on file explorer    | workbench.view.explorer
+<kbd>alt</kbd>+<kbd>2</kbd>    |  focus on editor           |
 
 ## Build & Run
+
 Keybinding |  Description|Command
-----------|
-ctrl+shift+b | Build default task | workbench.action.tasks.build
+-----------|-------------|--------
+<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>b</kbd> | Build default task | workbench.action.tasks.build
                                         
+## Editor actions
+Keybinding |  Description|Command
+-----------|-------------|--------
+<kbd>ctrl</kbd>+<kbd>.</kbd> | quick fix | editor.action.quickfix
+<kbd>ctrl</kbd>+<kbd>space</kbd> | trigger suggest \| read more | editor.action.triggerSuggest
+<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>space</kbd> | trigger parameter hint | editor.action.triggerParameterHints
 
 ## References:
 
