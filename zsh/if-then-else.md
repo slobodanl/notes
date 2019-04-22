@@ -25,5 +25,9 @@ if [[ $1 = "--wait" ]]; then
 fi
 ```
 Please note that `=` is preferred over `==`, the later is used for pattern matching
+
+## Arithmatic comparision
+Use `-eq`, `-ne`, `-lt`, `-le`, `-gt`, or `-ge` only for arithmatic comparisions and when you are comparing numbers.
+_these will not work with strings_{.info .warn}
 * * *
 Creation date: _2019-04-19_
