@@ -92,8 +92,8 @@ This is apparantly an **ERROR**{.red}, since we manually set the default mime to
 
 **Investigation:**
 ``` sh
-# To see trace logs use the following
-sh -x /usr/bin/xdg-mime query default application/pdf
+# To see trace logs use the following command:
+ﰲ sh -x /usr/bin/xdg-mime query default application/pdf
 ```
 
 1. `zathura-pdf-poppler.desktop` was not correct and trace showed that since it fails it tries to fallback to something else
