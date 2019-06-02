@@ -63,9 +63,37 @@ __epub__{.ct}
 # ﰲ xdg-mime query default application/epub+zip
 #   calibre-gui.desktop
 #
-# 
+# The issue is that since `okularApplication_md.desktop` is not present xdg-open fallsback to a 
+# default application for opening epubs to fix this either change
+# [Default Applications]                                                           
+# application/epub+zip=calibre-ebook-viewer.desktop
+# or
 
+ﰲ xdg-mime default calibre-ebook-viewer.desktop application/epub+zip
 ```
+
+__pdf__{.ct}
+``` sh
+ﰲ xdg-mime query filetype ~/Downloads/pdf/awk_cheatsheets.pdf
+  application/pdf
+ﰲ xdg-mime query default application/pdf  
+  wine-extension-pdf.desktop
+
+# looking at ~/.config/mimeapps.list
+# [Added Associations]
+# application/pdf=org.pwmt.zathura-pdf-poppler.desktop;org.gnome.Evince.desktop;zathura-pdf-poppler.desktop;evince.desktop;okularApplication_pdf.desktop;
+# [Default Applications]
+# application/pdf=zathura-pdf-poppler.desktop
+ﰲ xdg-mime default zathura-pdf-poppler.desktop application/pdf
+  wine-extension-pdf.desktop
+```
+This is apparantly an **ERROR**{.red}, since we manually set the default mime to `zathura-pdf-poppler.desktop`
+
+**Investigation:**
+1. `zathura-pdf-poppler.desktop` was not correct and `strace` showed that since it fails it tries to fallback to something else
+2. `wine-extension-pdf.desktop` was comming from `~/.local/share/applications/mimeinfo.cache` who has maintained that file is still unknown.
+3. Removing that row from that file caused a fallback to `calibre-gui.desktop` and that was comming from `/usr/local/share/applications/mimeinfo.cache`
+4. These files can be updated by `update-desktop-database` command but they should be manually proned
 
 * * *
 Creation date: _2019-06-02_
