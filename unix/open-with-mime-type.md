@@ -8,6 +8,22 @@ Separate `mimeapps.list` files exist to handle user-specific, system-specific an
 xdg-mime query default inode/directory
 ```
 
+Changing default folder open with:
+
+__Using thunar__{.ct}
+``` sh
+xdg-mime default Thunar.desktop inode/directory application
+xdg-open .
+```
+__Using nautil__{.ct}
+``` sh
+xdg-mime default nautilus.desktop inode/directory application
+xdg-open .
+```
+
+The changes will be written to : `~/.config/mimeapps.list`
+
+
 * * *
 Creation date: _2019-06-02_
 
