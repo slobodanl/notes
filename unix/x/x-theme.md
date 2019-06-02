@@ -12,10 +12,14 @@ sudo apt install mate-control-center
 
 Others are:
 1. lxappearance
-1. gtk-theme-config
-1. gtk-chtheme
-1. qtconfig-qt4
-1. xfce4-appearance-settings
+2. gtk-theme-config
+3. gtk-chtheme
+4. qtconfig-qt4
+5. xfce4-appearance-settings
+6. gnome-tweak-tool:
+    ``` sh
+    sudo apt install gnome-tweak-tool
+    ```
 
 ## Changing cursor
 All the programs should be restarted for cursor to be effective
