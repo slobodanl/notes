@@ -85,16 +85,34 @@ __pdf__{.ct}
 # [Default Applications]
 # application/pdf=zathura-pdf-poppler.desktop
 ﰲ xdg-mime default zathura-pdf-poppler.desktop application/pdf
+ﰲ xdg-mime query default application/pdf
   wine-extension-pdf.desktop
 ```
 This is apparantly an **ERROR**{.red}, since we manually set the default mime to `zathura-pdf-poppler.desktop`
 
 **Investigation:**
-1. `zathura-pdf-poppler.desktop` was not correct and `strace` showed that since it fails it tries to fallback to something else
+``` sh
+# To see trace logs use the following
+sh -x /usr/bin/xdg-mime query default application/pdf
+```
+
+1. `zathura-pdf-poppler.desktop` was not correct and trace showed that since it fails it tries to fallback to something else
 2. `wine-extension-pdf.desktop` was comming from `~/.local/share/applications/mimeinfo.cache` who has maintained that file is still unknown.
 3. Removing that row from that file caused a fallback to `calibre-gui.desktop` and that was comming from `/usr/local/share/applications/mimeinfo.cache`
 4. These files can be updated by `update-desktop-database` command but they should be manually proned
+5. Manually fixing again:
+``` sh
+ﰲ locate zathura-pdf-poppler.desktop
+  /usr/share/app-install/desktop/zathura:zathura-pdf-poppler.desktop
+  /usr/share/applications/org.pwmt.zathura-pdf-poppler.desktop
 
+# Apparantly that desktopfile didn't exists at all
+
+ﰲ xdg-mime default org.pwmt.zathura-pdf-poppler.desktop application/pdf
+ﰲ xdg-mime query default application/pdf
+  org.pwmt.zathura-pdf-poppler.desktop
+```
+__Apparantly there are other places that `xdg-mime` uses for fallback such as:<br>`~/.local/share/applications/mimeinfo.cache`<br>`/usr/local/share/applications/mimeinfo.cache`<br>These files are updated automatically by `sudo update-desktop-database`<br>The best way to findout about where an association is comming from is by running `sh -x /usr/bin/xdg-mime query default application/pdf`__{.note .red}
 * * *
 Creation date: _2019-06-02_
 
