@@ -1,5 +1,5 @@
 _Written by: Reza Shams Amiri_
-# gdrive google drive
+# Google Drive installation
 
 ## Install
 ``` sh
