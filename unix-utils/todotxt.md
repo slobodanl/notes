@@ -1,18 +1,38 @@
 # Todotxt.Md
-# Todotxt.Md
-* * *
 
-#internal commands:
+## Apps:
 
+1. [Todour | nerdur.com][TNC]
+    ``` sh
+    ﰲ Todour    
+    ```
+
+# Internal commands:
 ``` sh
-t lsa
-t ls
+ﰲ t lsa
+ﰲ t ls
+ﰲ t ls +queue
 
-t rm item#
-t del item#
+ﰲ t rm <item number>
+ﰲ t del <item number>
 
+ﰲ t edit <item number>
+
+ﰲ t done <item number>
+
+ﰲ t undo
+ﰲ t undo <item number>
+
+ﰲ t archive
+
+ﰲ t aa +queue "document todo txt"
+
+    107 2019-06-03 +queue document todo txt
+    TODO: 107 added.
+    107 (A) 2019-06-03 +queue document todo txt
+    TODO: 107 prioritized (A).
 ```
-#[Addons](https://github.com/todotxt/todo.txt-cli/wiki/Todo.sh-Add-on-Directory):
+# [Todo.sh Add on Directory · todotxt/todo.txt-cli Wiki · GitHub][TSAODTTTCWG]:
 List your Todo.sh add-ons here. Include a short description and a link to the 
 GitHub repository or other location.
 
@@ -204,3 +224,6 @@ TODO: No tasks were deleted.
 
 * * *
 2018-08-25 14:51:14
+
+[TNC]: https://nerdur.com/todour-pl/
+[TSAODTTTCWG]: https://github.com/todotxt/todo.txt-cli/wiki/Todo.sh-Add-on-Directory
