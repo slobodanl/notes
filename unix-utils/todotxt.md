@@ -8,6 +8,7 @@
     ```
 
 # Internal commands:
+
 ``` sh
 ﰲ t lsa
 ﰲ t ls
@@ -25,12 +26,39 @@
 
 ﰲ t archive
 
+# List all tasks by project
+ﰲ t lsgp
+```
+
+__aa__{.ct}
+``` sh
 ﰲ t aa +queue "document todo txt"
 
     107 2019-06-03 +queue document todo txt
     TODO: 107 added.
     107 (A) 2019-06-03 +queue document todo txt
     TODO: 107 prioritized (A).
+```
+
+__lsprj__{.ct}
+``` sh
+ﰲ t lsprj
+    ...
+    +tothink
+    +unix
+    +userapi
+    +wiki
+    +work
+```
+__last__{.ct}
+``` sh
+ﰲ t last
+    ...
+    102 2019-06-03 Why have you eaten!!!! :<  +queue
+    103 2019-06-03 2019-05-06   +queue get an ebike
+    104 (A) 2019-06-03 +wiki Add a blob reference link to the pages
+    --
+    TODO: 10 of 104 tasks shown
 ```
 # [Todo.sh Add on Directory · todotxt/todo.txt-cli Wiki · GitHub][TSAODTTTCWG]:
 List your Todo.sh add-ons here. Include a short description and a link to the 
