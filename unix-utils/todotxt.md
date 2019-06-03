@@ -26,8 +26,11 @@
 
 ﰲ t archive
 
-# List all tasks by project
+#  List all tasks by project 
 ﰲ t lsgp
+
+# Project view
+ﰲ t pv
 ```
 
 __aa__{.ct}
