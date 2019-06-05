@@ -52,7 +52,6 @@ class Node{
     + type
     - _sort
     - _version
-    - _children
     + timestamp
     + settings
     + annotations
@@ -69,9 +68,21 @@ class Node{
     <&eye> new
     <&eye> dirty
 }
+Node "0..*" <- Node: _children
 class Root{
     ID = 'root'
     <&eye> dirty :False
+}
+class TopLevelNode{
+    - _TYPE = None
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True)
+    <&pencil> color
+    <&pencil> archived
+    <&pencil> pinned
+    <&pencil> title
+    <&eye> url
+    <&eye> blobs: [Blob...]
 }
 class Blob{
     _blob_type_map: NodeBlob
@@ -81,9 +92,27 @@ class Blob{
     - _load(raw)
     + save(clean=True)
 }
-
+class ListItem{
+    + parent_item
+    + parent_server_id
+    + super_list_item_id
+    + prev_super_list_item_id
+    + _checked = False
+    - _load(raw)
+    + save(clean=True)
+    + add(text, checked=False, sort=None) : Node
+    + indent(node, dirty=True)
+    + dedent(node, dirty=True)
+    <&eye> subitems
+    <&eye> indented
+    <&pencil> checked
+    - __str__()
+}
 Node <|-- Root
 Node <|-- Blob
+Node <|-- TopLevelNode
+Node <|-- ListItem
+Node "0..*" <-- ListItem: _subitems
 ```
 
 * * *
