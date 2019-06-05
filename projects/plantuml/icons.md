@@ -12,6 +12,12 @@ class test{
 }
 ```
 ``` uml
+skinparam {
+    DefaultFontName Aapex
+    BackgroundColor FFFFEE
+    DefaultFontSize 20
+}
+
 class test{
     <&pencil> property
     <&wrench> overwrite
