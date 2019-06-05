@@ -1,6 +1,6 @@
 _Written by: Reza Shams Amiri_
 # reminders
-
+Syncing reminders
 ``` uml
 skinparam {
     FontName Aapex
@@ -13,9 +13,10 @@ Participant Keep as keep
 Participant ReminderAPI as rapi
 autoactivate on
 u->keep: sync()
-
+== get all changes from reminder API==
 keep->rapi: list()
 rapi-->keep: changes
+== Pars tasks ==
 keep->keep #ff5500: _parseTasks(<b>changes</b>)
 
 ```
