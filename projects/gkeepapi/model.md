@@ -40,10 +40,36 @@ class NodeDrawing{
     <&wrench> _load(raw)
     <&wrench> save(clean=True)
 }
+class NodeLabels{
+    - _labels
+    - _load(raw)
+    + save(clean=True)
+    + add(label)
+    + remove(label)
+    + get(label_id)
+    + all()
+}
+class NodeAnnotations{
+    - _annotations
+    - __len__()
+    + {static} from_json(cls, raw) : Annotation
+    + all():[Annotation...]
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True)
+    - _get_category_node():Category
+    <&pencil> category:Category
+    <&eye> links: [WebLink...]
+    + append(annotation): Annotation
+    + remove(annotation)
+    <&wrench> dirty
+}
 Element <|-- NodeBlob
+Element <|-- NodeAnnotations
+Element <|-- NodeLabels
 NodeBlob <|-- NodeAudio
 NodeBlob <|-- NodeImage
 NodeBlob <|-- NodeDrawing
+
 class Node{
     + Node parent
     + id
