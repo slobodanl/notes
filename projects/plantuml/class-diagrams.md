@@ -1,7 +1,8 @@
 _Written by: Reza Shams Amiri_
-# classdiagrams
+# Class Diagrams
 
-Start your content here...
+1. [Class Diagram syntax and features][CDSAF]
+
 __class diagrams__{.ct}
 ``` sh
 enum BlobType{
@@ -71,3 +72,5 @@ Element <|-- NodeBlob
 
 * * *
 Creation date: _2019-06-05_
+
+[CDSAF]: http://plantuml.com/class-diagram
