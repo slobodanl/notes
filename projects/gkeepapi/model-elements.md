@@ -1,5 +1,5 @@
 _Written by: Reza Shams Amiri_
-# model
+# Elements
 
 ``` uml
 skinparam {
@@ -63,9 +63,57 @@ class NodeAnnotations{
     + remove(annotation)
     <&wrench> dirty
 }
+class NodeCollaborators{
+    - _collaborators
+    - __len__()
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True)
+    + add(email)
+    + remove(email)
+    + all()
+
+}
+class NodeTimestamps{
+    + TZ_FMT = '%Y-%m-%dT%H:%M:%S.%fZ'
+    - _created
+    - _deleted
+    - _created
+    - _updated
+    - _edited
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True)
+    + {static} str_to_dt(cls, tzs) : datetime
+    + {static} int_to_dt(cls, tz) : datetime
+    + {static} dt_to_str(cls, dt) : string
+    + {static} int_to_str(cls, tz) : string
+    <&pencil> created
+    <&pencil> deleted
+    <&pencil> trashed
+    <&pencil> updated
+    <&pencil> edited
+}
+class Annotation{
+    + id
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True) : Annotation
+    + {static} _generateAnnotationId(cls)
+}
+class NodeSettings{
+    - _new_listitem_placement
+    - _graveyard_state
+    - _checked_listitems_policy
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True) : Annotation
+    <&pencil> new_listitem_placement
+    <&pencil> graveyard_state
+    <&pencil> checked_listitems_policy
+}
 Element <|-- NodeBlob
 Element <|-- NodeAnnotations
 Element <|-- NodeLabels
+Element <|-- NodeCollaborators
+Element <|-- NodeTimestamps
+Element <|-- Annotation
 NodeBlob <|-- NodeAudio
 NodeBlob <|-- NodeImage
 NodeBlob <|-- NodeDrawing
