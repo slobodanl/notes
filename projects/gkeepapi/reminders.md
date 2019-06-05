@@ -3,7 +3,6 @@ _Written by: Reza Shams Amiri_
 Syncing reminders
 ``` uml
 skinparam {
-    FontName Aapex
     DefaultFontName Aapex
     BackgroundColor FFFFEE
     DefaultFontSize 16
