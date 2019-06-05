@@ -108,16 +108,65 @@ class NodeSettings{
     <&pencil> graveyard_state
     <&pencil> checked_listitems_policy
 }
+class NodeDrawingInfo{
+    + drawing_id
+    + snapshot: NodeImage
+    - _snapshot_fingerprint
+    - _thumbnail_generated_time: datetime
+    - _ink_hash
+    - _snapshot_proto_fprint
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True) : Annotation
+}
 Element <|-- NodeBlob
 Element <|-- NodeAnnotations
 Element <|-- NodeLabels
 Element <|-- NodeCollaborators
 Element <|-- NodeTimestamps
 Element <|-- Annotation
+Element <|-- NodeSettings
+Element <|-- NodeDrawingInfo
 NodeBlob <|-- NodeAudio
 NodeBlob <|-- NodeImage
 NodeBlob <|-- NodeDrawing
 
+class TaskAssist{
+    - _suggest
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True) : Annotation
+    <&eye> suggest
+}
+class Category{
+    - _category
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True) : Category
+    <&eye> category
+}
+class Context{
+    - _entries
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True) : Context
+    + all()
+    <&eye> dirty
+}
+class WebLink{
+    - _title
+    - _url
+    - _image_url
+    - _provenance_url
+    - _description
+    <&wrench> _load(raw)
+    <&wrench> save(clean=True) : WebLink
+    <&pencil> title
+    <&pencil> url
+    <&pencil> image_url
+    <&pencil> provenance_url
+    <&pencil> description
+}
+Annotation <|-- TaskAssist
+Annotation <|-- Category
+Annotation <|-- Context
+Annotation <|-- WebLink
 ```
 
 * * *
