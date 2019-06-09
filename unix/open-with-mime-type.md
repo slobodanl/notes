@@ -133,7 +133,7 @@ code.desktop
 ```
 # Question:
 Do we have a graphical MIME editor?
-```
+
 
 
 * * *
