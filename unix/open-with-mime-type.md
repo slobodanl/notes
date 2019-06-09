@@ -19,7 +19,7 @@ Separate `mimeapps.list` files exist to handle user-specific, system-specific an
 ```
 
 __The desktop files exists in `/usr/share/applications/`, when using `xdg-mime` make sure that the desktop file exists, otherwise you might get unexpected results__{.info .warn}
-
+__In addition to the above method, you can also query the mimetype using the following commands:<br> `file --mime-type -b ~/Downloads/citation-6737405.txt`__{.info .ok}
 ## Example:
 Changing default folder open with:
 
@@ -46,6 +46,7 @@ __Some times you need to update `~/.local/share/mime` for changes to be effectiv
 
 ## Other examples:
 
+### epub
 __epub__{.ct}
 ``` sh
 # Looking at ~/.config/mimeapps.list , shows:
@@ -72,6 +73,7 @@ __epub__{.ct}
 ﰲ xdg-mime default calibre-ebook-viewer.desktop application/epub+zip
 ```
 
+### pdf
 __pdf__{.ct}
 ``` sh
 ﰲ xdg-mime query filetype ~/Downloads/pdf/awk_cheatsheets.pdf
@@ -113,6 +115,25 @@ This is apparantly an **ERROR**{.red}, since we manually set the default mime to
   org.pwmt.zathura-pdf-poppler.desktop
 ```
 __Apparantly there are other places that `xdg-mime` uses for fallback such as:<br>`~/.local/share/applications/mimeinfo.cache`<br>`/usr/local/share/applications/mimeinfo.cache`<br>These files are updated automatically by `sudo update-desktop-database`<br>The best way to findout about where an association is comming from is by running `sh -x /usr/bin/xdg-mime query default application/pdf`__{.note .red}
+
+### text
+
+__pdf__{.ct}
+``` sh
+ﰲ xdg-mime query filetype ~/Downloads/citation-6737405.txt
+  text/plain
+
+ﰲ xdg-mime query default text/plain
+  calibre-gui.desktop
+  
+ﰲ xdg-mime default code.desktop text/plain
+
+ﰲ xdg-mime query default text/plain
+code.desktop
+```
+# Question:
+Do we have a graphical MIME editor?
+```
 * * *
 Creation date: _2019-06-02_
 
