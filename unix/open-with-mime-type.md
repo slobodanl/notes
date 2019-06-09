@@ -6,15 +6,15 @@ Separate `mimeapps.list` files exist to handle user-specific, system-specific an
 
 ``` sh
 ## setting
-ﰲ xdg-mime default <opener-shortcut>.desktop inode/directory application
+ xdg-mime default <opener-shortcut>.desktop inode/directory application
 
 ## querying
-ﰲ xdg-mime query default inode/directory
+ xdg-mime query default inode/directory
 
 ## Identifying the mime type
-ﰲ xdg-mime query filetype ~/Downloads/pdf/silence.epub
+ xdg-mime query filetype ~/Downloads/pdf/silence.epub
   application/epub+zip
-ﰲ xdg-mime query default application/epub+zip
+ xdg-mime query default application/epub+zip
   calibre-gui.desktop
 ```
 
@@ -25,24 +25,24 @@ Changing default folder open with:
 
 __Using thunar__{.ct}
 ``` sh
-ﰲ xdg-mime default Thunar.desktop inode/directory application
-ﰲ xdg-open .
+ xdg-mime default Thunar.desktop inode/directory application
+ xdg-open .
 
-ﰲ xdg-mime query default inode/directory
+ xdg-mime query default inode/directory
   Thunar.desktop
 ```
 __Using nautilus__{.ct}
 ``` sh
-ﰲ xdg-mime default org.gnome.Nautilus.desktop inode/directory application
-ﰲ xdg-open .
+ xdg-mime default org.gnome.Nautilus.desktop inode/directory application
+ xdg-open .
 
-ﰲ xdg-mime query default inode/directory
+ xdg-mime query default inode/directory
 org.gnome.Nautilus.desktop
 ```
 
 The changes will be written to : `~/.config/mimeapps.list`
 
-__Some times you need to update `~/.local/share/mime` for changes to be effective in different applications (ex: calibre). To do that you need to execute:<br><br>ﰲ `update-mime-database ~/.local/share/mime`__{.info .warn}
+__Some times you need to update `~/.local/share/mime` for changes to be effective in different applications (ex: calibre). To do that you need to execute:<br><br> `update-mime-database ~/.local/share/mime`__{.info .warn}
 
 ## Other examples:
 
@@ -53,32 +53,32 @@ __epub__{.ct}
 #
 # [Added Associations]
 # application/epub+zip=atril.desktop;okularApplication_md.desktop;calibre-ebook-edit.desktop;calibre-ebook-viewer.desktop;
-# [Default Applications]                                                           
+# [Default Applications]
 # application/epub+zip=okularApplication_md.desktop
-# 
+#
 # but :
-# ﰲ locate okularApplication_md.desktop
+#  locate okularApplication_md.desktop
 # shows okular is not installed
 #
-# and 
-# ﰲ xdg-mime query default application/epub+zip
+# and
+#  xdg-mime query default application/epub+zip
 #   calibre-gui.desktop
 #
-# The issue is that since `okularApplication_md.desktop` is not present xdg-open fallsback to a 
+# The issue is that since `okularApplication_md.desktop` is not present xdg-open fallsback to a
 # default application for opening epubs to fix this either change
-# [Default Applications]                                                           
+# [Default Applications]
 # application/epub+zip=calibre-ebook-viewer.desktop
 # or
 
-ﰲ xdg-mime default calibre-ebook-viewer.desktop application/epub+zip
+ xdg-mime default calibre-ebook-viewer.desktop application/epub+zip
 ```
 
 ### pdf
 __pdf__{.ct}
 ``` sh
-ﰲ xdg-mime query filetype ~/Downloads/pdf/awk_cheatsheets.pdf
+ xdg-mime query filetype ~/Downloads/pdf/awk_cheatsheets.pdf
   application/pdf
-ﰲ xdg-mime query default application/pdf  
+ xdg-mime query default application/pdf
   wine-extension-pdf.desktop
 
 # looking at ~/.config/mimeapps.list
@@ -86,8 +86,8 @@ __pdf__{.ct}
 # application/pdf=org.pwmt.zathura-pdf-poppler.desktop;org.gnome.Evince.desktop;zathura-pdf-poppler.desktop;evince.desktop;okularApplication_pdf.desktop;
 # [Default Applications]
 # application/pdf=zathura-pdf-poppler.desktop
-ﰲ xdg-mime default zathura-pdf-poppler.desktop application/pdf
-ﰲ xdg-mime query default application/pdf
+ xdg-mime default zathura-pdf-poppler.desktop application/pdf
+ xdg-mime query default application/pdf
   wine-extension-pdf.desktop
 ```
 This is apparantly an **ERROR**{.red}, since we manually set the default mime to `zathura-pdf-poppler.desktop`
@@ -95,7 +95,7 @@ This is apparantly an **ERROR**{.red}, since we manually set the default mime to
 **Investigation:**
 ``` sh
 # To see trace logs use the following command:
-ﰲ sh -x /usr/bin/xdg-mime query default application/pdf
+ sh -x /usr/bin/xdg-mime query default application/pdf
 ```
 
 1. `zathura-pdf-poppler.desktop` was not correct and trace showed that since it fails it tries to fallback to something else
@@ -104,14 +104,14 @@ This is apparantly an **ERROR**{.red}, since we manually set the default mime to
 4. These files can be updated by `update-desktop-database` command but they should be manually proned
 5. Manually fixing again:
 ``` sh
-ﰲ locate zathura-pdf-poppler.desktop
+ locate zathura-pdf-poppler.desktop
   /usr/share/app-install/desktop/zathura:zathura-pdf-poppler.desktop
   /usr/share/applications/org.pwmt.zathura-pdf-poppler.desktop
 
 # Apparantly that desktopfile didn't exists at all
 
-ﰲ xdg-mime default org.pwmt.zathura-pdf-poppler.desktop application/pdf
-ﰲ xdg-mime query default application/pdf
+ xdg-mime default org.pwmt.zathura-pdf-poppler.desktop application/pdf
+ xdg-mime query default application/pdf
   org.pwmt.zathura-pdf-poppler.desktop
 ```
 __Apparantly there are other places that `xdg-mime` uses for fallback such as:<br>`~/.local/share/applications/mimeinfo.cache`<br>`/usr/local/share/applications/mimeinfo.cache`<br>These files are updated automatically by `sudo update-desktop-database`<br>The best way to findout about where an association is comming from is by running `sh -x /usr/bin/xdg-mime query default application/pdf`__{.note .red}
@@ -120,15 +120,15 @@ __Apparantly there are other places that `xdg-mime` uses for fallback such as:<b
 
 __pdf__{.ct}
 ``` sh
-ﰲ xdg-mime query filetype ~/Downloads/citation-6737405.txt
+ xdg-mime query filetype ~/Downloads/citation-6737405.txt
   text/plain
 
-ﰲ xdg-mime query default text/plain
+ xdg-mime query default text/plain
   calibre-gui.desktop
-  
-ﰲ xdg-mime default code.desktop text/plain
 
-ﰲ xdg-mime query default text/plain
+ xdg-mime default code.desktop text/plain
+
+ xdg-mime query default text/plain
 code.desktop
 ```
 # Question:
