@@ -17,6 +17,10 @@ __notify each minute__{.ct}
 ``` sh
 */1 * * * * /bin/sh -c 'export DISPLAY=:0 && /home/existme/bin/dunstify -p "Runs each minutes" "... $(date)" -i "done-38"'
 ```
+__play a sound each minute__{.ct}
+``` sh
+*/1 * * * * /bin/sh -c 'export XDG_RUNTIME_DIR="/run/user/1000" && /home/existme/bin/,ding'
+```
 
 ## Logs
 To enable separate logging:
