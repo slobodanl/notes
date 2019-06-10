@@ -97,6 +97,14 @@ _Written by: Reza Shams Amiri_
     sudo journalctl --flush
     sudo journalctl --vacuum-time=1seconds
     ```
+1. **Show errors since boot**
+   * `-x` Augment log lines with explanation texts from the message catalog
+   * `-b` Show messages from a specific boot. If the boot ID is omitted, a positive offset will look up the boots starting from the beginning of the journal
+   * `-p` Filter output by message priorities or priority ranges. i.e: "emerg" (0), "alert" (1),"crit" (2), "err" (3), "warning" (4), "notice" (5), "info" (6), "debug" (7)
+   ``` sh
+   journalctl -xb -p err
+   ```
+
 ## Analyse
 
 1.  Analyze systemd boot process     
