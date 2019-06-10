@@ -1,7 +1,22 @@
 _Written by: Reza Shams Amiri_
 # crontab
-
+Editing crontab for the current user can be achieved by:
+``` sh
+sudo -E crontab -u $USER -e
+```
 ## Format
+
+## Run complex queries
+You can wrap the script as follows:
+```
+/bin/sh -c '<command>'
+```
+Examples:
+
+__notify each minute__{.ct}
+``` sh
+*/1 * * * * /bin/sh -c 'export DISPLAY=:0 && /home/existme/bin/dunstify -p "Runs each minutes" "... $(date)" -i "done-38"'
+```
 
 ## Logs
 To enable separate logging:
