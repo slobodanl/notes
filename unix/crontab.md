@@ -17,7 +17,7 @@ _System wide cron jobs_{.ct}
 #Ansible: Update certificates
 25 * * * * /opt/MyApp/scripts/refresh-cert.sh
 ```
-_System wide cron jobs_{.ct}
+_Current user's cron jobs_{.ct}
 ``` sh
  sudo crontab -l -u $USER
 
