@@ -48,21 +48,58 @@ _System wide cron jobs_{.ct}
 ```
 
 # Format
+**Syntax:**
+``` sh
+*  *  *  *  *  /path/to/script *
+1  2  3  4  5        6         7
+|  |  |  |  |        |         |+- Year
+|  |  |  |  |        +-- Command to run
+|  |  |  |  +---- Day of the Week   (Allowed Value: 0-6, 1 for Monday and so on)
+|  |  |  +------ Month of the Year (Allowed Value: 1-12, 1 for January and so on)
+|  |  +-------- Day of the Month  (Allowed Value: 1-31)
+|  +---------- Hour              (Allowed Value: 0-23)
++------------ Minute            (Allowed Value: 0-59)
+```
+The following picture is referenced from [https://www.markus-gattol.name/ws/time.html#cron][TCRSM] 
+![cron_schedule_a_command_format.png](/img/unix/cron_schedule_a_command_format.png)
 
-You can use different services for generating crontab jobs:
+You can use different services for **generating crontab**{.hl} jobs:
 1. [Crontab Generator][CGGCS]  - Generate crontab syntax
 2. [crontab.guru][CGTCSEE]  - the cron schedule expression editor
 3. [CRON tester][CTTYCD] - Test your CRON definition
 
-
-| Format | Meaning |
+## Some examples (see [ref][2UCETSCILBWHO])
+| Syntax | Meaning |
 | ------ | ------- |
 | `*/1 * * * *` | At every minute |
 | `  0 * * * *` | At minute 0 (**every hour**) |
 | `0 */6 * * *` | At minute 0 past every 6th hour (every 6 hour) |
 | `30 16 * * *` | At 16:30 every day |
+| `30-50/5 14 * * *` | At every 5 minutes starting at 2:30 pm and ending at 2:50 pm daily |
 | `0 22 * * 1-5` | At 22:00 on every day-of-week from Monday through Friday |
+| `45 18 * 1-4,8 5` | At 6:45 PM every Friday(5) in <br> January(1) through March(4) and August(8) |
 
+`crontab` also allows the following formats:
+| Keyword | Equivalent | Describe |
+| ------- | ---------- | -------- |
+| @yearly  | `0 0 1 1 *` | 0th minute of every year |
+| @monthly | `0 0 1 * *` | 00:00 on 1st of every month |
+| @daily   | `0 0 * * *` | 00:00 Every single day |
+| @hourly  | `0 * * * *` | Every hour |
+| @reboot  | `Run at startup` ||
+
+Run process after reboot can look like this:
+``` sh
+@reboot /home/ondrej/run_process.sh
+```
+## More about Crontab
+An example of ENV variables inside of Crontab job
+``` sh
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+HOME=/
+```
 ## Run complex queries
 
 You can wrap the script as follows:
@@ -131,3 +168,5 @@ Creation date: _2019-06-10_
 [CTTYCD]: http://cron.schlitt.info/index.php
 [LJSUCWWHWCISDTTSF]: https://serverfault.com/a/52338/447489
 [SRALUSGAWLOSU]: https://superuser.com/a/345051/285113
+[2UCETSCILBWHO]: https://best-web-hosting.org/linux-crontab-examples/
+[TCRSM]: https://www.markus-gattol.name/ws/time.html#cron
