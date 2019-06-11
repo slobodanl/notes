@@ -7,8 +7,47 @@ Editing crontab for the current user can be achieved by:
 ``` sh
 sudo -E crontab -u $USER -e
 ```
+**If `crontab -e` doesn't work for your user and you need to use sudo to access your crontab file (which is located in `/var/spool/cron/crontabs/`), you probably are not part of the `crontab` group.<br>Use:<br> `sudo sudo usermod -a -G crontab $USER` to add yourself to the `crontab` group.<br>If you don't want to logoff and logon for the group to be effective use [this hack][SRALUSGAWLOSU]**{.info .warn}
 
-## Format
+### Use `-l` flag to Display the current crontab:
+_System wide cron jobs_{.ct}
+``` sh
+ sudo crontab -l
+
+#Ansible: Update certificates
+25 * * * * /opt/MyApp/scripts/refresh-cert.sh
+```
+_System wide cron jobs_{.ct}
+``` sh
+ sudo crontab -l -u $USER
+
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+# */1 * * * * /bin/sh -c 'export DISPLAY=:0 && /home/existme/bin/dunstify -p "Run each five minutes" "... $(date)" -i "done-38"' >/dev/null 2>&1
+# */1 * * * * /bin/sh -c 'export XDG_RUNTIME_DIR="/run/user/1000" && /home/existme/bin/,ding' > /tmp/crontab.log
+```
+
+# Format
 
 You can use different services for generating crontab jobs:
 1. [Crontab Generator][CGGCS]  - Generate crontab syntax
@@ -50,7 +89,7 @@ To be able to use graphical UI `export DISPLAY=:0` should be preceded.
 
 To have sound `export XDG_RUNTIME_DIR="/run/user/1000"` should be preceded.
 
-## Logs
+# Logs
 
 To enable separate logging:
 
@@ -59,7 +98,7 @@ To enable separate logging:
 3. Restart cron service: service cron restart
 4. `lnav /var/log/cron.log`
 
-## Disable sending emails (See [ref][DTMABCCOALOULSN]):
+# Disable sending emails (See [ref][DTMABCCOALOULSN]):
 
 Either send the results to `>/dev/null 2>&1` or `> /tmp/mylog.log`
 
@@ -68,7 +107,7 @@ Either send the results to `>/dev/null 2>&1` or `> /tmp/mylog.log`
 
 */1 * * * * /bin/sh -c 'export XDG_RUNTIME_DIR="/run/user/1000" && /home/existme/bin/,ding' > /tmp/crontab.log
 ```
-## Running jobs if they are missed because computer is turned off (See [ref][LJSUCWWHWCISDTTSF])
+# Running jobs if they are missed because computer is turned off (See [ref][LJSUCWWHWCISDTTSF])
 To do that you need to use **`anacron`**, the file is located at `/etc/anacrontab`. Viewing `anacrontab` shows that it has:
 ``` sh
 # format: period delay job-identifier command
@@ -91,3 +130,4 @@ Creation date: _2019-06-10_
 [CGTCSEE]: https://crontab.guru
 [CTTYCD]: http://cron.schlitt.info/index.php
 [LJSUCWWHWCISDTTSF]: https://serverfault.com/a/52338/447489
+[SRALUSGAWLOSU]: https://superuser.com/a/345051/285113
