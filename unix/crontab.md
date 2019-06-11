@@ -1,6 +1,6 @@
 _Written by: Reza Shams Amiri_
 
-# crontab
+# CRONTAB
 
 Editing crontab for the current user can be achieved by:
 
@@ -11,16 +11,18 @@ sudo -E crontab -u $USER -e
 ## Format
 
 You can use different services for generating crontab jobs:
-1. [Crontab Generator - Generate crontab syntax][CGGCS]
-2. [crontab.guru - the cron schedule expression editor][CGTCSEE]
-3. [CRON tester - Test your CRON definition][CTTYCD]
+1. [Crontab Generator][CGGCS]  - Generate crontab syntax
+2. [crontab.guru][CGTCSEE]  - the cron schedule expression editor
+3. [CRON tester][CTTYCD] - Test your CRON definition
 
 
 | Format | Meaning |
 | ------ | ------- |
 | `*/1 * * * *` | At every minute |
-| `  0 * * * *` | At minute 0 (every hour) |
+| `  0 * * * *` | At minute 0 (**every hour**) |
 | `0 */6 * * *` | At minute 0 past every 6th hour (every 6 hour) |
+| `30 16 * * *` | At 16:30 every day |
+| `0 22 * * 1-5` | At 22:00 on every day-of-week from Monday through Friday |
 
 ## Run complex queries
 
@@ -66,7 +68,7 @@ Either send the results to `>/dev/null 2>&1` or `> /tmp/mylog.log`
 
 */1 * * * * /bin/sh -c 'export XDG_RUNTIME_DIR="/run/user/1000" && /home/existme/bin/,ding' > /tmp/crontab.log
 ```
-
+## Running jobs if they are missed because computer is turned off
 - - -
 
 Creation date: _2019-06-10_
@@ -74,4 +76,4 @@ Creation date: _2019-06-10_
 [CGGCS]: https://crontab-generator.org/
 [DTMABCCOALOULSN]: https://www.cyberciti.biz/faq/disable-the-mail-alert-by-crontab-command/
 [CGTCSEE]: https://crontab.guru
-[CTTYCD]: http://cron.schlitt.info/index.php?cron=*%2F10+*+*+*+*&iterations=10&test=Test
+[CTTYCD]: http://cron.schlitt.info/index.php
