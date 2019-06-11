@@ -68,7 +68,20 @@ Either send the results to `>/dev/null 2>&1` or `> /tmp/mylog.log`
 
 */1 * * * * /bin/sh -c 'export XDG_RUNTIME_DIR="/run/user/1000" && /home/existme/bin/,ding' > /tmp/crontab.log
 ```
-## Running jobs if they are missed because computer is turned off
+## Running jobs if they are missed because computer is turned off (See [ref][LJSUCWWHWCISDTTSF])
+To do that you need to use **`anacron`**, the file is located at `/etc/anacrontab`. Viewing `anacrontab` shows that it has:
+``` sh
+# format: period delay job-identifier command
+1	        5	cron.daily	run-parts --report /etc/cron.daily
+7	        10	cron.weekly	run-parts --report /etc/cron.weekly
+@monthly	15	cron.monthly	run-parts --report /etc/cron.monthly
+```
+The `5`, `10`, and `15` numbers shows that anacron will wait `5`, `10`, and `15` minutes after system startup to execute the symlink scripts in each of these folders:
+1. `/etc/cron.daily/`
+1. `/etc/cron.weekly/`
+1. `/etc/cron.monthly/`
+
+To read more about `anacron` just `vim /usr/share/doc/anacron/README.gz`
 - - -
 
 Creation date: _2019-06-10_
@@ -77,3 +90,4 @@ Creation date: _2019-06-10_
 [DTMABCCOALOULSN]: https://www.cyberciti.biz/faq/disable-the-mail-alert-by-crontab-command/
 [CGTCSEE]: https://crontab.guru
 [CTTYCD]: http://cron.schlitt.info/index.php
+[LJSUCWWHWCISDTTSF]: https://serverfault.com/a/52338/447489
