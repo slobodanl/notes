@@ -80,6 +80,7 @@ You can use different services for **generating crontab**{.hl} jobs:
 | `45 18 * 1-4,8 5` | At 6:45 PM every Friday(5) in <br> January(1) through March(4) and August(8) |
 
 `crontab` also allows the following formats:
+
 | Keyword | Equivalent | Describe |
 | ------- | ---------- | -------- |
 | @yearly  | `0 0 1 1 *` | 0th minute of every year |
