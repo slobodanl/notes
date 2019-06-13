@@ -1,6 +1,14 @@
 _Written by: Reza Shams Amiri_
 # Open with... mime-types
+## ﯦ TL/DR; Update: Easy method
+``` sh
+mimeopen -d ~/sample.pdf
+# select zathura
 
+xdg-open ~/sample.pdf
+```
+
+## Original method
 `xdg-mime` uses `mimeapps.list` to determine the default application to use.
 Separate `mimeapps.list` files exist to handle user-specific, system-specific and distribution-specific requirements. Their lookup order can be found here: [Association between MIME types and applications][ABMTAA]
 
