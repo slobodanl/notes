@@ -50,6 +50,17 @@ _Current user's cron jobs_{.ct}
 ```
 _BEWARE: `%` signs should be escaped in crontab they have special meaning there (newline).<br>The best way is to have a script running not writing complex bash commands_{.info .warn}
 # Format
+
+**NOTE for notification problems**:
+If notifications couldn't run from cron you need to include:
+``` sh
+$(dbus-launch)
+```
+in the crotab, something like this:
+``` sh
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-fH9SpDteIQ,guid=5709052da70a0b733220b72b5d03590
+```
+
 **Syntax:**
 ``` sh
 *  *  *  *  *  /path/to/script *
