@@ -24,13 +24,55 @@ _Written by: Reza Shams Amiri_
 ### ISSUES:
 1. [How to Install and Configure KVM on Ubuntu 18.04 LTS Server][HTIACKOU10LS]
     1. `libvirtbin` doesn't exists anymore instead use `libvirt-daemon-system` and `libvirt-clients`
-2. Proxy issues:
+2. Current user should be a member of `libvirt`
+3. Proxy issues:
+    Make sure that you remove proxies otherwise you will get problems like this:
     ``` sh
-    export no_proxy="localhost,127.0.0.1,localaddress,.domain.com,192.168.0.*"
+    Downloading Resources...
+    Progress: |====================>| 100.0%
+    Setting State...
+    Creating the VM...
+    Starting the VM...
+    Fetching VM Address...
+    Waiting for the VM...
+    FAILED
     ```
-    and in `/opt/jdk1.8.0_144/jre/lib/net.properties`
+    So do the following before you do `cf dev start`:
     ``` sh
-    http.nonProxyHosts=localhost|127.*|[::1]|0.0.0.0|192.168.0.* 
+    http_proxy= 
+    https_proxy=
+    HTTP_PROXY= 
+    HTTPS_PROXY=
+    ```
+    and you should see:
+    ``` sh
+    Downloading Resources...
+    Progress: |====================>| 100.0%
+    Setting State...
+    Creating the VM...
+    Starting the VM...
+    Fetching VM Address...
+    Waiting for the VM...
+    Deploying the BOSH Director...
+    Deploying CF...
+      Done (10m33s)
+
+          ██████╗███████╗██████╗ ███████╗██╗   ██╗
+         ██╔════╝██╔════╝██╔══██╗██╔════╝██║   ██║
+         ██║     █████╗  ██║  ██║█████╗  ██║   ██║
+         ██║     ██╔══╝  ██║  ██║██╔══╝  ╚██╗ ██╔╝
+         ╚██████╗██║     ██████╔╝███████╗ ╚████╔╝
+          ╚═════╝╚═╝     ╚═════╝ ╚══════╝  ╚═══╝
+                     is now running!
+
+        To begin using CF Dev, please run:
+            cf login -a https://api.dev.cfdev.sh --skip-ssl-validation
+
+        Admin user => Email: admin / Password: admin
+        Regular user => Email: user / Password: pass
+
+        To deploy a particular service, please run:
+            cf dev deploy-service <service-name> [Available services: mysql]
     ```
 ## CF Commands
 ``` sh
