@@ -21,6 +21,16 @@ _Written by: Reza Shams Amiri_
     ``` sh
     cf dev start -f <filepath/VERSION.tgz>
     ```
+### ISSUES:
+1. [How to Install and Configure KVM on Ubuntu 18.04 LTS Server][HTIACKOU10LS]
+2. Proxy issues:
+    ``` sh
+    export no_proxy="localhost,127.0.0.1,localaddress,.domain.com,192.168.0.*"
+    ```
+    and in `/opt/jdk1.8.0_144/jre/lib/net.properties`
+    ``` sh
+    http.nonProxyHosts=localhost|127.*|[::1]|0.0.0.0|192.168.0.* 
+    ```
 ## CF Commands
 ``` sh
 cf plugins
@@ -40,3 +50,4 @@ Creation date: _2019-06-14_
 [GCCTOCLCFCF]: https://github.com/cloudfoundry/cli#downloads
 [DPDPN]: https://network.pivotal.io/products/pcfdev
 [GCSSMASAFUDSOCFWSF]: https://github.com/cloudfoundry-samples/spring-music
+[HTIACKOU10LS]: https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/
