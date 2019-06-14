@@ -2,22 +2,41 @@ _Written by: Reza Shams Amiri_
 # Cloud Foundary PCF
 
 ## Installation
-PCF CLI [page][GCCTOCLCFCF]
-
-_Debian/Ubuntu installation_{.ct}
+1. Install PCF CLI [Instruction page][GCCTOCLCFCF]
+    _Debian/Ubuntu installation_{.ct}
+    ``` sh
+    # ...first add the Cloud Foundry Foundation public key and package repository to your system
+    wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+    echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+    # ...then, update your local package index, then finally install the cf CLI
+    sudo apt-get update
+    sudo apt-get install cf-cli
+    ```
+1. Install **cfdev** plugin
+    ``` sh
+    cf install-plugin cfdev
+    ```
+1. Download latest version of PCF Dev from [Pivotal Network][DPDPN]
+1. Start PCF Dev:
+    ``` sh
+    cf dev start -f <filepath/VERSION.tgz>
+    ```
+## CF Commands
 ``` sh
-# ...first add the Cloud Foundry Foundation public key and package repository to your system
-wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
-echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
-# ...then, update your local package index, then finally install the cf CLI
-sudo apt-get update
-sudo apt-get install cf-cli
+cf plugins
+
+cf dev start/stop
+
 ```
 
-
+## Deploying a sample app:
+1. Clone sample app: [spring-music][GCSSMASAFUDSOCFWSF]
+1. cd ./spring-music
 # References:
 
 * * *
 Creation date: _2019-06-14_
 
 [GCCTOCLCFCF]: https://github.com/cloudfoundry/cli#downloads
+[DPDPN]: https://network.pivotal.io/products/pcfdev
+[GCSSMASAFUDSOCFWSF]: https://github.com/cloudfoundry-samples/spring-music
