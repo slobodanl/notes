@@ -17,6 +17,7 @@ _Written by: Reza Shams Amiri_
 |||
 | <kbd>f</kbd> | Toggle fullscreen mode ||
 | <kbd>i</kbd> | Toggle Show indexes ||
+| <kbd>Tab</kbd> | Toggle Show indexes ||
 | <kbd>p</kbd> | Toggle presentation mode ||
 | <kbd>b</kbd> | Toggle status bar ||
 
