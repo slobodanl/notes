@@ -74,6 +74,28 @@ _Written by: Reza Shams Amiri_
         To deploy a particular service, please run:
             cf dev deploy-service <service-name> [Available services: mysql]
     ```
+## Deploy the app
+1. Login to PCF Dev:
+    ``` sh
+    https_proxy=
+    http_proxy=
+    cf login -a https://api.dev.cfdev.sh --skip-ssl-validation
+    
+    ```
+2. Get the sample app:
+    ``` sh
+    git clone https://github.com/cloudfoundry-samples/spring-music
+    cd ./spring-music
+    ```
+3. Deploy `spring-music` to the vm, for proxy stuff look at [this page][UPDBAPPD]:
+    ``` sh
+    export NO_PROXY=.dev.cfdev.sh,dev.cfdev.sh,$NO_PROXY
+    cf set-env spring-music HTTPS_PROXY $HTTPS_PROXY
+
+    cf push --hostname spring-music        
+    ```
+    You should get the following output [output.txt](/img/output.txt).
+    Then just browse to: [http://spring-music-chipper-civet.dev.cfdev.sh/][HSMCCDCS]
 ## CF Commands
 ``` sh
 cf plugins
@@ -82,9 +104,6 @@ cf dev start/stop
 
 ```
 
-## Deploying a sample app:
-1. Clone sample app: [spring-music][GCSSMASAFUDSOCFWSF]
-1. cd ./spring-music
 # References:
 
 * * *
@@ -94,3 +113,5 @@ Creation date: _2019-06-14_
 [DPDPN]: https://network.pivotal.io/products/pcfdev
 [GCSSMASAFUDSOCFWSF]: https://github.com/cloudfoundry-samples/spring-music
 [HTIACKOU10LS]: https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/
+[UPDBAPPD]: https://docs.pivotal.io/pcf-dev/proxy.html
+[HSMCCDCS]: http://spring-music-chipper-civet.dev.cfdev.sh/
