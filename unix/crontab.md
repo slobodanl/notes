@@ -42,11 +42,13 @@ _Current user's cron jobs_{.ct}
 # 
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
+# BEWARE: % signs should be escaped in crontab they have special meaning here (newline)
+#
 # m h  dom mon dow   command
-# */1 * * * * /bin/sh -c 'export DISPLAY=:0 && /home/existme/bin/dunstify -p "Run each five minutes" "... $(date)" -i "done-38"' >/dev/null 2>&1
-# */1 * * * * /bin/sh -c 'export XDG_RUNTIME_DIR="/run/user/1000" && /home/existme/bin/,ding' > /tmp/crontab.log
+*/5 * * * * /bin/sh -c 'export DISPLAY=:0 && /home/existme/bin/dunstify -p "Run each five minutes" "$(date +\%H:\%M)" -i "done-38"' >/tmp/crontab.log 2>&1
+*/5 * * * * /bin/sh -c 'export XDG_RUNTIME_DIR="/run/user/1000" && /home/existme/bin/,ding' > /tmp/crontab.log 2>&1
 ```
-
+_BEWARE: `%` signs should be escaped in crontab they have special meaning there (newline).<br>The best way is to have a script running not writing complex bash commands_{.info .warn}
 # Format
 **Syntax:**
 ``` sh
