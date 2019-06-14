@@ -94,7 +94,7 @@ _Written by: Reza Shams Amiri_
 
     cf push --hostname spring-music        
     ```
-    You should get the following output [output.txt](/img/output.txt).
+    You should get the following output [output.txt](/img/cloud-foundary-pcf/output.txt).
     Then just browse to: [http://spring-music-chipper-civet.dev.cfdev.sh/][HSMCCDCS]
 ## CF Commands
 ``` sh
