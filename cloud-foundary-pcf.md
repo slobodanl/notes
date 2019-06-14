@@ -23,6 +23,7 @@ _Written by: Reza Shams Amiri_
     ```
 ### ISSUES:
 1. [How to Install and Configure KVM on Ubuntu 18.04 LTS Server][HTIACKOU10LS]
+    1. `libvirtbin` doesn't exists anymore instead use `libvirt-daemon-system` and `libvirt-clients`
 2. Proxy issues:
     ``` sh
     export no_proxy="localhost,127.0.0.1,localaddress,.domain.com,192.168.0.*"
