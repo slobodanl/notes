@@ -31,12 +31,12 @@ Shortcut                   | Descrtiption
 # User interface:
 1. Errors will be colored in red
 2. Earnings will be yellow
-3. Right side:
-    has a proportionally sized ‘scrollbar’ that shows:
-    ![lnav-hits.png](/img/unix/lnav-hits.png)   
+3. **Right side**:   
+    has a proportionally sized ‘scrollbar’ that shows:   
    1.  your current position in the file
    2.  the locations of errors/warnings in the log files by using a red or yellow coloring
    3.  the locations of search hits by using a tick-mark pointing to the left!
+    ![lnav-hits.png](/img/unix/lnav-hits.png#3dt)   
 # References
 1. [lnav Documentation Release 0.8.5][TNE]
 * * *
