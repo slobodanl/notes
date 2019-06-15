@@ -28,5 +28,18 @@ Shortcut                   | Descrtiption
 <kbd>I</kbd>                  | Switch between the log and histogram views while keeping the time displayed at the top of each view in sync.
 <kbd>?</kbd>                  | Display the help page
 
+# User interface:
+1. Errors will be colored in red
+2. Earnings will be yellow
+3. Right side:
+    has a proportionally sized ‘scrollbar’ that shows:
+    ![lnav-hits.png](/img/unix/lnav-hits.png)   
+   1.  your current position in the file
+   2.  the locations of errors/warnings in the log files by using a red or yellow coloring
+   3.  the locations of search hits by using a tick-mark pointing to the left!
+# References
+1. [lnav Documentation Release 0.8.5][TNE]
 * * *
 Creation date: _2019-01-21_
+
+[TNE]: https://buildmedia.readthedocs.org/media/pdf/lnav/latest/lnav.pdf
