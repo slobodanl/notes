@@ -37,6 +37,9 @@ Shortcut                   | Descrtiption
    2.  the locations of errors/warnings in the log files by using a red or yellow coloring
    3.  the locations of search hits by using a tick-mark pointing to the left!
     ![lnav-hits.png](/img/unix/lnav-hits.png#3dt)![lnav-search-hits.png](/img/unix/lnav-search-hits.png)
+
+4. LNAV status bars
+    ![lnav-status.png](/img/unix/lnav-status.png)
 # References
 1. [lnav Documentation Release 0.8.5][TNE]
 * * *
