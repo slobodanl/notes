@@ -102,21 +102,6 @@ _Written by: Reza Shams Amiri_
 
 | Command | Desc |
 | ------- | ---- |
-| ,pkg-graph    | Visualizes the dependency graph for a package |
-|               |  `,dpkg-graph ssh` |
-| ,pkg-info     | Shows information about a **not installed** package |
-|               |  `,pkg-info wmpinboard` |
-|               |  `,pkg-info` <kbd>enter</kbd> |
-| ,pkg-info{.hl}| Tries to find a file within **not installed** packages |
-|               |  `,pkg-find otfinfo` |
-|               |  `,pkg-find` <kbd>enter</kbd> (very slow) |
-|               | **EQ:** `apt-file search $1` |
-| asf           | Uses `fzf` to list all files **installed** by packages |
-|               |  `asf` <kbd>Enter</kbd> and search for `_apt` |
-| aps         | Alias for `aptitude search`, searches in not installed packages |
-|               |  `aps pinboard`|
-| dq            | Query an installed package and list its files |
-|               |  `dq yelp` |
 
 ## Browser lunch commands
 | Command | Desc |
@@ -140,22 +125,61 @@ _Written by: Reza Shams Amiri_
 | ------- | ---- |
 | ,build        | download, pull, and build some popular packages from Github.|
 |               |examples: i3, dunst, surf... **Usage:** `,build i3`  |
-| ,fonts        | Show all installed fonts in a rofi dialog |
-|               |  `,fonts i3` |
 | ,font-test    | Print out all supported codepages for the current font |
 | ,font-c2u     | Converts a character to it's unicode equivalent |
 |               |  `,font-c2u ` |
-| ,icon         | Pick and apply a new icon set to WM|
-| ,emoji        | Show emojis in a rofi dialog |
-| ,symbol-delimeter | Shows the shell prompt with several delimiters |
 | ,toggle-notifications | Enable/disable desktop notifications |
-| toggle-loudness | Toggle override loudness for headphones |
+|  |  |
+| takenote <kbd>tab</kbd> | edit ~/notes/*.md files using vim and fzf  |
 
 ## Utility commands
 | Command | Desc |
 | ------- | ---- |
-| ,ss     | services state change script |
-
+|**File related**||
+| `,show-permission` | show access rights of a file/folder in the octal value format |
+|||
+|**Package related**||
+| `,pkg-graph`    | Visualizes the dependency graph for a package |
+|               |  `,dpkg-graph ssh` |
+| `,pkg-info`     | Shows information about a **not installed** package |
+|               |  `,pkg-info wmpinboard` |
+|               |  `,pkg-info` <kbd>enter</kbd> |
+| `,pkg-info{.hl}`| Tries to find a file within **not installed** packages |
+|               |  `,pkg-find otfinfo` |
+|               |  `,pkg-find` <kbd>enter</kbd> (very slow) |
+|               | **EQ:** `apt-file search $1` |
+| `asf`           | Uses `fzf` to list all files **installed** by packages |
+|               |  `asf` <kbd>Enter</kbd> and search for `_apt` |
+| `aps`         | Alias for `aptitude search`, searches in not installed packages |
+|               |  `aps pinboard`|
+| `dq`            | Query an installed package and list its files |
+|               |  `dq yelp` |
+|||
+|**Service related**||
+| `,s`     | Show/rotate logs for different services using a rofi dialog|
+| `,ss`     | services state change script |
+|||
+| **Misc**||
+| `,se`     | Translate Swedish -> English using Google translate |
+| `,es`     | Translate English -> Swedish using Google translate |
+|||
+| `,speed` | Check the speed of download and upload using speedtest.net|
+|||
+|**Theme related**||
+| `,fonts`        | Show all installed fonts in a rofi dialog |
+|               |  `,fonts i3` |
+| `,icon`         | Pick and apply a new icon set to WM. If that's not enough change using `lxappearance` (restart thunar)|
+| `,switch-prompt` | Switch prompt in a rofi dialog|
+|||
+| **Symbols** ||
+| `,symbol-delimeter` | Shows the shell prompt with several delimiters |
+| `,dotcolors` |show dots in various colors|
+|||
+|**Sound related**||
+| `,select-sound-card` | Select different sound card options in a rofi dialog |
+| `toggle-loudness` | Toggle override loudness for headphones |
+| `,audible-convert`| Convert audible file to mp3 and store it in Dropbox|
+| `,ding` ||
 - - -
 
 Creation date: _2018-10-28_
