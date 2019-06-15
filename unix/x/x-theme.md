@@ -20,6 +20,7 @@ Others are:
     ``` sh
     sudo apt install gnome-tweak-tool
     ```
+7. gnome-tweaks
 
 ## Changing cursor
 All the programs should be restarted for cursor to be effective
