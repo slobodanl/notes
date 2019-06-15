@@ -145,6 +145,7 @@ _Written by: Reza Shams Amiri_
 | ,font-test    | Print out all supported codepages for the current font |
 | ,font-c2u     | Converts a character to it's unicode equivalent |
 |               |  `,font-c2u ` |
+| ,icon         | Pick and apply a new icon set to WM|
 | ,emoji        | Show emojis in a rofi dialog |
 | ,symbol-delimeter | Shows the shell prompt with several delimiters |
 | ,toggle-notifications | Enable/disable desktop notifications |
