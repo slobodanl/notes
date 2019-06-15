@@ -40,6 +40,23 @@ Shortcut                   | Descrtiption
 
 4. LNAV status bars
     ![lnav-status.png](/img/unix/lnav-status.png)
+
+# Log formats
+``` sh
+ ls ~/.lnav/formats/
+
+/home/existme/.lnav/formats/
+├── default
+│   ├── default-formats.json.sample
+│   ├── dhclient-summary.lnav
+│   ├── dump-pid.sh
+│   ├── lnav-pop-view.lnav
+│   ├── partition-by-boot.lnav
+│   └── search-for.lnav
+└── installed
+
+```
+
 # References
 1. [lnav Documentation Release 0.8.5][TNE]
 * * *
