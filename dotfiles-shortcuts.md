@@ -176,7 +176,7 @@ _Written by: Reza Shams Amiri_
 | `,symbol-delimeter` | Shows the shell prompt with several delimiters |
 | `,dotcolors` |show dots in various colors|
 |||
-|**Sound related**||
+|_Sound related_{.f1}||
 | `,select-sound-card` | Select different sound card options in a rofi dialog |
 | `toggle-loudness` | Toggle override loudness for headphones |
 | `,audible-convert`| Convert audible file to mp3 and store it in Dropbox|
