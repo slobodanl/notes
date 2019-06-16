@@ -155,7 +155,7 @@ _Written by: Reza Shams Amiri_
 | `dq`            | Query an installed package and list its files |
 |               |  `dq yelp` |
 |||
-|**Service related**||
+|_Service_{.f2}||
 | `,s`     | Show/rotate logs for different services using a rofi dialog|
 | `,ss`     | services state change script |
 |||
@@ -165,14 +165,14 @@ _Written by: Reza Shams Amiri_
 |||
 | `,speed` | Check the speed of download and upload using speedtest.net|
 |||
-|**Theme related**||
+|_Theme_{.f1}||
 | `,fonts`        | Show all installed fonts in a rofi dialog |
 |               |  `,fonts i3` |
 | `,font-test`        | Show all characters in nerd fonts |
 | `,icon`         | Pick and apply a new icon set to WM. If that's not enough change using `lxappearance` (restart thunar)|
 | `,switch-prompt` | Switch prompt in a rofi dialog|
 |||
-| **Symbols** ||
+| _Symbols_{.f1} ||
 | `,symbol-delimeter` | Shows the shell prompt with several delimiters |
 | `,dotcolors` |show dots in various colors|
 |||
