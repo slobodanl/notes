@@ -23,9 +23,6 @@ _**Movement**_{.f2}|
 <kbd>W</kbd>|Jump to previous warning
 <kbd>g</kbd>|Move to the top of the current view
 <kbd>G</kbd>|Move to the bottom of the current view
-|_xxx_{.f1}|
-|_xxxx_{.f2}|
-|_Hello_{.f3}|
 |_Marking_{.f3}|
 <kbd>m</kbd>               | Mark/unmark the line at the top of the display.
 <kbd>M</kbd>               | Mark/unmark all the lines between the top of the display and the last line marked/unmarked.
@@ -34,7 +31,7 @@ _**Movement**_{.f2}|
 <kbd>C</kbd>               | Clear all marked lines.
 <kbd>T</kbd>               | Toggle time
 ||
-|_View related_{.f1}|
+|_View_{.f1}|
 <kbd>CTRL</kbd>+<kbd>l</kbd>  | (Lo-fi mode) Exit screen-mode and write the displayed log lines in plain text to the terminal
 <kbd>CTRL</kbd>+<kbd>w</kbd>  | Toggle wrap
 <kbd>i</kbd>                  | View/leave a histogram of the log messages over time
