@@ -135,10 +135,10 @@ _Written by: Reza Shams Amiri_
 ## Utility commands
 | Command | Desc |
 | ------- | ---- |
-|**File related**||
+|_File related_{.f1}||
 | `,show-permission` | show access rights of a file/folder in the octal value format |
 |||
-|**Package related**||
+|_Package_{.f1}||
 | `,pkg-graph`    | Visualizes the dependency graph for a package |
 |               |  `,dpkg-graph ssh` |
 | `,pkg-info`     | Shows information about a **not installed** package |
@@ -155,11 +155,11 @@ _Written by: Reza Shams Amiri_
 | `dq`            | Query an installed package and list its files |
 |               |  `dq yelp` |
 |||
-|_Service_{.f2}||
+|_Service_{.f1}||
 | `,s`     | Show/rotate logs for different services using a rofi dialog|
 | `,ss`     | services state change script |
 |||
-| **Misc**||
+| _Misc_{.f1}||
 | `,se`     | Translate Swedish -> English using Google translate |
 | `,es`     | Translate English -> Swedish using Google translate |
 |||
