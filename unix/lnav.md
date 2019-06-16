@@ -16,7 +16,7 @@ curl -o ~/.lnav/formats/log4j.json https://raw.githubusercontent.com/PaulWay/lna
 
 Shortcut                   | Descrtiption 
 ---------------------------|---------------------------------------------------
-_Movement_{.f1}| 
+_**Movement**_{.f2}| 
 <kbd>e</kbd>|Jump to next error
 <kbd>E</kbd>|Jump to previous error
 <kbd>w</kbd>|Jump to next warning
