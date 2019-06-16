@@ -23,7 +23,7 @@ _**Movement**_{.f2}|
 <kbd>W</kbd>|Jump to previous warning
 <kbd>g</kbd>|Move to the top of the current view
 <kbd>G</kbd>|Move to the bottom of the current view
-||
+|xxx|
 |_Marking_{.f3}|
 <kbd>m</kbd>               | Mark/unmark the line at the top of the display.
 <kbd>M</kbd>               | Mark/unmark all the lines between the top of the display and the last line marked/unmarked.
