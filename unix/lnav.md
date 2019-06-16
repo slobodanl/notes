@@ -1,11 +1,10 @@
 _Written by: Reza Shams Amiri_
 
 # lnav
-
 ## Support for other formats:
 
 A git repo, as an example, provides support for different formats [https://github.com/PaulWay/lnav-formats](https://github.com/PaulWay/lnav-formats) (including log4j.)
-
+   
 If you quickly want to support `log4j` just execute the following command:
  
 ``` bash
