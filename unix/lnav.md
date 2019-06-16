@@ -23,14 +23,14 @@ Movement|
 <kbd>W</kbd>|Jump to previous warning
 <kbd>g</kbd>|Move to the top of the current view
 <kbd>G</kbd>|Move to the bottom of the current view
-|
+||
 <kbd>m</kbd>               | Mark/unmark the line at the top of the display.
 <kbd>M</kbd>               | Mark/unmark all the lines between the top of the display and the last line marked/unmarked.
 <kbd>J</kbd>               | Mark/unmark the next line after the previously marked line.
 <kbd>K</kbd>               | Like 'J' except it toggles the mark on the previous line.
 <kbd>C</kbd>               | Clear all marked lines.
 <kbd>T</kbd>               | Toggle time
-|
+||
 <kbd>CTRL</kbd>+<kbd>l</kbd>  | (Lo-fi mode) Exit screen-mode and write the displayed log lines in plain text to the terminal
 <kbd>CTRL</kbd>+<kbd>w</kbd>  | Toggle wrap
 <kbd>i</kbd>                  | View/leave a histogram of the log messages over time
