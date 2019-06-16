@@ -168,6 +168,7 @@ _Written by: Reza Shams Amiri_
 |**Theme related**||
 | `,fonts`        | Show all installed fonts in a rofi dialog |
 |               |  `,fonts i3` |
+| `,font-test`        | Show all characters in nerd fonts |
 | `,icon`         | Pick and apply a new icon set to WM. If that's not enough change using `lxappearance` (restart thunar)|
 | `,switch-prompt` | Switch prompt in a rofi dialog|
 |||
