@@ -62,6 +62,13 @@ sudo -H python2 -m pip install sh
  Documentation: [http://amoffat.github.io/sh][111S111D]   
 
 ### Example: running and piping:
+_Run dunstify with some parameters_{.ct}
+``` python
+import sh
+dunstify = sh.dunstify.bake('-i', 'done-38')
+dunstify('-p', "This is our agenda...")
+```
+
 _tail `/var/log/syslog` and pass it to tr_{.ct}
 ``` python
 import sh
