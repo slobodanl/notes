@@ -2,7 +2,7 @@ _Written by: Reza Shams Amiri_
 
 # python files
 
-## [open](https://docs.python.org/3/library/functions.html#open)
+## [open][BIFP373D]
 
 | Character | Meaning |
 | --------- | ------- |
@@ -20,7 +20,30 @@ _open/create file if doesn't exists_{.ct}
 ``` sh
 file = open('myfile.dat', 'w+')
 ```
+## [expanduser][OPCPMP373D]
+If you want to use `~` in the file name you need to use `expanduser`:
+``` python
+import  os
+
+# with will automatically close your file
+with open(os.path.expanduser("~/.boto"),"w") as f:
+    f.write("test") # write to f
+```
+
+## [glob][GUSPPEP373D]
+``` python
+import glob
+>>> glob.glob('~/.zshrc')
+>>> glob.glob('**/*.txt', recursive=True)
+['2.txt', 'sub/3.txt']
+>>> glob.glob('./**/', recursive=True)
+['./', './sub/']
+```
 
 - - -
 
 Creation date: _2019-06-17_
+
+[GUSPPEP373D]: https://docs.python.org/3/library/glob.html#glob.glob
+[BIFP373D]: https://docs.python.org/3/library/functions.html#open
+[OPCPMP373D]: https://docs.python.org/3/library/os.path.html#os.path.expanduser
