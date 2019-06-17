@@ -3,12 +3,19 @@ _Written by: Reza Shams Amiri_
 
 Python 3.6 added a new string formatting approach called formatted string literals or _“f-strings”_{.hl}
 
+_Having expressions_{.ct}
 ``` python
 a = 5
 b = 10
 print(f'Five plus ten is {a + b} and not {2 * (a + b)}.')
 
 'Five plus ten is 15 and not 30.'
+```
+
+_Combining with formatters_{.ct}
+``` python
+print(f"Hey {name}, there's a {errno:#x} error!")
+"Hey Bob, there's a 0xbadc0ffee error!"
 ```
 
 # String formats ([ref][61SCSOP349D])
