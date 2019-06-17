@@ -27,9 +27,9 @@ _open/create file if doesn't exists_{.ct}
 ``` sh
 file = open('myfile.dat', 'w+')
 ```
-## file - read
+## _file - read_{.f3}
 
-_Read the content of a file_{.ct}
+_**Read the content of a file**_{.ct}
 ``` python
 f = open("demofile.txt", "r")
 print(f.read())
