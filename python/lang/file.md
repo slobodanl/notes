@@ -15,11 +15,31 @@ _Written by: Reza Shams Amiri_
 | `'+'` | open a disk file for updating (reading and writing) |
 
 For binary read-write access, the mode `w+b` opens and truncates the file to 0 bytes. `r+b` opens the file without truncation.
-
+## file - if exists
+``` python
+agenda_path = os.path.expanduser('~/agenda.dat')
+if not os.path.exists(agenda_path):
+   print("file doesn't exists")
+```
+## file - create
 _open/create file if doesn't exists_{.ct}
 ``` sh
 file = open('myfile.dat', 'w+')
 ```
+## file - read
+
+_Read the content of a file_{.ct}
+``` python
+f = open("demofile.txt", "r")
+print(f.read())
+```
+
+_Read first 5 bytes_{.ct}
+``` python
+f = open("demofile.txt", "r")
+print(f.read(5))
+```
+
 ## [expanduser][OPCPMP373D]
 If you want to use `~` in the file name you need to use `expanduser`:
 ``` python
