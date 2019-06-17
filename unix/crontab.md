@@ -52,7 +52,10 @@ _BEWARE: `%` signs should be escaped in crontab they have special meaning there 
 
 _Example 2_{.ct}
 ``` sh
-*/1 * * * * /bin/sh -c 'export DISPLAY=:0 && /home/existme/bin/agenda' >/tmp/crontab.log 2>&1
+SHELL=/bin/zsh
+DISPLAY=":0"
+
+*/5 * * * * /bin/sh -c '/home/existme/bin/agenda' >>/tmp/crontab.log 2>&1
 ```
 
 **NOTE for notification problems**:
@@ -176,6 +179,10 @@ The `5`, `10`, and `15` numbers shows that anacron will wait `5`, `10`, and `15`
 1. `/etc/cron.monthly/`
 
 To read more about `anacron` just `vim /usr/share/doc/anacron/README.gz`
+
+# References:
+1. [Common Cron Mistakes | alleft.com][CCMAC]
+
 - - -
 
 Creation date: _2019-06-10_
@@ -188,3 +195,4 @@ Creation date: _2019-06-10_
 [SRALUSGAWLOSU]: https://superuser.com/a/345051/285113
 [2UCETSCILBWHO]: https://best-web-hosting.org/linux-crontab-examples/
 [TCRSM]: https://www.markus-gattol.name/ws/time.html#cron
+[CCMAC]: http://www.alleft.com/sysadmin/common-cron-mistakes/
