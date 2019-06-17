@@ -16,6 +16,7 @@ _Written by: Reza Shams Amiri_
 
 For binary read-write access, the mode `w+b` opens and truncates the file to 0 bytes. `r+b` opens the file without truncation.
 ## file - if exists
+_check if file exists_{.ct}
 ``` python
 agenda_path = os.path.expanduser('~/agenda.dat')
 if not os.path.exists(agenda_path):
@@ -40,8 +41,23 @@ f = open("demofile.txt", "r")
 print(f.read(5))
 ```
 
+_Read first 2 lines_{.ct}
+``` python
+f = open("demofile.txt", "r")
+print(f.readline())
+print(f.readline())
+```
+
+_Read line by line_{.ct}
+``` python
+f = open("demofile.txt", "r")
+for x in f:
+  print(x)
+```
+
 ## [expanduser][OPCPMP373D]
 If you want to use `~` in the file name you need to use `expanduser`:
+_expand user file_{.ct}
 ``` python
 import  os
 
