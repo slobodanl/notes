@@ -164,6 +164,21 @@ _rofi cat_{.ct}
 
 ```
 
+## Normal subprocess
+
+### Calling vim
+_Call vim to edit a file_{.ct}
+``` python
+from docopt import docopt
+from subprocess import call
+
+agenda_path = os.path.expanduser('~/agenda.dat')
+arguments = docopt(__doc__, version='1.0.0rc2')
+
+if arguments['-e']:
+    call(['vim', agenda_path])
+    sys.exit()
+```
 
 * * *
 Creation date: _2019-02-23_
