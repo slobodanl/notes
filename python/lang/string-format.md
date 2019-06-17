@@ -1,4 +1,15 @@
 _Written by: Reza Shams Amiri_
+# [String Interpolation][PSFBPRP]
+
+Python 3.6 added a new string formatting approach called formatted string literals or _“f-strings”_{.hl}
+
+``` python
+a = 5
+b = 10
+print(f'Five plus ten is {a + b} and not {2 * (a + b)}.')
+
+'Five plus ten is 15 and not 30.'
+```
 
 # String formats ([ref][61SCSOP349D])
 ``` 
@@ -114,3 +125,4 @@ for num in range(5, 12):
 Creation date: _2019-02-25_
 
 [61SCSOP349D]: https://docs.python.org/3.4/library/string.html
+[PSFBPRP]: https://realpython.com/python-string-formatting/
