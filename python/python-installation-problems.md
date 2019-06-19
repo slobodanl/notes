@@ -51,5 +51,15 @@ to
 from email6.parser import Parser
 ```
 
+# No module named 'apt_pkg' 
+```
+sudo apt install --reinstall --purge python_apt
+cd /usr/lib/python3/dist-packages
+ls -la apt_pkg.cpython-*
+
+
+sudo ln -s apt_pkg.cpython-37m-x86_64-linux-gnu.so apt_pkg.cpython-34m-x86_64-linux-gnu.so
+sudo ln -s apt_pkg.cpython-37m-x86_64-linux-gnu.so apt_pkg.cpython-36m-x86_64-linux-gnu.so
+```
 
 [LPDIEINMNASO]: https://stackoverflow.com/a/36232975/161312
