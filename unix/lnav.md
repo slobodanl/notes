@@ -27,11 +27,11 @@ _Movement_{.f1}|
 <kbd>M</kbd>               || Mark/unmark all the lines between the top of the display and the last line marked/unmarked.
 <kbd>J</kbd>               |怜  |  Mark/unmark the next line after the previously marked line.
 <kbd>K</kbd>               |玲  |  Like 'J' except it toggles the mark on the previous line.
-<kbd>C</kbd>               || Clear all marked lines.
+<kbd>C</kbd>               | | Clear all marked lines.
 <kbd>T</kbd>               || Toggle time
 |||
 |_Filters_{.f1}||
-|<kbd>CTRL</kbd>+<kbd>f</kbd>||Toggle enable/disable all filters|
+|<kbd>CTRL</kbd>+<kbd>f</kbd>| |Toggle enable/disable all filters|
 |||
 |_View_{.f1}||
 |<kbd>P</kbd>  |  | Switch to/from the pretty-printed view|
