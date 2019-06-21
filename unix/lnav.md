@@ -13,29 +13,35 @@ curl -o ~/.lnav/formats/log4j.json https://raw.githubusercontent.com/PaulWay/lna
 
 ## Keyboard shortcuts
 
-Shortcut                   | Descrtiption 
----------------------------|---------------------------------------------------
+Shortcut                |   | Descrtiption 
+------------------------|---|---------------------------------------------------
 _Movement_{.f1}| 
-<kbd>e</kbd>|Jump to next error
-<kbd>E</kbd>|Jump to previous error
-<kbd>w</kbd>|Jump to next warning
-<kbd>W</kbd>|Jump to previous warning
-<kbd>g</kbd>|Move to the top of the current view
-<kbd>G</kbd>|Move to the bottom of the current view
-|_Marking_{.f1}|
-<kbd>m</kbd>               | Mark/unmark the line at the top of the display.
-<kbd>M</kbd>               | Mark/unmark all the lines between the top of the display and the last line marked/unmarked.
-<kbd>J</kbd>               | Mark/unmark the next line after the previously marked line.
-<kbd>K</kbd>               | Like 'J' except it toggles the mark on the previous line.
-<kbd>C</kbd>               | Clear all marked lines.
-<kbd>T</kbd>               | Toggle time
-||
-|_View_{.f1}|
-<kbd>CTRL</kbd>+<kbd>l</kbd>  | (Lo-fi mode) Exit screen-mode and write the displayed log lines in plain text to the terminal
-<kbd>CTRL</kbd>+<kbd>w</kbd>  | Toggle wrap
-<kbd>i</kbd>                  | View/leave a histogram of the log messages over time
-<kbd>I</kbd>                  | Switch between the log and histogram views while keeping the time displayed at the top of each view in sync.
-<kbd>?</kbd>                  | Display the help page
+<kbd>e</kbd>|怜 |Jump to next error
+<kbd>E</kbd>|玲 |Jump to previous error
+<kbd>w</kbd>|怜 ﱿ |Jump to next warning
+<kbd>W</kbd>|玲 ﱿ|Jump to previous warning
+<kbd>g</kbd>|ﬢ|Move to the top of the current view
+<kbd>G</kbd>|ﬠ|Move to the bottom of the current view
+|_Marking_{.f1}||
+<kbd>m</kbd>               || Mark/unmark the line at the top of the display.
+<kbd>M</kbd>               || Mark/unmark all the lines between the top of the display and the last line marked/unmarked.
+<kbd>J</kbd>               |怜  |  Mark/unmark the next line after the previously marked line.
+<kbd>K</kbd>               |玲  |  Like 'J' except it toggles the mark on the previous line.
+<kbd>C</kbd>               || Clear all marked lines.
+<kbd>T</kbd>               || Toggle time
+|||
+|_Filters_{.f1}||
+|<kbd>CTRL</kbd>+<kbd>f</kbd>||Toggle enable/disable all filters|
+|||
+|_View_{.f1}||
+|<kbd>P</kbd>  |  | Switch to/from the pretty-printed view|
+|<kbd>p</kbd>  || enable or disable the display of the fields that the log message parser knbows about|
+|<kbd>v</kbd>  |  | Switch to/from the SQL result view|
+<kbd>CTRL</kbd>+<kbd>l</kbd>  |  | (Lo-fi mode) Exit screen-mode and write the displayed log lines in plain text to the terminal
+<kbd>CTRL</kbd>+<kbd>w</kbd>  | 蝹 | Toggle wrap
+<kbd>i</kbd>                  | | View/leave a histogram of the log messages over time
+<kbd>I</kbd>                  | | Switch between the log and histogram views while keeping the time displayed at the top of each view in sync.
+<kbd>?</kbd>                  || Display the help page
 
 # User interface:
 1. Errors will be colored in red
@@ -87,6 +93,7 @@ _`~/rlnav`_{.ct}
 #!lnav -f
 # This script will filter out unnecessary information from the log file
 
+:reset-session filters
 :filter-out se.curity.identityserver.web|se.curity.identityserver.util|se.curity.identityserver.controllers.AnonymousOAuthController
 ```
 To run it, issue:
