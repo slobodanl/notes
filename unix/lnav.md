@@ -74,13 +74,16 @@ _Movement_{.f1}|
 1. **Install additional formats directly from a repo**:
    ``` sh
      lnav -i https://github.com/curityio/lnav.git
+     lnav -i https://github.com/existme/lnav.git
    ```
   _Make sure you are using `noConsoleNoAnsi="true"` in `log4j2.xml` at `<PatternLayout noConsoleNoAnsi="true" pattern="%date ...`, otherwise pattern matching might fail_{.info .warn}
 2. 
 # References
 1. [lnav Documentation Release 0.8.5][TNE]
+2. [GitHub - existme/lnav: Lnav add-ons for the Curity Identity Server][GELLAOFTCIS]
 * * *
 Creation date: _2019-01-21_
 
 [TNE]: https://buildmedia.readthedocs.org/media/pdf/lnav/latest/lnav.pdf
 [GTLCOCDFL]: https://github.com/tstack/lnav-config
+[GELLAOFTCIS]: https://github.com/existme/lnav.git
