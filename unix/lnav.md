@@ -77,7 +77,23 @@ _Movement_{.f1}|
      lnav -i https://github.com/existme/lnav.git
    ```
   _Make sure you are using `noConsoleNoAnsi="true"` in `log4j2.xml` at `<PatternLayout noConsoleNoAnsi="true" pattern="%date ...`, otherwise pattern matching might fail_{.info .warn}
-2. 
+
+## Run commands before showing the logs
+Sometimes you want to set specific filters for certain purposes before running lnav, you can do it by having a shabang line inside a script that contains `#!lnav -f` or `#!lnav -nf` (`n` is for headless mode, so lnav will quit and doesn't show curse interface and `f` is for executing commands)
+
+_Example 1:_{.f1}
+_`~/rlnav`_{.ct}
+``` sh
+#!lnav -f
+# This script will filter out unnecessary information from the log file
+
+:filter-out se.curity.identityserver.web|se.curity.identityserver.util|se.curity.identityserver.controllers.AnonymousOAuthController
+```
+To run it, issue:
+```
+./rlnav /var/log/curity/server.log
+```
+
 # References
 1. [lnav Documentation Release 0.8.5][TNE]
 2. [GitHub - existme/lnav: Lnav add-ons for the Curity Identity Server][GELLAOFTCIS]
