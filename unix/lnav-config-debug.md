@@ -87,6 +87,7 @@ Curity IDP has a [git repo][GCLLAOFTCIS] providing log formats for their softwar
    ```
 3. Use the two in the [debuggex][HWDC]:
    ![debuggex-finding-issues.png](/img/unix/debuggex-finding-issues.png)
+   You can see that the tool easily identifies where the REGEX doesn't match the sample, it's due to different datatime format used in logs. Let's relax the pattern a little bit:
 
 # References:
 1. [www.debuggex.com][HWDC]
