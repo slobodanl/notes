@@ -77,7 +77,16 @@ Curity IDP has a [git repo][GCLLAOFTCIS] providing log formats for their softwar
         ]
     }
    ```
-
+1. Get a sample log line which is not working from `/var/log/curity/server.log`, example:
+   ``` 
+   2019-04-12T20:58:57,425+0200 DEBUG EfwrPdrp  {req-63} se.curity.identityserver.web.SubrouterHelper - Got renderer se.curity.identityserver.web.AdminApiJsonHttpResponseRenderer@7a34df6a for Controllable se.curity.identityserver.adminapi.AdminApiController@25a4c4ba
+   ```
+1. Copy the `pattern` section of the curity log format and replace `\\` with `\`:
+   ``` 
+   (?<timestamp>\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}:\\d{3}[-+]\\d{4}) +(?<alert_level>(TRACE|DEBUG|INFO|WARN|ERROR)) {1,2}((?<request_id>[^ ]{8,})?| ) ((?<session_id>([^ ]+))?| ) {(?<thread>[-\\w]+)} +(?<class>[\\w.]+)(:(?<line>\\d+))? +(?<body>.*)
+   ```
+3. Use the two in the [debuggex][HWDC]:
+   ![debuggex-finding-issues.png](/img/unix/debuggex-finding-issues.png)
 
 # References:
 1. [www.debuggex.com][HWDC]
@@ -86,6 +95,4 @@ Curity IDP has a [git repo][GCLLAOFTCIS] providing log formats for their softwar
 Creation date: _2019-06-21_
 
 [HWDC]: https://www.debuggex.com/
-
-[GCLLAOFTCIS]: https://github.com/curityio/lnav
 [GCLLAOFTCIS]: https://github.com/curityio/lnav
