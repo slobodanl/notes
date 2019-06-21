@@ -15,6 +15,7 @@ Curity IDP has a [git repo][GCLLAOFTCIS] providing log formats for their softwar
 1. Since we are debugging `server log format`, open `~/.lnav/formats/installed/curity.json` and fomd `curity_server_log` section:
    _curity.json_{.ct}
    ``` json
+   {
        "curity_server_log" : {
         "title" : "Curity server log format",
         "description" : "The format for Cuirty Identity Server logs",
@@ -74,7 +75,7 @@ Curity IDP has a [git repo][GCLLAOFTCIS] providing log formats for their softwar
                 "line" : "2017-05-08T16:04:42:006+0200 DEBUG e6683295 38763868 {req-51} se.curity.identityserver.web.RouteHandler:140 Selected Locale: 'en'. Default Locale: 'en'."
             }
         ]
-    },
+    }
    ```
 
 
