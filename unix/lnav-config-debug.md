@@ -117,13 +117,33 @@ error:curity_server_log:unrecognized timestamp format -- 2019-04-12T20:58:57,425
   format: %Y-%m-%d %H:%M:%S; matched: 2019-04-12
   format: %Y-%m-%dT%H:%M:%S:%L%z; matched: 2019-04-12T20:58:57
 ```
+The actual error is `unrecognized timestamp format -- 2019-04-12T20:58:57,425+0200`, that gives us hints to know where it went wrong.If we look closely we can see:
+``` 
+    .
+    .
+    "curity_server_log" : {
+        "title" : "Curity server log format",
+        "description" : "The format for Cuirty Identity Server logs",
+        "regex" : {
+            "std-2.0" : {
+                "pattern" : "...."
+            }
+        },
+        "json" : false,
+        "timestamp-format" : [ "%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%S:%L%z" ],
+```
+Adding `"%Y-%m-%dT%H:%M:%S,%L%z"` to the list of supported `timestamp-format` will solve the issue.
+The corrected config is available at a [forked][GELLAOFTCIS] version of the configuration.
+
 
 # References:
 1. [www.debuggex.com](https://www.debuggex.com/)
 2. [GitHub - curityio/lnav: Lnav add-ons for the Curity Identity Server][GCLLAOFTCIS]
+3. [GitHub - existme/lnav: Lnav add-ons for the Curity Identity Server][GELLAOFTCIS]
 
 - - -
 Creation date: _2019-06-21_
 
 [HWDC]: https://www.debuggex.com/
 [GCLLAOFTCIS]: https://github.com/curityio/lnav
+[GELLAOFTCIS]: https://github.com/existme/lnav.git
