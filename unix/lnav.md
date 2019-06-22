@@ -20,7 +20,7 @@ _Movement_{.f1}|
 <kbd>w</kbd>/<kbd>W</kbd> |怜 玲 ﱿ |Jump to next/previous warning
 <kbd>n</kbd>/<kbd>N</kbd> |怜 玲  |Jump to next/previous search hit
 <kbd>u</kbd>/<kbd>U</kbd> |怜 玲  |Jump to next/previous Bookmark
-<kbd>1-6</kbd>/<kbd>SHIFT</kbd><kbd>1-6</kbd> |怜 玲  |Next/previous n’th ten minute of the hour
+<kbd>1-6</kbd>/<kbd>SHIFT</kbd><kbd>1-6</kbd> |  |Next/previous n’th ten minute of the hour
 <kbd>f</kbd>/<kbd>F</kbd> |怜 玲  |Goto next/previous file
 <kbd>g</kbd>/<kbd>G</kbd> |祝  | Move to the top/bottom of the current view
 <kbd>Home</kbd>/<kbd>End</kbd> |祝 | Move to the top/bottom of the current view
