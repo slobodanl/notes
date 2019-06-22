@@ -31,6 +31,7 @@ _Movement_{.f1}|
 <kbd>J</kbd>               |怜  |  Mark/unmark the next line after the previously marked line.
 <kbd>K</kbd>               |玲  |  Like 'J' except it toggles the mark on the previous line.
 <kbd>C</kbd>               | | Clear all marked lines.
+<kbd>c</kbd>               | | _Copy all selected bookmarks_{.hl}
 <kbd>T</kbd>               || Toggle time
 |||
 |_Filters_{.f1}||
