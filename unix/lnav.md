@@ -16,12 +16,11 @@ curl -o ~/.lnav/formats/log4j.json https://raw.githubusercontent.com/PaulWay/lna
 Shortcut                |   | Descrtiption 
 ------------------------|---|---------------------------------------------------
 _Movement_{.f1}| 
-<kbd>e</kbd>|怜 |Jump to next error
-<kbd>E</kbd>|玲 |Jump to previous error
-<kbd>w</kbd>|怜 ﱿ |Jump to next warning
-<kbd>W</kbd>|玲 ﱿ|Jump to previous warning
-<kbd>g</kbd>|ﬢ|Move to the top of the current view
-<kbd>G</kbd>|ﬠ|Move to the bottom of the current view
+<kbd>e</kbd>/<kbd>E</kbd> |怜 玲 | Jump to next/previous error
+<kbd>w</kbd>/<kbd>W</kbd> |怜 玲 ﱿ |Jump to next/previous warning
+<kbd>g</kbd>/<kbd>G</kbd> |ﬢ| ﬠ   Move to the top of the current view
+<kbd>Home</kbd>/<kbd>End</kbd> |ﬠ|   Move to the bottom of the current view
+<kbd>shift</kbd><kbd>/</kbd>|| Left/Right ten columns
 |_Marking_{.f1}||
 <kbd>m</kbd>               || Mark/unmark the line at the top of the display.
 <kbd>M</kbd>               || Mark/unmark all the lines between the top of the display and the last line marked/unmarked.
@@ -83,6 +82,17 @@ _Movement_{.f1}|
      lnav -i https://github.com/existme/lnav.git
    ```
   _Make sure you are using `noConsoleNoAnsi="true"` in `log4j2.xml` at `<PatternLayout noConsoleNoAnsi="true" pattern="%date ...`, otherwise pattern matching might fail_{.info .warn}
+
+## SQL
+1. Stand on a line and press <kbd>p</kbd> tos how message parser output
+2. Press <kbd>;</kbd> to enter SQL run statement mode
+3. Type `select * from logline;`, this will select all messages which parse the same way as this one.
+4. Press <kbd>V/v</kbd> to go back and force between log viewer and sQL results
+5. You can be creative with statements such as:
+   ``` sql
+   ;select distinct(uri) from logline order by uri;
+   ```
+
 
 ## Run commands before showing the logs
 Sometimes you want to set specific filters for certain purposes before running lnav, you can do it by having a shabang line inside a script that contains `#!lnav -f` or `#!lnav -nf` (`n` is for headless mode, so lnav will quit and doesn't show curse interface and `f` is for executing commands)
