@@ -46,7 +46,7 @@ _Spatial Navigation_{.f1}| |
 |||
 |_Display options_{.f1}||
 |<kbd>P</kbd>  |  | Switch to/from the pretty-printed view|
-|<kbd>p</kbd>  || enable or disable the display of the fields that the log message parser knbows about|
+|<kbd>p</kbd>  |ﬥ| enable or disable the display of the fields that the log message parser knbows about|
 |<kbd>v</kbd>  |  | Switch to/from the SQL result view|
 |<kbd>Shift</kbd>+<kbd>v</kbd>  | 難 | Switch to/from the SQL result view and move to the corresponding in the log_line column
 <kbd>CTRL</kbd>+<kbd>l</kbd>  |  | (_Lo-fi mode_{.hl}) Exit screen-mode and write the displayed log lines in plain text to the terminal
@@ -176,7 +176,9 @@ See more about log formats here: [Debugging lnav config][LCD]
    ```
    `/tmp/lnav.out` will contain the output of make
 
-# SQL
+# SQL queries
+
+## Performing queries
 1. Stand on a line and press <kbd>p</kbd> tos how message parser output
 2. Press <kbd>;</kbd> to enter SQL run statement mode
 3. Type `select * from logline;`, this will select all messages which parse the same way as this one.
@@ -190,6 +192,29 @@ See more about log formats here: [Debugging lnav config][LCD]
    ;SELECT distinct(class) from logline order by class;
    ```
 
+## Tables
+`lnav` will create tables that can be queried using the subset of SQL that is supported by Sqlite3.
+  Note that only the log messages that match a particular format can be queried by a particular table. 
+  _You can get a dump of the schema for the internal tables, and any attached databases, by running the `.schema` SQL command_{.note}
+
+Some commonly used format tables are:
+1. `generic_log`
+2. `access_log`
+3. `syslog_log`
+4. `strace_log`
+5. **Curity Logs:**
+    1. `curity_server_log`
+    1. `curity_audit_log`
+    1. `curity_cluster_log`
+    1. `curity_conf_service_log`
+    1. `curity_request_log`    
+
+_Examples:_{.f1}
+``` sql
+select count(class) as _count, class from curity_server_log group by class order by _count
+```
+Example output and the histogram of the query is showed below:
+![lnav-select-output.png](/img/unix/lnav-select-output.png)
 # Running commands before showing the log
 Sometimes you want to set specific filters for certain purposes before running lnav, you can do it by having a shabang line inside a script that contains `#!lnav -f` or `#!lnav -nf` (`n` is for headless mode, so lnav will quit and doesn't show curse interface and `f` is for executing commands)
 
