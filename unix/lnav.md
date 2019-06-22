@@ -46,7 +46,7 @@ _Movement_{.f1}|
 |<kbd>v</kbd>  |  | Switch to/from the SQL result view|
 |<kbd>Shift</kbd>+<kbd>v</kbd>  | 難 | Switch to/from the SQL result view and move to the corresponding in the log_line column
 <kbd>CTRL</kbd>+<kbd>l</kbd>  |  | (_Lo-fi mode_{.hl}) Exit screen-mode and write the displayed log lines in plain text to the terminal
-<kbd>CTRL</kbd>+<kbd>w</kbd>  | 蝹 | Toggle wrap
+<kbd>CTRL</kbd>+<kbd>w</kbd>  | 蝹 | Toggle wrap
 <kbd>SHIFT</kbd>+<kbd>t</kbd> |神 | Display elapsed time between lines
 <kbd>i</kbd>/<kbd>I</kbd>                  | | View/leave a histogram of the log messages over time
 <kbd>I</kbd>                  | | Switch between the log and histogram views while keeping the time displayed at the top of each view in sync.
