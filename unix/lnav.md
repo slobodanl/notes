@@ -22,7 +22,7 @@ _Movement_{.f1}|
 <kbd>u</kbd>/<kbd>U</kbd> | ﮿﯀   |Jump to next/previous Bookmark
 <kbd>1-6</kbd>/<kbd>SHIFT</kbd><kbd>1-6</kbd> | ﮿﯀  |Next/previous n’th ten minute of the hour
 <kbd>8</kbd>/<kbd>7</kbd> | ﮿﯀  |Next/previous minute
-<kbd>0</kbd>/<kbd>SHIGT</kbd><kbd>0</kbd> | ﮿﯀  |Next/previous day
+<kbd>0</kbd>/<kbd>SHIFT</kbd><kbd>0</kbd> | ﮿﯀  |Next/previous day
 <kbd>f</kbd>/<kbd>F</kbd> | ﮿﯀   |Goto next/previous file
 <kbd>g</kbd>/<kbd>G</kbd> |祝  | Move to the top/bottom of the current view
 <kbd>Home</kbd>/<kbd>End</kbd> |祝 | Move to the top/bottom of the current view
@@ -44,9 +44,11 @@ _Movement_{.f1}|
 |<kbd>P</kbd>  |  | Switch to/from the pretty-printed view|
 |<kbd>p</kbd>  || enable or disable the display of the fields that the log message parser knbows about|
 |<kbd>v</kbd>  |  | Switch to/from the SQL result view|
-<kbd>CTRL</kbd>+<kbd>l</kbd>  |  | (Lo-fi mode) Exit screen-mode and write the displayed log lines in plain text to the terminal
+|<kbd>Shift</kbd>+<kbd>v</kbd>  | 難 | Switch to/from the SQL result view and move to the corresponding in the log_line column
+<kbd>CTRL</kbd>+<kbd>l</kbd>  |  | (_Lo-fi mode_{.hl}) Exit screen-mode and write the displayed log lines in plain text to the terminal
 <kbd>CTRL</kbd>+<kbd>w</kbd>  | 蝹 | Toggle wrap
-<kbd>i</kbd>                  | | View/leave a histogram of the log messages over time
+<kbd>SHIFT</kbd>+<kbd>t</kbd> |神 | Display elapsed time between lines
+<kbd>i</kbd>/<kbd>I</kbd>                  | | View/leave a histogram of the log messages over time
 <kbd>I</kbd>                  | | Switch between the log and histogram views while keeping the time displayed at the top of each view in sync.
 <kbd>?</kbd>                  || Display the help page
 
