@@ -22,7 +22,7 @@ _Spatial Navigation_{.f1}| |
 <kbd>w</kbd>/<kbd>W</kbd> | ﮿﯀   |Jump to next/previous warning
 <kbd>n</kbd>/<kbd>N</kbd> | ﮿﯀   |Jump to next/previous search hit
 <kbd>u</kbd>/<kbd>U</kbd> | ﮿﯀   |Jump to next/previous Bookmark
-<kbd>s</kbd>/<kbd>S</kbd> | ﮿﯀  省 |A slow down is detected by measuring how quickly the message rate has changed over the previous several messages.  For example, if one message is logged every second for five seconds and then the last message arrives five seconds later, the last message will be highlighted as a slow down.
+<kbd>s</kbd>/<kbd>S</kbd> | ﮿﯀  省 |A slow down is detected by measuring how quickly the message rate has changed over the previous several messages.
 <kbd>f</kbd>/<kbd>F</kbd> | ﮿﯀   |Goto next/previous file
 <kbd>SHIFT</kbd><kbd>/</kbd>|| Left/Right ten columns
 <kbd>SHIFT</kbd><kbd>/</kbd>|| Left/Right ten columns
