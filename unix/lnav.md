@@ -106,16 +106,27 @@ See more about log formats here: [Debugging lnav config][LCD]
 |Optional arguments|Description|
 |------|-----------|
 | `-I` path | Add the given configuration directory to the search path|
-| `-i` | Install the given format files in the `$HOME/.lnav/formats/installed` directory|
-| `-c` | A command, query, or file to execute.  The first characterdetermines the type of operation: a `colon` is used for the built-in commands; a `semi-colon` for SQL queries; and a pipe symbol (`|`) for executing a file containing other commands. |
+| `-i` | **Install the given format** files in the `$HOME/.lnav/formats/installed` directory|
+| `-c` | **A command, query**, or file to execute.  The first characterdetermines the type of operation: a `colon` is used for the built-in commands; a `semi-colon` for SQL queries; and a pipe symbol (`|`) for executing a file containing other commands. |
 | `-C` | Check the configuration and exit.  The log format files will be loaded and checked|
-| `-d` file | Write debug messages to the given file|
+| `-d` file | **Write debug messages** to the given file|
+| `-f` file | A file that contains commands, queries, or **files to execute**. This option is a shortcut for `-c '|file'`.  You can use a dash (`-`) to execute commands from the standard input.|
 | `-V` | Print version information|
-| `-r` | Load older rotated log files as well|
-| `-t` | repend timestamps to the lines of data being read in on the standard input|
-| `-w` file | Load older rotated log files as well|
+| `-r` | **Load older rotated log** files as well|
+| `-t` | **Prepend timestamps** to the lines of data being read in on the standard input|
+| `-w` file | **Write** the contents of the **standard input** to this file.|
 
 _Examples:_{.f3}
+
+1. `-c`:
+   _goto a line_{.ct}
+   ``` sh
+   # Goto line number 10 after loading the file
+   lnav -c ':goto 10' /var/log/curity/server.log
+   ```
+   _goto a line_{.ct}
+   ``` sh
+   ```
 
 
 ## SQL
