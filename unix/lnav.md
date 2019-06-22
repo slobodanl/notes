@@ -20,6 +20,7 @@ _Movement_{.f1}|
 <kbd>w</kbd>/<kbd>W</kbd> |怜 玲 ﱿ |Jump to next/previous warning
 <kbd>n</kbd>/<kbd>N</kbd> |怜 玲  |Jump to next/previous search hit
 <kbd>u</kbd>/<kbd>U</kbd> |怜 玲  |Jump to next/previous Bookmark
+<kbd>f</kbd>/<kbd>F</kbd> |怜 玲  |Goto next/previous file
 <kbd>g</kbd>/<kbd>G</kbd> |祝  | Move to the top/bottom of the current view
 <kbd>Home</kbd>/<kbd>End</kbd> |祝 | Move to the top/bottom of the current view
 <kbd>shift</kbd><kbd>/</kbd>|| Left/Right ten columns
