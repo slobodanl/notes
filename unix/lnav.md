@@ -21,7 +21,9 @@ _Movement_{.f1}|
 <kbd>n</kbd>/<kbd>N</kbd> | ﮿﯀   |Jump to next/previous search hit
 <kbd>u</kbd>/<kbd>U</kbd> | ﮿﯀   |Jump to next/previous Bookmark
 <kbd>1-6</kbd>/<kbd>SHIFT</kbd><kbd>1-6</kbd> | ﮿﯀  |Next/previous n’th ten minute of the hour
-<kbd>f</kbd>/<kbd>F</kbd> |怜 玲  |Goto next/previous file
+<kbd>8</kbd>/<kbd>7</kbd> | ﮿﯀  |Next/previous minute
+<kbd>0</kbd>/<kbd>SHIGT</kbd><kbd>0</kbd> | ﮿﯀  |Next/previous day
+<kbd>f</kbd>/<kbd>F</kbd> | ﮿﯀   |Goto next/previous file
 <kbd>g</kbd>/<kbd>G</kbd> |祝  | Move to the top/bottom of the current view
 <kbd>Home</kbd>/<kbd>End</kbd> |祝 | Move to the top/bottom of the current view
 <kbd>SHIFT</kbd><kbd>/</kbd>|| Left/Right ten columns
