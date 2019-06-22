@@ -107,12 +107,17 @@ See more about log formats here: [Debugging lnav config][LCD]
 |------|-----------|
 | `-I` path | Add the given configuration directory to the search path|
 | `-i` | Install the given format files in the `$HOME/.lnav/formats/installed` directory|
+| `-c` | A command, query, or file to execute.  The first characterdetermines the type of operation: a `colon` is used for the built-in commands; a `semi-colon` for SQL queries; and a pipe symbol (`|`) for executing a file containing other commands. |
 | `-C` | Check the configuration and exit.  The log format files will be loaded and checked|
 | `-d` file | Write debug messages to the given file|
 | `-V` | Print version information|
 | `-r` | Load older rotated log files as well|
 | `-t` | repend timestamps to the lines of data being read in on the standard input|
 | `-w` file | Load older rotated log files as well|
+
+_Examples:_{.f3}
+
+
 ## SQL
 1. Stand on a line and press <kbd>p</kbd> tos how message parser output
 2. Press <kbd>;</kbd> to enter SQL run statement mode
