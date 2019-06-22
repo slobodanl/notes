@@ -87,6 +87,7 @@ _Spatial Navigation_{.f1}| |
 │   └── search-for.lnav
 └── installed
 ```
+See more about log formats here: [Debugging lnav config][LCD]
 ## Installing formats
 1. **Install remote repository**:   
     A standard set of repositories is maintained at [ tstack/lnav-config][GTLCOCDFL] and can be installed by passing ‘extra’ on the command line
@@ -101,6 +102,17 @@ _Spatial Navigation_{.f1}| |
    ```
   _Make sure you are using `noConsoleNoAnsi="true"` in `log4j2.xml` at `<PatternLayout noConsoleNoAnsi="true" pattern="%date ...`, otherwise pattern matching might fail_{.info .warn}
 
+## Command line interface
+|Optional arguments|Description|
+|------|-----------|
+| `-I` path | Add the given configuration directory to the search path|
+| `-i` | Install the given format files in the `$HOME/.lnav/formats/installed` directory|
+| `-C` | Check the configuration and exit.  The log format files will be loaded and checked|
+| `-d` file | Write debug messages to the given file|
+| `-V` | Print version information|
+| `-r` | Load older rotated log files as well|
+| `-t` | repend timestamps to the lines of data being read in on the standard input|
+| `-w` file | Load older rotated log files as well|
 ## SQL
 1. Stand on a line and press <kbd>p</kbd> tos how message parser output
 2. Press <kbd>;</kbd> to enter SQL run statement mode
@@ -141,3 +153,4 @@ Creation date: _2019-01-21_
 [TNE]: https://buildmedia.readthedocs.org/media/pdf/lnav/latest/lnav.pdf
 [GTLCOCDFL]: https://github.com/tstack/lnav-config
 [GELLAOFTCIS]: https://github.com/existme/lnav.git
+[LCD]: /unix/lnav-config-debug
