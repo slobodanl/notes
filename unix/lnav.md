@@ -1,15 +1,6 @@
 _Written by: Reza Shams Amiri_
 
 # lnav
-## Support for other formats:
-
-A git repo, as an example, provides support for different formats [https://github.com/PaulWay/lnav-formats](https://github.com/PaulWay/lnav-formats) (including log4j.)
-   
-If you quickly want to support `log4j` just execute the following command:
- 
-``` bash
-curl -o ~/.lnav/formats/log4j.json https://raw.githubusercontent.com/PaulWay/lnav-formats/master/log4j.json
-```
 
 ## Keyboard shortcuts
 
@@ -88,21 +79,26 @@ _Spatial Navigation_{.f1}| |
 └── installed
 ```
 See more about log formats here: [Debugging lnav config][LCD]
-## Installing formats
-1. **Install remote repository**:   
-    A standard set of repositories is maintained at [ tstack/lnav-config][GTLCOCDFL] and can be installed by passing ‘extra’ on the command line
-    ``` sh
-     lnav -i extra    
-    ```
-    It will install bunch of formats in `~/.lnav/formats` folder
-1. **Install additional formats directly from a repo**:
-   ``` sh
-     lnav -i https://github.com/curityio/lnav.git
-     lnav -i https://github.com/existme/lnav.git
-   ```
+## Installing formats:
+- **Install remote repository**:   
+  A standard set of repositories is maintained at [ tstack/lnav-config][GTLCOCDFL] and can be installed by passing ‘extra’ on the command line
+  ``` sh
+   lnav -i extra    
+  ```
+  It will install bunch of formats in `~/.lnav/formats` folder
+- **Install additional formats directly from a repo**:
+  ``` sh
+    lnav -i https://github.com/curityio/lnav.git
+    lnav -i https://github.com/existme/lnav.git
+  ```
+- **Downloading one format from internet and installing it directly**
+  A git repo, as an example, provides support for different formats [https://github.com/PaulWay/lnav-formats](https://github.com/PaulWay/lnav-formats) (including log4j.)  
+  If you quickly want to support `log4j` just execute the following command: 
+  ``` sh
+  curl -o ~/.lnav/formats/installed/log4j.json https://raw.githubusercontent.com/PaulWay/lnav-formats/master/log4j.json
+  ```
   _Make sure you are using `noConsoleNoAnsi="true"` in `log4j2.xml` at `<PatternLayout noConsoleNoAnsi="true" pattern="%date ...`, otherwise pattern matching might fail_{.info .warn}
-
-## Command line interface
+# Command line interface
 |Optional arguments|Description|
 |------|-----------|
 | `-I` path | Add the given configuration directory to the search path|
@@ -116,7 +112,7 @@ See more about log formats here: [Debugging lnav config][LCD]
 | `-t` | **Prepend timestamps** to the lines of data being read in on the standard input|
 | `-w` file | **Write** the contents of the **standard input** to this file.|
 
-_Examples:_{.f3}
+## _Examples:_{.f3}
 
 1. `-c`:
    _goto a line_{.ct}
@@ -125,6 +121,11 @@ _Examples:_{.f3}
    lnav -c ':goto 10' /var/log/curity/server.log
    ```
    This option **can be given multiple times** to execute multiple operations in sequence.
+1. `-f`:
+   _Using `-f` to execute commands from stdin_{.ct}
+   ``` sh   
+   echo ":goto 10"|lnav /var/log/curity/server.log -f -
+   ```
 1. `-r`:
    _Using `-r` to load older rotated logs_{.ct}
    ``` sh
@@ -168,7 +169,7 @@ _Examples:_{.f3}
    ```
    `/tmp/lnav.out` will contain the output of make
 
-## SQL
+# SQL
 1. Stand on a line and press <kbd>p</kbd> tos how message parser output
 2. Press <kbd>;</kbd> to enter SQL run statement mode
 3. Type `select * from logline;`, this will select all messages which parse the same way as this one.
@@ -182,7 +183,7 @@ _Examples:_{.f3}
    ;SELECT distinct(class) from logline order by class;
    ```
 
-## Run commands before showing the logs
+# Running commands before showing the log
 Sometimes you want to set specific filters for certain purposes before running lnav, you can do it by having a shabang line inside a script that contains `#!lnav -f` or `#!lnav -nf` (`n` is for headless mode, so lnav will quit and doesn't show curse interface and `f` is for executing commands)
 
 _Example 1:_{.f1}
