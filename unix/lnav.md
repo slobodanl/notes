@@ -15,38 +15,44 @@ curl -o ~/.lnav/formats/log4j.json https://raw.githubusercontent.com/PaulWay/lna
 
 Shortcut                |   | Descrtiption 
 ------------------------|---|---------------------------------------------------
-_Movement_{.f1}| 
+_Spatial Navigation_{.f1}| |
+<kbd>g</kbd>/<kbd>G</kbd> |祝  | Move to the top/bottom of the current view
+<kbd>Home</kbd>/<kbd>End</kbd> |祝 | Move to the top/bottom of the current view
 <kbd>e</kbd>/<kbd>E</kbd> | ﮿﯀  | Jump to next/previous error
 <kbd>w</kbd>/<kbd>W</kbd> | ﮿﯀   |Jump to next/previous warning
 <kbd>n</kbd>/<kbd>N</kbd> | ﮿﯀   |Jump to next/previous search hit
 <kbd>u</kbd>/<kbd>U</kbd> | ﮿﯀   |Jump to next/previous Bookmark
+<kbd>s</kbd>/<kbd>S</kbd> | ﮿﯀  省 |A slow down is detected by measuring how quickly the message rate has changed over the previous several messages.  For example, if one message is logged every second for five seconds and then the last message arrives five seconds later, the last message will be highlighted as a slow down.
+<kbd>f</kbd>/<kbd>F</kbd> | ﮿﯀   |Goto next/previous file
+<kbd>SHIFT</kbd><kbd>/</kbd>|| Left/Right ten columns
+<kbd>SHIFT</kbd><kbd>/</kbd>|| Left/Right ten columns
+|||
+|_Chronological Navigation_{.f1}||
 <kbd>1-6</kbd>/<kbd>SHIFT</kbd><kbd>1-6</kbd> | ﮿﯀  |Next/previous n’th ten minute of the hour
 <kbd>8</kbd>/<kbd>7</kbd> | ﮿﯀  |Next/previous minute
 <kbd>0</kbd>/<kbd>SHIFT</kbd><kbd>0</kbd> | ﮿﯀  |Next/previous day
-<kbd>f</kbd>/<kbd>F</kbd> | ﮿﯀   |Goto next/previous file
-<kbd>g</kbd>/<kbd>G</kbd> |祝  | Move to the top/bottom of the current view
-<kbd>Home</kbd>/<kbd>End</kbd> |祝 | Move to the top/bottom of the current view
-<kbd>SHIFT</kbd><kbd>/</kbd>|| Left/Right ten columns
-<kbd>SHIFT</kbd><kbd>/</kbd>|| Left/Right ten columns
-|_Marking_{.f1}||
+|||
+|_Bookmarks_{.f1}||
 <kbd>m</kbd>               || Mark/unmark the line at the top of the display.
 <kbd>M</kbd>               || Mark/unmark all the lines between the top of the display and the last line marked/unmarked.
 <kbd>J</kbd>               |怜  |  Mark/unmark the next line after the previously marked line.
 <kbd>K</kbd>               |玲  |  Like 'J' except it toggles the mark on the previous line.
 <kbd>C</kbd>               | | Clear all marked lines.
-<kbd>c</kbd>               | | _Copy all selected bookmarks_{.hl}, if there are marked messages
+<kbd>c</kbd>               | | _Copy the marked text_{.hl} to the X11 selection buffer or OS X clipboard.
 <kbd>T</kbd>               || Toggle time
 |||
 |_Filters_{.f1}||
 |<kbd>CTRL</kbd>+<kbd>f</kbd>| |Toggle enable/disable all filters|
 |||
-|_View_{.f1}||
+|_Display options_{.f1}||
 |<kbd>P</kbd>  |  | Switch to/from the pretty-printed view|
 |<kbd>p</kbd>  || enable or disable the display of the fields that the log message parser knbows about|
 |<kbd>v</kbd>  |  | Switch to/from the SQL result view|
 |<kbd>Shift</kbd>+<kbd>v</kbd>  | 難 | Switch to/from the SQL result view and move to the corresponding in the log_line column
-<kbd>CTRL</kbd>+<kbd>l</kbd>  |  | (_Lo-fi mode_{.hl}) Exit screen-mode and write the displayed log lines in plain text to the terminal
-<kbd>CTRL</kbd>+<kbd>w</kbd>  | 蝹 | Toggle wrap
+<kbd>CTRL</kbd>+<kbd>l</kbd>  |  | (_Lo-fi mode_{.hl}) Exit screen-mode and write the displayed log lines in plain text to the terminal
+<kbd>CTRL</kbd>+<kbd>R</kbd>  |  | Reset the session state.  This will save the current session state (filters, highlights) and then reset the state to the factory default.
+<kbd>z</kbd>/<kbd>Z</kbd>  |  | Zoom in or out one step in the histogram view
+<kbd>CTRL</kbd>+<kbd>w</kbd>  | 蝹 | _Toggle wrap_{.hl}
 <kbd>SHIFT</kbd>+<kbd>t</kbd> |神 | Display elapsed time between lines
 <kbd>i</kbd>/<kbd>I</kbd>                  | | View/leave a histogram of the log messages over time
 <kbd>I</kbd>                  | | Switch between the log and histogram views while keeping the time displayed at the top of each view in sync.
@@ -102,7 +108,10 @@ _Movement_{.f1}|
    ``` sql
    ;select distinct(uri) from logline order by uri;
    ```
-
+   or
+   ``` sql 
+   ;SELECT distinct(class) from logline order by class;
+   ```
 
 ## Run commands before showing the logs
 Sometimes you want to set specific filters for certain purposes before running lnav, you can do it by having a shabang line inside a script that contains `#!lnav -f` or `#!lnav -nf` (`n` is for headless mode, so lnav will quit and doesn't show curse interface and `f` is for executing commands)
