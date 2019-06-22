@@ -125,8 +125,8 @@ _Examples:_{.f3}
    lnav -c ':goto 10' /var/log/curity/server.log
    ```
    This option **can be given multiple times** to execute multiple operations in sequence.
-1. `-r`
-   _goto a line_{.ct}
+1. `-r`:
+   _Using `-r` to load older rotated logs_{.ct}
    ``` sh
    # The following command only loads /var/log/apache2/error.log
    sudo lnav /var/log/apache2/error.log
@@ -140,6 +140,33 @@ _Examples:_{.f3}
    sudo lnav -r /var/log/apache2/error.log
    ```
    ![lnav-loaded-files.png](/img/unix/lnav-loaded-files.png)
+   
+   _Using `-r` to load older syslog rotated logs_{.ct}
+   ``` sh
+   # The following command only loads /var/log/apache2/error.log
+   sudo lnav -r
+   ```   
+   
+1. `-d`: 
+   _Using `-d` to write debug logs to a file_{.ct}
+   ``` sh
+   lnav /var/log/curity/server.log -d /tmp/lnav.out
+   ```
+1. `-t`:
+   _Using `-t` to prepend timestamp_{.ct}
+   ``` sh
+   ,build i3 | lnav -t
+   
+   ## Slightly better version will use `|&` which will not mess with lnav display
+   ,build i3 |& lnav -t
+   ```
+   _Pay attention to the usage of `|&` (pipe ampersand) to avoid messing lnav display when piping!_{.note .red}
+1. `-w`:
+   _Using `-w` to write stdin to a file_{.ct}
+   ``` sh
+   ,build i3 |& lnav -t -w /tmp/lnav.out
+   ```
+   `/tmp/lnav.out` will contain the output of make
 
 ## SQL
 1. Stand on a line and press <kbd>p</kbd> tos how message parser output
