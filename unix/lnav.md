@@ -18,8 +18,8 @@ Shortcut                |   | Descrtiption
 _Movement_{.f1}| 
 <kbd>e</kbd>/<kbd>E</kbd> |怜 玲 | Jump to next/previous error
 <kbd>w</kbd>/<kbd>W</kbd> |怜 玲 ﱿ |Jump to next/previous warning
-<kbd>g</kbd>/<kbd>G</kbd> |ﬢ| ﬠ   Move to the top of the current view
-<kbd>Home</kbd>/<kbd>End</kbd> |ﬠ|   Move to the bottom of the current view
+<kbd>g</kbd>/<kbd>G</kbd> | ﬢ ﬠ|    Move to the top/bottom of the current view
+<kbd>Home</kbd>/<kbd>End</kbd> | ﬢ|   Move to the top/bottom of the current view
 <kbd>shift</kbd><kbd>/</kbd>|| Left/Right ten columns
 |_Marking_{.f1}||
 <kbd>m</kbd>               || Mark/unmark the line at the top of the display.
