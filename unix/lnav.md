@@ -23,7 +23,8 @@ _Spatial Navigation_{.f1}| |
 <kbd>n</kbd>/<kbd>N</kbd> | ﮿﯀   |Jump to next/previous search hit
 <kbd>u</kbd>/<kbd>U</kbd> | ﮿﯀   |Jump to next/previous Bookmark
 <kbd>s</kbd>/<kbd>S</kbd> | ﮿﯀  省 |A slow down is detected by measuring how quickly the message rate has changed over the previous several messages.
-<kbd>f</kbd>/<kbd>F</kbd> | ﮿﯀   |Goto next/previous file
+<kbd>f</kbd>/<kbd>F</kbd> | ﮿﯀   |Goto next/previous log file
+<kbd>X</kbd> |   |Close current log file
 <kbd>SHIFT</kbd><kbd>/</kbd>|| Left/Right ten columns
 <kbd>SHIFT</kbd><kbd>/</kbd>|| Left/Right ten columns
 |||
@@ -42,6 +43,7 @@ _Spatial Navigation_{.f1}| |
 <kbd>T</kbd>               || Toggle time
 |||
 |_Filters_{.f1}||
+|<kbd>TAB</kbd> | |Toggle focusing on the Filter Editor or to the main window|
 |<kbd>CTRL</kbd>+<kbd>f</kbd>| |Toggle enable/disable all filters|
 |||
 |_Display options_{.f1}||
