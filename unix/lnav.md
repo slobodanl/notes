@@ -13,7 +13,7 @@ curl -o ~/.lnav/formats/log4j.json https://raw.githubusercontent.com/PaulWay/lna
 
 ## Keyboard shortcuts
 
-Shortcut                |   | Descrtiption 
+Shortcut                |  Iconinc Desc | Descrtiption 
 ------------------------|---|---------------------------------------------------
 _Spatial Navigation_{.f1}| |
 <kbd>g</kbd>/<kbd>G</kbd> |祝  | Move to the top/bottom of the current view
