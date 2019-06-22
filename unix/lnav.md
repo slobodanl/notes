@@ -124,10 +124,22 @@ _Examples:_{.f3}
    # Goto line number 10 after loading the file
    lnav -c ':goto 10' /var/log/curity/server.log
    ```
+   This option **can be given multiple times** to execute multiple operations in sequence.
+1. `-r`
    _goto a line_{.ct}
    ``` sh
+   # The following command only loads /var/log/apache2/error.log
+   sudo lnav /var/log/apache2/error.log
+   
+   # How ever supplying -r will cause lnav to load all the following files:
+   # /var/log/apache2/error.log
+   # /var/log/apache2/error.log.1
+   # /var/log/apache2/error.log.2.gz
+   # ....
+   # /var/log/apache2/error.log.14.gz   
+   sudo lnav -r /var/log/apache2/error.log
    ```
-
+   ![lnav-loaded-files.png](/img/unix/lnav-loaded-files.png)
 
 ## SQL
 1. Stand on a line and press <kbd>p</kbd> tos how message parser output
