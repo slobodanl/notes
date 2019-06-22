@@ -17,7 +17,7 @@ Shortcut                |   | Descrtiption
 ------------------------|---|---------------------------------------------------
 _Movement_{.f1}| 
 <kbd>e</kbd>/<kbd>E</kbd> | ﮿﯀  | Jump to next/previous error
-<kbd>w</kbd>/<kbd>W</kbd> | ﮿﯀  ﱿ |Jump to next/previous warning
+<kbd>w</kbd>/<kbd>W</kbd> | ﮿﯀   |Jump to next/previous warning
 <kbd>n</kbd>/<kbd>N</kbd> | ﮿﯀   |Jump to next/previous search hit
 <kbd>u</kbd>/<kbd>U</kbd> | ﮿﯀   |Jump to next/previous Bookmark
 <kbd>1-6</kbd>/<kbd>SHIFT</kbd><kbd>1-6</kbd> | ﮿﯀  |Next/previous n’th ten minute of the hour
