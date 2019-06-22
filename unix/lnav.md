@@ -22,7 +22,7 @@ _Spatial Navigation_{.f1}| |
 |_Chronological Navigation_{.f1}||
 <kbd>1-6</kbd>/<kbd>SHIFT</kbd><kbd>1-6</kbd> | ﮿﯀  |Next/previous n’th ten minute of the hour
 <kbd>8</kbd>/<kbd>7</kbd> | ﮿﯀  |Next/previous minute
-<kbd>0</kbd>/<kbd>SHIFT</kbd><kbd>0</kbd> | ﮿﯀  |Next/previous day
+<kbd>0</kbd>/<kbd>SHIFT</kbd><kbd>0</kbd> | ﮿﯀  |_Next/previous day_{.hl}
 |||
 |_Bookmarks_{.f1}||
 <kbd>m</kbd>               || Mark/unmark the line at the top of the display.
@@ -34,8 +34,15 @@ _Spatial Navigation_{.f1}| |
 <kbd>T</kbd>               || Toggle time
 |||
 |_Filters_{.f1}||
-|<kbd>TAB</kbd> | |Toggle focusing on the Filter Editor or to the main window|
+|<kbd>TAB</kbd> | |Toggle focusing on the Filter Editor or to the main window<br>_(only available in lnav 0.8.5+)_{.red}|
 |<kbd>CTRL</kbd>+<kbd>f</kbd>| |Toggle enable/disable all filters|
+||| **Only when Filter Editor is active**<br>|
+|<kbd>SPACE</kbd> || **Toggle** a filter|
+|<kbd>o</kbd> |ﱻ| Create a new "**out**" filter |
+|<kbd>i</kbd> |ﱷ| Create a new "**in**" filter |
+|<kbd>t</kbd> |﴾| **Toggle** the type of filter between "**in**" and "**out**"|
+|<kbd>Enter</kbd> || Edit the selected filter |
+|<kbd>D</kbd> |﫧| Delete the selected filter |
 |||
 |_Display options_{.f1}||
 |<kbd>P</kbd>  |  | Switch to/from the pretty-printed view|
@@ -43,7 +50,7 @@ _Spatial Navigation_{.f1}| |
 |<kbd>v</kbd>  |  | Switch to/from the SQL result view|
 |<kbd>Shift</kbd>+<kbd>v</kbd>  | 難 | Switch to/from the SQL result view and move to the corresponding in the log_line column
 <kbd>CTRL</kbd>+<kbd>l</kbd>  |  | (_Lo-fi mode_{.hl}) Exit screen-mode and write the displayed log lines in plain text to the terminal
-<kbd>CTRL</kbd>+<kbd>R</kbd>  |  | Reset the session state.  This will save the current session state (filters, highlights) and then reset the state to the factory default.
+<kbd>CTRL</kbd>+<kbd>R</kbd>  |  | _Reset the session state_{.hl}.  This will save the current session state (filters, highlights) and then reset the state to the factory default.
 <kbd>z</kbd>/<kbd>Z</kbd>  |  | Zoom in or out one step in the histogram view
 <kbd>CTRL</kbd>+<kbd>w</kbd>  | 蝹 | _Toggle wrap_{.hl}
 <kbd>SHIFT</kbd>+<kbd>t</kbd> |神 | Display elapsed time between lines
