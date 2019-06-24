@@ -34,6 +34,8 @@ Try running dunst:
 ``` sh
 dunst -config ~/.config/dunst/dunstrc -print
 ```
+_Also make sure to run `sudo dunst -/.config/dunst/dunstrc -print` because `sudo` user might already have acquired the same app although it's not obviouse and even though you have already uninstalled the extra notification service!_{.note .red}
+
 You might get something like this:
 ```
 CRITICAL: Cannot acquire 'org.freedesktop.Notifications': Name is acquired by 'Notification Daemon' with PID '19731'.
@@ -48,6 +50,11 @@ We can see that `/usr/lib/mate-notification-daemon/mate-notification-daemon` is 
 ``` sh
 sudo apt remove mate-notification-daemon
 ```
+
+Some of the notification services that are safe to be removed are:
+1. `notify-osd`
+2. `mate-notification-daemon`
+3. ...
 
 -----------------------------------------
 2017-11-30 00:35:23
