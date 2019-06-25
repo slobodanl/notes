@@ -13,5 +13,4 @@ Default landing page for daily notes
 | Curiosity | be finite |  |  |  |
 |  |  |  |  |  |
 
-
 Created at: **2018-11-13**
