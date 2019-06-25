@@ -36,10 +36,10 @@ echo "body of your email" | mail -s "This is a Subject" -a "From: you@example.co
 
 ``` sh
 # View
-set pager_index_lines=20  # Split the view and show pager at line 20 
+set pager_index_lines=20  # Split the view and show pager at line 20
 ## Sidebar
-set sidebar_width         = 30                                                   
-set sidebar_visible       = yes                                                  
+set sidebar_width         = 30
+set sidebar_visible       = yes
 set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S" 
 
 # Sorting
