@@ -53,13 +53,17 @@ from email6.parser import Parser
 
 # No module named 'apt_pkg' 
 ```
-sudo apt install --reinstall --purge python_apt
+sudo apt install --reinstall --purge python-apt
 cd /usr/lib/python3/dist-packages
 ls -la apt_pkg.cpython-*
 
 
 sudo ln -s apt_pkg.cpython-37m-x86_64-linux-gnu.so apt_pkg.cpython-34m-x86_64-linux-gnu.so
 sudo ln -s apt_pkg.cpython-37m-x86_64-linux-gnu.so apt_pkg.cpython-36m-x86_64-linux-gnu.so
+```
+# No module named 'dist-util'
+``` sh
+sudo apt-get install python-distutils python3-distutils python-distutils-extra
 ```
 
 # Install/uninstalling using specific python settings
