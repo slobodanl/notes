@@ -62,4 +62,9 @@ sudo ln -s apt_pkg.cpython-37m-x86_64-linux-gnu.so apt_pkg.cpython-34m-x86_64-li
 sudo ln -s apt_pkg.cpython-37m-x86_64-linux-gnu.so apt_pkg.cpython-36m-x86_64-linux-gnu.so
 ```
 
+# Install/uninstalling using specific python settings
+``` sh
+/usr/bin/python3.6 -m pip install -U pep8 --user 
+```
+
 [LPDIEINMNASO]: https://stackoverflow.com/a/36232975/161312
