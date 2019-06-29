@@ -12,7 +12,7 @@ if a number isn't explicitly given, then **number 1** is assumed by the shell (b
 - `>/dev/null 2>&1`: The same as above but portable!
 - `>/dev/null`: Redirect **STDOUT** to `/dev/null` (only STDERR shows on console)
 
-## Exampless
+## Examples
 _Pipe `jq` to `less`, with colour_{.ct}
 ``` sh
 pinboard bookmarks |jq -C '.' |& less
