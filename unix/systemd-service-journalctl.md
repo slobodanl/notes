@@ -194,9 +194,11 @@ _Written by: Reza Shams Amiri_
 References:
 1. [How to Manage 'Systemd' Services and Units Using 'Systemctl' in Linux][HTMSSAUUSIL]
 2. [How To Use Systemctl to Manage Systemd Services and Units | DigitalOcean][HTUSTMSSAUD]
+3. [How To Use Journalctl to View and Manipulate Systemd Logs | DigitalOcean][HTUJTVAMSLD]
 
 * * *
 Creation date: _2018-10-29_
 
 [HTMSSAUUSIL]: https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/
 [HTUSTMSSAUD]: https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+[HTUJTVAMSLD]: https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs
