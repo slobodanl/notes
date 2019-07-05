@@ -37,8 +37,18 @@ _Written by: Reza Shams Amiri_
     ```
     1. List all failed units
     ``` sh
-    systemctl --failed
-    ```
+    systemctl list-units --state=failed
+    # Or you can use the alias
+    # systemctl --failed        
+    ```    
+    _`systemctl --failed` doesn't work on all systems_{.note}
+    **Example results could be like this:**
+    ![failed-services.png](/img/unix/failed-services.png)
+1. **Display status** of the unit:
+   ``` sh
+   sudo systemctl status networkd-dispatcher.service      
+   ```
+   ![service-status.png](/img/unix/service-status.png)
 1. **Mask**/**Unmask** (imposible to start)
     ``` sh
     systemctl mask httpd.service
@@ -74,15 +84,22 @@ _Written by: Reza Shams Amiri_
     ```
     
 ##  journalctl  
-1. **Show logs for a specific unit**:
+1. **Show logs for a specific unit** (`<service-name>.service`):
     1. to follow the logs:
     ``` sh
     sudo journalctl -f -u wiki-private.service
+    # OR: sudo journalctl -f -u wiki-private
     ```
     1. to follow and pass it to lnav
     ``` sh
     sudo journalctl -f -u wiki-private.service | lnav
+    # OR: sudo journalctl -f -u wiki-private | lnav
     ```
+    1. to show logs since boot(`-b`) and not truncating the logs(`-l`) 
+    ``` 
+    sudo journalctl -u networkd-dispatcher -b -l
+    ```
+    
 1. **Rotate logs**:
     1. for all units:
     ``` sh
