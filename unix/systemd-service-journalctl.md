@@ -112,8 +112,7 @@ _Written by: Reza Shams Amiri_
    -10 88c37209120142f390f2b5a4fdbc9a52 Mon 2019-06-10 21:12:10 CEST—Wed 2019-06-12 00:56:54 CEST
    
    journalctl -b -1 -u private-wiki
-    ```
-
+   ```
 1. **Rotate logs**:
     1. for all units:
     ``` sh
