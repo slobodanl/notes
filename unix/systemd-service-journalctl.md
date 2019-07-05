@@ -85,21 +85,35 @@ _Written by: Reza Shams Amiri_
     
 ##  journalctl  
 1. **Show logs for a specific unit** (`<service-name>.service`):
-    1. to follow the logs:
-    ``` sh
-    sudo journalctl -f -u wiki-private.service
-    # OR: sudo journalctl -f -u wiki-private
+   1. to follow the logs:
+   ``` sh
+   sudo journalctl -f -u wiki-private.service
+   # OR: sudo journalctl -f -u wiki-private
+   ```
+   1. to follow and pass it to lnav
+   ``` sh
+   sudo journalctl -f -u wiki-private.service | lnav
+   # OR: sudo journalctl -f -u wiki-private | lnav
+   ```
+   1. to show logs since boot(`-b`) and not truncating the logs(`-l`) 
+   ``` 
+   sudo journalctl -u networkd-dispatcher -b -l
+   ```
+   1. Show logs since(`--since`) a specific date
+   ``` 
+   sudo journalctl --since "2015-01-10 17:15:00" -u wiki-notes.service --no-pager | lnav
+   ```
+   1. Show logs since last boot
+   ``` 
+   journalctl --list-boots
+   
+   -12 456fa857417c4253b71fb798cf457e11 Mon 2019-06-03 19:02:40 CEST—Tue 2019-06-04 00:27:51 CEST
+   -11 e9cc9d10b9304cc4b23ac55ee73fc917 Tue 2019-06-04 19:12:45 CEST—Mon 2019-06-10 05:23:56 CEST   
+   -10 88c37209120142f390f2b5a4fdbc9a52 Mon 2019-06-10 21:12:10 CEST—Wed 2019-06-12 00:56:54 CEST
+   
+   journalctl -b -1 -u private-wiki
     ```
-    1. to follow and pass it to lnav
-    ``` sh
-    sudo journalctl -f -u wiki-private.service | lnav
-    # OR: sudo journalctl -f -u wiki-private | lnav
-    ```
-    1. to show logs since boot(`-b`) and not truncating the logs(`-l`) 
-    ``` 
-    sudo journalctl -u networkd-dispatcher -b -l
-    ```
-    
+
 1. **Rotate logs**:
     1. for all units:
     ``` sh
