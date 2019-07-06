@@ -27,7 +27,7 @@ _Written by: Reza Shams Amiri_
     systemctl list-units --all --state=inactive
     
     ```
-    1. List all running units    
+    1. **List all running units    **
     ``` sh
     systemctl list-units    
     ```
@@ -35,13 +35,23 @@ _Written by: Reza Shams Amiri_
     ``` sh
     journalctl --field _SYSTEMD_UNIT
     ```
-    1. List all failed units
+    _Example_{.f1}
+    Find teamviewer service and disable it:
+    ``` 
+     systemctl list-units | grep team
+    teamviewerd.service
+     sudo systemctl stop teamviewerd.service
+     sudo systemctl disable teamviewerd.service
+     sudo systemctl mask teamviewerd.service
+    ```
+
+    1. **List all failed units**
     ``` sh
     systemctl list-units --state=failed
     # Or you can use the alias
     # systemctl --failed        
     ```    
-    _`systemctl --failed` doesn't work on all systems_{.note}
+    _`systemctl --failed` doesn't work on all systems_{.note}    
     **Example results could be like this:**
     ![failed-services.png](/img/unix/failed-services.png)
 1. **Display status** of the unit:
@@ -60,7 +70,7 @@ _Written by: Reza Shams Amiri_
     $ systemctl list-unit-files    
     httpd.service                          masked
     ```
-1. Enable/disable:
+1. **Enable/disable**:
     ``` sh
     # systemctl is-active tmp.mount
     # systemctl enable tmp.mount
@@ -190,6 +200,41 @@ _Written by: Reza Shams Amiri_
                                         └─-.slice @175ms
 
     ```
+## Default target
+To view the default target that systemd tries to reach at boot (which in turn starts all of the unit files that make up the dependency tree of that target), type:
+``` sh
+ systemctl get-default
+graphical.target
+
+ sudo systemctl list-dependencies graphical.target
+graphical.target
+● ├─accounts-daemon.service
+● ├─apport.service
+● ├─dictd.service
+● ├─grub-common.service
+● ├─hddtemp.service
+● ├─switcheroo-control.service
+● ├─systemd-update-utmp-runlevel.service
+● ├─udisks2.service
+● ├─xdm.service
+● └─multi-user.target
+●   ├─anacron.service
+●   ├─apache2.service
+●   ├─apport.service
+●   ├─autofs.service
+●   ├─avahi-daemon.service
+●   ├─binfmt-support.service
+●   ├─cfengine3.service
+●   ├─containerd.service
+●   ├─cron.service
+●   ├─cups-browsed.service
+●   ├─cups.path
+●   ├─dbus.service
+●   ├─dictd.service
+●   ├─dmesg.service
+
+```
+Here we can see that `xdm.service` is started at boot
 
 References:
 1. [How to Manage 'Systemd' Services and Units Using 'Systemctl' in Linux][HTMSSAUUSIL]
