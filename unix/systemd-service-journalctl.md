@@ -43,6 +43,8 @@ _Written by: Reza Shams Amiri_
      sudo systemctl stop teamviewerd.service
      sudo systemctl disable teamviewerd.service
      sudo systemctl mask teamviewerd.service
+     sudo rm /etc/systemd/system/teamviewerd.service
+     sudo systemctl daemon-reload
     ```
 
     1. **List all failed units**
