@@ -156,6 +156,7 @@ _Written by: Reza Shams Amiri_
 |               |  `dq yelp` |
 |||
 |_Service_{.f1}||
+| `sc`     | `sc` is alias for `sudo PATH=\"$PATH\" -E systemctl --no-pager `|
 | `,s`     | Show/rotate logs for different services using a rofi dialog|
 | `,ss`     | services state change script |
 |||
