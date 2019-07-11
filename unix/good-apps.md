@@ -194,6 +194,15 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 1. sudo evtest # lists all your devices  
 1. xmodmap -pke # list all keycodes  
 
+# Editors
+## micro
+Terminal editor for linux (10mb) [(github page)][GZMAMAITBTE]
+``` sh
+# installation
+curl https://getmic.ro | bash
+```
+
+
 -----------------------------------------
 2017-11-07 01:18:46
 
@@ -210,3 +219,4 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 [7MUELAO2]: https://www.fossmint.com/most-used-linux-applications/
 [GBBBSCFWAL]: https://github.com/bleachbit/bleachbit
 [TUE]: https://taskwarrior.org/docs/examples.html
+[GZMAMAITBTE]: https://github.com/zyedidia/micro
