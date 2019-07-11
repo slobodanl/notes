@@ -18,6 +18,12 @@ _list all gmail mailboxes_{.ct}
 ``` sh
 mbsync -l Gmail
 ```
+### Cron job
+You should add the following cronjob to run `mailsync` each minute:
+_crontab -e_
+``` 
+*/1 * * * * /bin/sh -c "$(type mailsync | cut -d' ' -f3)" >>/tmp/crontab.log 2>&1
+```
 
 * * *
 Creation date: _2019-07-11_
