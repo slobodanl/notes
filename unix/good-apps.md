@@ -202,6 +202,12 @@ Terminal editor for linux (10mb) [(github page)][GZMAMAITBTE]
 curl https://getmic.ro | bash
 ```
 
+# MidiPlayer
+You can use `Audacious`:
+``` sh
+sudo apt install audacious
+```
+See [MIDI - ArchWiki][MA] for instructions, you need to install `soundfont-fluid` and point Audacious to use it by going to `File`  `Preferences`  `Plugins`  `Input`  `AMIDI-Plug`  `Preferences` and adding `/usr/share/soundfonts/FluidR3_GM.sf2` to it.
 
 -----------------------------------------
 2017-11-07 01:18:46
@@ -220,3 +226,4 @@ curl https://getmic.ro | bash
 [GBBBSCFWAL]: https://github.com/bleachbit/bleachbit
 [TUE]: https://taskwarrior.org/docs/examples.html
 [GZMAMAITBTE]: https://github.com/zyedidia/micro
+[MA]: https://wiki.archlinux.org/index.php/MIDI
