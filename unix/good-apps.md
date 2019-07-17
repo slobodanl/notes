@@ -214,6 +214,10 @@ sudo apt-get install fluid-soundfont-gm
 ```
 Then point Audacious to use it by going to `File`  `Preferences`  `Plugins`  `Input`  `AMIDI-Plug`  `Preferences` and adding `/usr/share/soundfonts/FluidR3_GM.sf2` to it.
 
+Some nice websites to download MIDI files:
+- [Classical MIDI Files :: MIDIWORLD.COM][CMFDFFMC]
+
+
 -----------------------------------------
 2017-11-07 01:18:46
 
@@ -232,3 +236,4 @@ Then point Audacious to use it by going to `File`  `Preferences`  `Plugins
 [TUE]: https://taskwarrior.org/docs/examples.html
 [GZMAMAITBTE]: https://github.com/zyedidia/micro
 [MA]: https://wiki.archlinux.org/index.php/MIDI
+[CMFDFFMC]: https://www.midiworld.com/classic.htm
