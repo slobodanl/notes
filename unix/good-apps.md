@@ -212,7 +212,7 @@ See [MIDI - ArchWiki][MA] for instructions, you need to install `soundfont-fluid
 sudo apt-get install fluidsynth
 sudo apt-get install fluid-soundfont-gm
 ```
-Then point Audacious to use it by going to `File`  `Preferences`  `Plugins`  `Input`  `AMIDI-Plug`  `Preferences` and adding `/usr/share/soundfonts/FluidR3_GM.sf2` to it.
+Then point Audacious to use it by going to `File`  `Preferences`  `Plugins`  `Input`  `AMIDI-Plug`  `Preferences` and adding `/usr/share/sounds/sf2/FluidR3_GM.sf2` to it.
 
 Some nice websites to download MIDI files:
 - [Classical MIDI Files :: MIDIWORLD.COM][CMFDFFMC]
