@@ -4,7 +4,7 @@ For information about `Pango` syntax look at [Text Attribute Markup: Pango Refer
 
 _Pango example_{.ct}
 ``` sh
-<span font='Balcony Angels Regular 32'>Current Agendas</span>
+<span font='Balcony Angels Regular 32' underline='low'>Current Agendas</span>
 - <span color="#ff0000" weight='heavy'>check</span> <big>state</big> in target
 - Emphasize on the <span weight='heavy'>important</span> parts
 - <span color="#ff0000"><span weight='heavy'>bold</span>notbold </span>
