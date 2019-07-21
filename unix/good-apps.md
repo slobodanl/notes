@@ -107,7 +107,7 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 1. **FontBase**: [https://fontba.se/downloads/linux#][FDFL]
    After downloading the `AppImage` file just make it executable and move it to `/opt` folder and run it.
    ![FontBase.png](/img/unix/FontBase.png)
-1. **Fontmatix**: see `install-fontmatrix.md` for installation
+1. **Fontmatix**: see [Install-Fontmatrix.Md][IFM] for installation
 
    ![](http://i.imgur.com/y1Nf2Ck.png)
 
@@ -241,3 +241,4 @@ Some nice websites to download MIDI files:
 [CMFDFFMC]: https://www.midiworld.com/classic.htm
 [FDFL]: https://fontba.se/downloads/linux#
 [1BLFTAHTILFOU]: https://www.ubuntupit.com/15-best-linux-font-tools-and-how-to-install-linux-fonts-on-ubuntu/
+[IFM]: /install/fontmatrix
