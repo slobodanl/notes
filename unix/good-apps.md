@@ -104,16 +104,18 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 
 
 # Font previewers
-
-1. [Fontmatix]: see `install-fontmatrix.md` for installation
+1. **FontBase**: [https://fontba.se/downloads/linux#][FDFL]
+   After downloading the `AppImage` file just make it executable and move it to `/opt` folder and run it.
+   ![FontBase.png](/img/unix/FontBase.png)
+1. **Fontmatix**: see `install-fontmatrix.md` for installation
 
    ![](http://i.imgur.com/y1Nf2Ck.png)
 
-1. [Linux font preview applications](https://cweiske.de/tagebuch/Linux%20font%20preview%20applications.htm)
+1. [15 Best Linux Font Tools and How to Install Linux Fonts on Ubuntu][1BLFTAHTILFOU]
 
 # Notification Daemons
-  1. [dunst]
-  2. [twmn]
+  1. **dunst**
+  2. **twmn**
   3. [eventd](https://www.eventd.org/)
   4. [State of the art](https://www.eventd.org/state-art.html)
 
@@ -237,3 +239,5 @@ Some nice websites to download MIDI files:
 [GZMAMAITBTE]: https://github.com/zyedidia/micro
 [MA]: https://wiki.archlinux.org/index.php/MIDI
 [CMFDFFMC]: https://www.midiworld.com/classic.htm
+[FDFL]: https://fontba.se/downloads/linux#
+[1BLFTAHTILFOU]: https://www.ubuntupit.com/15-best-linux-font-tools-and-how-to-install-linux-fonts-on-ubuntu/
