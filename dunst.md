@@ -1,6 +1,40 @@
 # Dunst
+## Pango
+For information about `Pango` syntax look at [Text Attribute Markup: Pango Reference Manual][TAMPRM]
 
------------------------------------------ 
+_Pango example_{.ct}
+``` sh
+<span font='Balcony Angels Regular 32'>Current Agendas</span>
+- <span color="#ff0000" weight='heavy'>check</span> <big>state</big> in target
+- Emphasize on the <span weight='heavy'>important</span> parts
+- <span color="#ff0000"><span weight='heavy'>bold</span>notbold </span>
+<span bgcolor="#00FF0044" style='italic' color='#00FF00FF' weight='bold' stretch='expanded'>
+This section has different background and foreground color
+</span>
+<span stretch='ultracondensed'>
+You <b>can</b> also <i>see</i> variable<sub>sub</sub>/variable<sup>sup</sup> 
+and <small>also it can be small</small> or <big>big</big> or <u>underlined</u>
+or <s>strikethrough</s>
+</span>
+<span background='#f8f8f8' color='#181818'><tt>
+#!/bin/sh
+exec ~/bini3/,o 9 $@
+</tt></span>
+- <span underline='double' underline_color='yellow'>pango in notification for agenda</span>
+
+<span font='False Positive Round BRK Normal 32'>This font is good?</span>
+<span font='Dephunked BRK Regular 32'>Or this?</span>
+```
+![agenda.png](/img/agenda.png)
+## Actions
+You can have some actions and when the notification is displayed use :
+<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>.</kbd> which is definded in `dunstrc` (shortcut  context) to display the result in `rofi` or `dmenu`
+
+``` sh
+dunstify "new mail" "text" -i "mail-6-128" --action="c,cancel" --action="r,reply"
+```
+
+## Problems
 Either remove the following service or change it to use `dunst`
 
 ```bash
@@ -58,3 +92,5 @@ Some of the notification services that are safe to be removed are:
 
 -----------------------------------------
 2017-11-30 00:35:23
+
+[TAMPRM]: https://developer.gnome.org/pango/stable/PangoMarkupFormat.html
