@@ -79,12 +79,16 @@ Commands
 |  | Toggle single mode through ZoomWin plugin (second toggle is slow) |
 |  |  |
 
+## Copy & Paste
+| command | description |
+| ------- | ----------- |
+|Copy and then paste in command bar|Select the block in visual mode, <kbd>y</kbd> to yank, press <kbd>:</kbd> then press <kbd>Ctrl</kbd>+<kbd>r</kbd> and press <kbd>"</kbd>
 ## search & replace
 
 | command | description |
 | ------- | ----------- |
 | `:%s//new-string/g` | First use <kbd>*</kbd> to highlight the words, then run this for replacing all |
-|  | This is a shortcut for the above one liner |
+|  <kbd>Ctrl</kbd> + <kbd>n</kbd>| This is a shortcut for the above one liner |
 |  |  |
 | `:%s/foo/bar/g` | replaces foo with bar in all lines |
 | `:s/foo/bar/g` | replaces foo with bar only in current line |
