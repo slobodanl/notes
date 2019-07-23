@@ -33,12 +33,6 @@ Commands
 
 | command | description |
 | ------- | ----------- |
-| <kbd>shift</kbd> + <kbd>right</kbd>/<kbd>left</kbd> arrow | move to next or previous buffer |
-| <kbd>shift</kbd> + <kbd>right</kbd>/<kbd>left</kbd> arrow | move to next or previous buffer |
-| <kbd>ctrl</kbd>+<kbd>wc</kbd> or <kbd>ctrl</kbd>+<kbd>q</kbd> | close current buffer |
-| <kbd>,,</kbd> | toggle previous buffer |
-| `:bd` | close current buffer |
-| `,q` | delete current buffer and move on |
 | `:vert help e` | show help in vertical mode |
 | `:vsp` | open another file in vertical |
 | `:vsp ~/.zshrc` | open another file in vertical |
@@ -52,8 +46,13 @@ Commands
 
 | command | description |
 | ------- | ----------- |
-| `:bn` | next buffer |
-| `,q` | delete current buffer and move on |
+| <kbd>ctrl</kbd>+<kbd>wc</kbd> or <kbd>ctrl</kbd>+<kbd>q</kbd> |  close current buffer |
+| `:bd` |  close current buffer |
+| `,q` |  delete current buffer and move on |
+|||
+| <kbd>,,</kbd> |  toggle previous buffer |
+| <kbd>shift</kbd> + <kbd></kbd>/<kbd></kbd> arrow |  move to next or previous buffer |
+| `:bn` |  next buffer |
 
 ## Window manipulation
 
@@ -84,10 +83,11 @@ Commands
 | ------- | ----------- |
 |Copy and then paste in command bar|Select the block in visual mode, <kbd>y</kbd> to yank, press <kbd>:</kbd> then press <kbd>Ctrl</kbd>+<kbd>r</kbd> and press <kbd>"</kbd>
 
-## search & replace
+## Search & Replace
 
 | command | description |
 | ------- | ----------- |
+| <kbd>/</kbd><kbd>q</kbd>| will unselect/unhighlight what ever you have selected or searched for|
 | <kbd>/</kbd><kbd>/</kbd> followd by <kbd>Ctrl</kbd>+<kbd>n</kbd>| Select visually some text and in vmod press <kbd>/</kbd><kbd>/</kbd> to search the whole document for it. After selection is made use <kbd>Ctrl</kbd>+<kbd>n</kbd> to replace|
 | `:%s//new-string/g` | First use <kbd>*</kbd> to highlight the words, then run this for replacing all |
 |  <kbd>Ctrl</kbd> + <kbd>n</kbd>| This is a shortcut for the above one liner |
