@@ -83,10 +83,12 @@ Commands
 | command | description |
 | ------- | ----------- |
 |Copy and then paste in command bar|Select the block in visual mode, <kbd>y</kbd> to yank, press <kbd>:</kbd> then press <kbd>Ctrl</kbd>+<kbd>r</kbd> and press <kbd>"</kbd>
+
 ## search & replace
 
 | command | description |
 | ------- | ----------- |
+| <kbd>/</kbd><kbd>/</kbd> followd by <kbd>Ctrl</kbd>+<kbd>n</kbd>| Select visually some text and in vmod press <kbd>/</kbd><kbd>/</kbd> to search the whole document for it. After selection is made use <kbd>Ctrl</kbd>+<kbd>n</kbd> to replace|
 | `:%s//new-string/g` | First use <kbd>*</kbd> to highlight the words, then run this for replacing all |
 |  <kbd>Ctrl</kbd> + <kbd>n</kbd>| This is a shortcut for the above one liner |
 |  |  |
