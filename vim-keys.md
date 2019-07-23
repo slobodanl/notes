@@ -46,12 +46,13 @@ Commands
 
 | command | description |
 | ------- | ----------- |
-| <kbd>ctrl</kbd>+<kbd>wc</kbd> or <kbd>ctrl</kbd>+<kbd>q</kbd> |  close current buffer |
+| <kbd>ctrl</kbd>+<kbd>q</kbd> |  _close current buffer_{.hl} |
+| <kbd>ctrl</kbd>+<kbd>wc</kbd> |  close current window |
 | `:bd` |  close current buffer |
 | `,q` |  delete current buffer and move on |
 |||
-| <kbd>,,</kbd> |  toggle previous buffer |
-| <kbd>shift</kbd> + <kbd></kbd>/<kbd></kbd> arrow |  move to next or previous buffer |
+| <kbd>,,</kbd> |  _toggle previous buffer_{.hl} |
+| <kbd>shift</kbd> + <kbd></kbd>/<kbd></kbd> arrow |  _move to next or previous_{.hl} buffer |
 | `:bn` |  next buffer |
 
 ## Window manipulation
