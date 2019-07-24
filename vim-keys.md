@@ -33,12 +33,6 @@ Commands
 
 | command | description |
 | ------- | ----------- |
-| <kbd>shift</kbd> + <kbd>right</kbd>/<kbd>left</kbd> arrow | move to next or previous buffer |
-| <kbd>shift</kbd> + <kbd>right</kbd>/<kbd>left</kbd> arrow | move to next or previous buffer |
-| <kbd>ctrl</kbd>+<kbd>wc</kbd> or <kbd>ctrl</kbd>+<kbd>q</kbd> | close current buffer |
-| <kbd>,,</kbd> | toggle previous buffer |
-| `:bd` | close current buffer |
-| `,q` | delete current buffer and move on |
 | `:vert help e` | show help in vertical mode |
 | `:vsp` | open another file in vertical |
 | `:vsp ~/.zshrc` | open another file in vertical |
@@ -52,8 +46,14 @@ Commands
 
 | command | description |
 | ------- | ----------- |
-| `:bn` | next buffer |
-| `,q` | delete current buffer and move on |
+| <kbd>ctrl</kbd>+<kbd>q</kbd> |  _close current buffer_{.hl} |
+| <kbd>ctrl</kbd>+<kbd>wc</kbd> |  close current window |
+| `:bd` |  close current buffer |
+| `,q` |  delete current buffer and move on |
+|||
+| <kbd>,,</kbd> |  _toggle previous buffer_{.hl} |
+| <kbd>shift</kbd> + <kbd></kbd>/<kbd></kbd> arrow |  _move to next or previous_{.hl} buffer |
+| `:bn` |  next buffer |
 
 ## Window manipulation
 
@@ -79,12 +79,19 @@ Commands
 |  | Toggle single mode through ZoomWin plugin (second toggle is slow) |
 |  |  |
 
-## search & replace
+## Copy & Paste
+| command | description |
+| ------- | ----------- |
+|Copy and then paste in command bar|Select the block in visual mode, <kbd>y</kbd> to yank, press <kbd>:</kbd> then press <kbd>Ctrl</kbd>+<kbd>r</kbd> and press <kbd>"</kbd>
+
+## Search & Replace
 
 | command | description |
 | ------- | ----------- |
+| <kbd>/</kbd><kbd>q</kbd>| will unselect/unhighlight what ever you have selected or searched for|
+| <kbd>/</kbd><kbd>/</kbd> followd by <kbd>Ctrl</kbd>+<kbd>n</kbd>| Select visually some text and in vmod press <kbd>/</kbd><kbd>/</kbd> to search the whole document for it. After selection is made use <kbd>Ctrl</kbd>+<kbd>n</kbd> to replace|
 | `:%s//new-string/g` | First use <kbd>*</kbd> to highlight the words, then run this for replacing all |
-|  | This is a shortcut for the above one liner |
+|  <kbd>Ctrl</kbd> + <kbd>n</kbd>| This is a shortcut for the above one liner |
 |  |  |
 | `:%s/foo/bar/g` | replaces foo with bar in all lines |
 | `:s/foo/bar/g` | replaces foo with bar only in current line |

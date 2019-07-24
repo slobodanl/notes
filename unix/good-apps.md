@@ -107,6 +107,12 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 1. **FontBase**: [https://fontba.se/downloads/linux#][FDFL]
    After downloading the `AppImage` file just make it executable and move it to `/opt` folder and run it.
    ![FontBase.png](/img/unix/FontBase.png)
+    After installing you should symlink your already installed font folders to FontBase/Providers folder:
+    ``` sh
+    sudo ln -s /usr/share/fonts ~/FontBase/Providers/UserShareFonts
+    sudo ln -s ~/.fonts ~/FontBase/Providers/HomeFonts
+    ```
+
 1. **Fontmatix**: see [Install-Fontmatrix.Md][IFM] for installation
 
    ![](http://i.imgur.com/y1Nf2Ck.png)
