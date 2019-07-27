@@ -7,7 +7,7 @@ Install and configure Thunderbird with these settings:
 ### Server Settings:
 
 * Server Type: IMAP Mail Server
-* Server Name: imap.se.axis.com Port:993
+* Server Name: imap.axis.com Port:993
 * User Name: <your full email address>
 * Connection Security: SSL/TLS
 * Authentication Method: Normal password
