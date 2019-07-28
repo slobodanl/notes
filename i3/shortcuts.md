@@ -39,6 +39,7 @@ _Written by: Reza Shams Amiri_
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>z</kbd> | "Mouse" Mode (easy scroll) |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>n</kbd> | Run `Thunar` |
 | <kbd>Mod</kbd> + <kbd>Shift</kbd> + <kbd>d</kbd> | Run `xfce4-appfinder` |
+| <kbd>Mod</kbd> + <kbd>A</kbd> | Runs Alias Manager which pops up address book and let you copy an email to clipboard |
 | ﯺ Workspace actions |  |
 | <kbd>Mod</kbd> + <kbd>tab</kbd> | Next workspace |
 | <kbd>Mod</kbd> + <kbd>Control</kbd> + <kbd>``</kbd> | Next workspace |
