@@ -236,7 +236,7 @@ Commands
 | r | Force reload :e! #force #reload |
 | gx | In normal mode, if you stand on a link and enter `g` then `x` |
 |  | the link will be opened in a browser window #browser #link |
-| <kbd>CTRL</kbd> + <kbd>f</kbd> | (only in insert mode) call rofi to select an email address from mutt aliases |
+| <kbd>CTRL</kbd> + <kbd>A</kbd> | (_only in insert mode_{.hl}) call rofi to select an email address from mutt aliases |
 
 | command | description |
 | ------- | ----------- |
