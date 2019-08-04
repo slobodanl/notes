@@ -8,6 +8,8 @@ Several ways to test a web site:
    telnet localhost 4200
    ```
    After you are connect, enter your command and press <kbd>ENTER</kbd> **twice**. 
+   See more info this [page][HBNID2H].
+   
    _telnet can be used to connect to an https site, but you can't issue commands to that site use `openssl`, `gnutls-cli` instead_{.note}
 3. **openssl**:
    ``` sh
@@ -33,3 +35,5 @@ Several ways to test a web site:
 
 * * *
 Creation date: _2019-08-04_
+
+[HBNID2H]: http://blog.nullspace.io/day-208.html
