@@ -86,22 +86,22 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
   ```
 # Paint, Image/Graphic applications
 
-    1. Krita
-    2. Gimp
+   1. Krita
+   2. Gimp
 
 # Image previewers
 
-    1. [hiptext](https://github.com/jart/hiptext)
-    2. [libsixel](https://github.com/saitoha/libsixel)
-    3. [w3mimgdisplay](/usr/lib/w3m/w3mimgdisplay)
+   1. [hiptext](https://github.com/jart/hiptext)
+   1. [libsixel](https://github.com/saitoha/libsixel)
+   1. [w3mimgdisplay](/usr/lib/w3m/w3mimgdisplay)
 
 # Utilities  
 
-    1. **peco** : quickly filter the output of commands. Consider it to be the interactive version of grep
-    2. **ncdu** : terminal storage analyzer 
-    3. **hub**  : [hub](https://hub.github.com/) Avoid going to GitHub for pull requests and forks! Perform most of GitHub’s operations from the comfort of the command line.
-    4. **tldr** : Simplified man pages. Usage: `tldr wget`
-
+   1. **peco** : quickly filter the output of commands. Consider it to be the interactive version of grep
+   2. **ncdu** : terminal storage analyzer 
+   3. **hub**  : [hub](https://hub.github.com/) Avoid going to GitHub for pull requests and forks! Perform most of GitHub’s operations from the comfort of the command line.
+   4. **tldr** : Simplified man pages. Usage: `tldr wget`
+   5. **shellinabox**: use it to perform ssh over http, see [this page for more info][HWTCSIABAWBSTTARLS]
 
 # Font previewers
 1. **FontBase**: [https://fontba.se/downloads/linux#][FDFL]
@@ -190,17 +190,18 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 ```
 
 ## finding keycode by pressing them
-1. screenkey: shows on screen what keys have been pressed
-1. xev:  
-   - xev -input keyboard  
-   - xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'  
-1. showkey:  
-   - showkey -a  
-1. xinput:  
-   - xinput list  # then using the ids  
-     xinput test 14  
-1. sudo evtest # lists all your devices  
-1. xmodmap -pke # list all keycodes  
+
+   1. screenkey: shows on screen what keys have been pressed
+   1. xev:  
+      - xev -input keyboard  
+      - xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'  
+   1. showkey:  
+      - showkey -a  
+   1. xinput:  
+      - xinput list  # then using the ids  
+        xinput test 14  
+   1. sudo evtest # lists all your devices  
+   1. xmodmap -pke # list all keycodes  
 
 # Editors
 ## micro
@@ -248,3 +249,4 @@ Some nice websites to download MIDI files:
 [FDFL]: https://fontba.se/downloads/linux#
 [1BLFTAHTILFOU]: https://www.ubuntupit.com/15-best-linux-font-tools-and-how-to-install-linux-fonts-on-ubuntu/
 [IFM]: /install/fontmatrix
+[HWTCSIABAWBSTTARLS]: https://www.tecmint.com/shell-in-a-box-a-web-based-ssh-terminal-to-access-remote-linux-servers/
