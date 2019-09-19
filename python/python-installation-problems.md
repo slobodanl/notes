@@ -71,4 +71,9 @@ sudo apt-get install python-distutils python3-distutils python-distutils-extra
 /usr/bin/python3.6 -m pip install -U pep8 --user 
 ```
 
+# cannot import name `_gi` from `gi`
+``` sh
+s -H python3 -m pip uninstall pygobject --upgrade
+```
+
 [LPDIEINMNASO]: https://stackoverflow.com/a/36232975/161312
