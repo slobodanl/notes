@@ -71,4 +71,12 @@ sudo apt-get install python-distutils python3-distutils python-distutils-extra
 /usr/bin/python3.6 -m pip install -U pep8 --user 
 ```
 
+# cannot import name `_gi` from `gi`
+``` sh
+s -H python3 -m pip uninstall pygobject --upgrade
+```
+# Othe common python installation problems
+[a short guide to install python3 and pip3 on Ubuntu Server · GitHub][ASGTIPAPOUSG]
+
 [LPDIEINMNASO]: https://stackoverflow.com/a/36232975/161312
+[ASGTIPAPOUSG]: https://gist.github.com/hadisfr/5c055c2d850cabeecaf51d1b599bd363
