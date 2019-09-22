@@ -193,15 +193,15 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
 
    1. screenkey: shows on screen what keys have been pressed
    1. xev:  
-      - xev -input keyboard  
-      - xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'  
+      - `xev -input keyboard`
+      - `xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'`
    1. showkey:  
-      - showkey -a  
+      - `showkey -a`
    1. xinput:  
-      - xinput list  # then using the ids  
-        xinput test 14  
-   1. sudo evtest # lists all your devices  
-   1. xmodmap -pke # list all keycodes  
+      - `xinput list`  # then using the ids
+        `xinput test 14`
+   1. `sudo evtest` # lists all your devices
+   1. `xmodmap -pke` # list all keycodes  
 
 # Editors
 ## micro
