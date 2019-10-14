@@ -89,6 +89,17 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
    1. Krita
    2. Gimp
 
+# On screen paint
+
+   1. [GitHub - bk138/gromit-mpx][GBGMGMIAMPGPOTOGDATIEGAWSPAOAIALFTIPSIUTXEWA]
+      ```
+      sudo apt-get install gromit-mpx
+      ```
+      1. <kbd>F9</kbd> Start/stop annotation
+      2. <kbd>shift</kbd><kbd>F9</kbd> Clear annotations
+      3. Erase: right click drag
+      4. Green (arrow): Middle click drag
+
 # Image previewers
 
    1. [hiptext](https://github.com/jart/hiptext)
@@ -250,3 +261,4 @@ Some nice websites to download MIDI files:
 [1BLFTAHTILFOU]: https://www.ubuntupit.com/15-best-linux-font-tools-and-how-to-install-linux-fonts-on-ubuntu/
 [IFM]: /install/fontmatrix
 [HWTCSIABAWBSTTARLS]: https://www.tecmint.com/shell-in-a-box-a-web-based-ssh-terminal-to-access-remote-linux-servers/
+[GBGMGMIAMPGPOTOGDATIEGAWSPAOAIALFTIPSIUTXEWA]: https://github.com/bk138/gromit-mpx
