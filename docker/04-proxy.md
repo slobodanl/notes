@@ -1,16 +1,11 @@
 _Written by: Reza Shams Amiri_
 
-# 04 proxy
+# proxy
 
-1. Add following configuration in **/etc/sysconfig/docker** file:
-    ```
-    export HTTP_PROXY="http://USERNAME:PASSWORD@[your.proxy.server]:[port]"
-    export HTTPS_PROXY="https://USERNAME:PASSWORD@[your.proxy.server]:[port]"
-    ```
-1. Restart the Docker daemon after setting up the proxy.</span>
-    ```
-    service docker restart
-    ```
+I ubuntu use this reference to configure the proxy
+[Control Docker with systemd | Docker Documentation][CDWSDD]
 
 ***
 Creation date: _2019-12-12_
+
+[CDWSDD]: https://docs.docker.com/config/daemon/systemd/
