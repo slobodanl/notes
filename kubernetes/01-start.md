@@ -6,6 +6,8 @@ _Written by: Reza Shams Amiri_
 3. validate kvm: `virt-host-validate`
 4. `minikube start --vm-driver=kvm2`
     1. Make sure the `NO_PROXY` (captial is important) include minikube IP (refer to [HTTP Proxies | minikube][HPM])
+5. `minikube config set vm-driver kvm2`
+6. 
 
 * * *
 Creation date: _2019-12-20_
