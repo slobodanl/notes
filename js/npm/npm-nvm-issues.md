@@ -22,11 +22,15 @@ npm WARN npm can't make any promises that npm will work with this version.
 npm WARN npm Supported releases of Node.js are the latest release of 6, 8, 9, 10, 11, 12.
 npm WARN npm You can find the latest version at https://nodejs.org/
 ```
-that means that `npm` is not correctly linked and `which npm` could result in `~/.npm-global/bin/npm` however the newer npm is actually installed in `~/.nvm/versions/node/v13.5.0/bin/npm`. To fix the issue do the following:
+that means that `npm` is not correctly linked and `which npm` could result in `~/.npm-global/bin/npm` however the newer npm is actually installed in `~/.nvm/versions/node/v13.5.0/bin/npm`. To fix the issue remove any `PATH` binding to `~/.npm-global/bin` because nvm should be in charge of using the correct npm.
+
+## reinstall system packages using `reinstall-packages system`
 1. `alias npm=/home/existme/.nvm/versions/node/v13.5.0/bin/npm`
 2. `npm -v` should result something >= `6.13.4`
 3. `nvm reinstall-packages system`
     1. if you got `Error: EPERM, Operation not permitted`, issue `npm config set unsafe-perm true`
+
+## npm peer problem
 
 * * *
 Creation date: _2019-12-21_
