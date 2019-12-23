@@ -5,7 +5,10 @@ Mount a remote folder into the local host:
 
 _Mount a remote folder into a local folder_{.ct}
 ``` sh
+sudo apt install sshfs
+
 mkdir -p ~/git/remote-example-kube
+
 sshfs rezasa@LNAX:~/git/example-kube ~/git/remote-example-kube
 ```
 
