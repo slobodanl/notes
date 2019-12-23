@@ -1,11 +1,12 @@
 _Written by: Reza Shams Amiri_
-# ssh remote folder mount
+# Mounting a remote folder into a local folder
 
-Mount a remote folder into host
+Mount a remote folder into the local host:
 
-aa
+_Mount a remote folder into a local folder_{.ct}
 ``` sh
-sshfs rezasa@LNAX:/home/rezasa/git/example-kube ~/git/remote-example-kube
+mkdir -p ~/git/remote-example-kube
+sshfs rezasa@LNAX:~/git/example-kube ~/git/remote-example-kube
 ```
 
 * * *
