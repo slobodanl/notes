@@ -42,7 +42,29 @@ docker ps
     docker build -t <image-name> .
     docker run <image-name>
     ```
-
+## Run
+1. Just run:
+   ``` sh
+   docker run <image-name>
+   docker start <image-name>
+   ```
+1. Run and accept keyboard input:
+   If you want to interact with the running container you need to specify `--it`: 
+   | flag | description  |
+   | --- | --- |
+   | -i, --interactive | Keep STDIN open even if not attached |
+   | -t, --tty | Allocate a pseudo-TTY |
+   ``` sh
+   docker run -it <image-name>
+   ```
+   now for example you can break the running docker by issuing <kbd>ctrl</kbd>+<kbd>c</kbd>
+3. Run and expose port:
+   If the docker file exposes some ports inorder to access those ports from localhost, you need to map them.
+   _An example node app which listens to port 8080 but is accessible through 3000_{.ct}
+   ``` sh
+   docker run -p 3000:8080 hello-node
+   ```
+   Now you can go to [http://localhost:3000/]() and access the app which internally runs on 8080
 ## Run a command on a container
 
 1. This can be achieved either by `CONTAINER ID` or it's `NAMES`, so for the above example, you can use both of the following commands to go to the shell prompt:  
