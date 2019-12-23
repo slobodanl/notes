@@ -21,7 +21,7 @@ _Written by: Reza Shams Amiri_
     ```
     After running this command you can see what port the application will use to expose itslef in minikube by issuing:
     ```
-    kubectl describe services describe ghost | grep NodePort:
+    kubectl describe services ghost | grep NodePort:
     ```
 3. run
     ``` sh
