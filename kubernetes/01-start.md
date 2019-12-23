@@ -48,6 +48,29 @@ The ip(192.168.39.44) is comming from `minikube ip`
     kubectl delete deployment hello-nginx
     kubectl delete service hello-nginx
     ```
+1. Checking the logs
+   ``` sh
+   kubectl logs -f jenkins-7f6444449b-hdvv9
+   ```
+1. Login to minikube
+   1. Using minikube itself:
+      ``` sh
+      minikube ssh
+      ```
+   3. Using normal ssh:
+      ``` sh
+      ssh -i ~/.minikube/machines/minikube/id_rsa docker@192.168.39.44
+      ```
+2. Login to a container
+   1. Login as the default user:
+      ``` sh
+      kubectl exec -it jenkins-7f6444449b-hdvv9 -- /bin/bash
+      ```
+   1. Login as the root user:
+      Use a script named [`shell-into-pod-as-root`][MSIPARADEMG] ([ref][STUFFDEIKEI3KKG])
+      ``` sh
+      ,shell-into-pod-as-root jenkins-7f6444449b-hdvv9
+      ```
 
 * * *
 Creation date: _2019-12-20_
@@ -55,3 +78,5 @@ Creation date: _2019-12-20_
 [LM]: https://minikube.sigs.k8s.io/docs/start/linux/
 [HPM]: https://minikube.sigs.k8s.io/docs/reference/networking/proxy/
 [IASUKK]: https://kubernetes.io/docs/tasks/tools/install-kubectl/
+[STUFFDEIKEI3KKG]: https://github.com/kubernetes/kubernetes/issues/30656#issuecomment-476872519
+[MSIPARADEMG]: https://github.com/existme/MyDotFiles/blob/develop/extras/bin/%2Cshell-into-pod-as-root
