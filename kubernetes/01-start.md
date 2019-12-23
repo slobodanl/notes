@@ -19,6 +19,10 @@ _Written by: Reza Shams Amiri_
     ``` sh
     kubectl expose deployments ghost --port=2368 --type=NodePort
     ```
+    After running this command you can see what port the application will use to expose itslef in minikube by issuing:
+    ```
+    kubectl describe services describe ghost | grep NodePort:
+    ```
 3. run
     ``` sh
     minikube service ghost
@@ -31,6 +35,19 @@ _Written by: Reza Shams Amiri_
     ```
     Then manually open the url in browser to access the service.
 
+Then run:
+``` sh
+kubectl get pods,rs,deployments,services
+```
+The port(32468) is comming from `kubectl describe services ghost`  `NodePort`
+The ip(192.168.39.44) is comming from `minikube ip`
+
+## Manage the minikube
+1. Delete a deployment and its service
+    ``` sh
+    kubectl delete deployment hello-nginx
+    kubectl delete service hello-nginx
+    ```
 
 * * *
 Creation date: _2019-12-20_
