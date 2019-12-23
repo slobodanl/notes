@@ -74,6 +74,20 @@ docker exec -it kafka-docker_kafka_1 ip addr show eth0 | grep inet
 docker inspect 4a8a022cfd8e | grep IPAddress
 ```
 
+## Cleaning
+1. clean images
+   ``` sh
+   docker image prune
+   ```
+2. clean networks
+   ``` sh
+   docker network prune
+   ```
+3. clean full system
+   ``` sh
+   docker system prune -a
+   ```
+
 - - -
 Creation date: _2019-02-09_
 
