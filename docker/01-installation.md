@@ -3,6 +3,9 @@ _Written by: Reza Shams Amiri_
 This is the briefed version of [Get Docker CE for Ubuntu | Docker Documentation][GDCFUDD]:
 ## Normal install
 ``` sh
+# Uninstall old versions
+sudo apt-get remove docker docker-engine docker.io containerd runc
+
 # Install packages to allow apt to use a repository over HTTPS:
 sudo apt-get install  apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 
