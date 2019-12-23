@@ -65,7 +65,29 @@ sudo ln -s apt_pkg.cpython-37m-x86_64-linux-gnu.so apt_pkg.cpython-36m-x86_64-li
 ``` sh
 sudo apt-get install python-distutils python3-distutils python-distutils-extra
 ```
+```
+s dpkg -s python3-distutils
 
+Package: python3-distutils
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 1366
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: python3-stdlib-extensions
+Version: 3.7.3-1ubuntu1
+Replaces: libpython3.6-stdlib (<< 3.6.4~rc1-2), libpython3.7-stdlib (<< 3.7.0~a3-2)
+Provides: python3.7-distutils, python3.8-distutils
+Depends: python3 (>= 3.7.1-1~), python3 (<< 3.9), python3-lib2to3 (>= 3.6.4)
+Breaks: libpython3.6-stdlib (<< 3.6.5~rc1-3), libpython3.7-stdlib (<< 3.7.0~b2-2)
+Description: distutils package for Python 3.x
+ Distutils package for Python 3.x.  This package contains the distutils module
+ from the Python standard library.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+```
+as you see `python3-distutils` is now broken for this distro so forget running python3.6 on this computer
 # Install/uninstalling using specific python settings
 ``` sh
 /usr/bin/python3.6 -m pip install -U pep8 --user 
