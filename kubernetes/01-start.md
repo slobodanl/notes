@@ -59,8 +59,8 @@ The ip(192.168.39.44) is comming from `minikube ip`
       ```
    3. Using normal ssh:
       ``` sh
-      ssh -i ~/.minikube/machines/minikube/id_rsa docker@192.168.39.44
-      ```
+      ssh -i ~/.minikube/machines/minikube/id_rsa docker@$(minikube ip)
+      ```      
 2. Login to a container
    1. Login as the default user:
       ``` sh
