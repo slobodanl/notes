@@ -8,7 +8,29 @@ _Written by: Reza Shams Amiri_
     1. Make sure the `NO_PROXY` (captial is important) include minikube IP (refer to [HTTP Proxies | minikube][HPM])
 5. `minikube config set vm-driver kvm2`
 6. Install `kubectl` from [Install and Set Up kubectl - Kubernetes][IASUKK]
-7. 
+
+# Deploying app using minikube
+
+1. deploy the image
+    ``` sh
+    kubectl create deployment ghost --image=ghost:latest
+    ```
+2. expose
+    ``` sh
+    kubectl expose deployments ghost --port=2368 --type=NodePort
+    ```
+3. run
+    ``` sh
+    minikube service ghost
+
+    |-----------|-------|-------------|----------------------------|
+    | NAMESPACE | NAME  | TARGET PORT |            URL             |
+    |-----------|-------|-------------|----------------------------|
+    | default   | ghost |             | http://192.168.39.44:32468 |
+    |-----------|-------|-------------|----------------------------|
+    ```
+    Then manually open the url in browser to access the service.
+
 
 * * *
 Creation date: _2019-12-20_
