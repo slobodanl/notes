@@ -78,6 +78,8 @@ References:
 1. [kubectl for Docker Users - Kubernetes][KFDUK]
 2. [Configure Access to Multiple Clusters - Kubernetes][CATMCK]
 3. [Getting Started with Kubernetes Ingress-Nginx on Minikube][GSWKINOM]
+4. [kubectl Cheat Sheet - Kubernetes][KCSK]
+
 * * *
 Creation date: _2019-12-20_
 
@@ -89,3 +91,4 @@ Creation date: _2019-12-20_
 [KFDUK]: https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
 [CATMCK]: https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
 [GSWKINOM]: https://medium.com/@awkwardferny/getting-started-with-kubernetes-ingress-nginx-on-minikube-d75e58f52b6c
+[KCSK]: https://kubernetes.io/docs/reference/kubectl/cheatsheet/
