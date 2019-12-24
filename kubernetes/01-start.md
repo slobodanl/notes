@@ -72,6 +72,8 @@ The ip(192.168.39.44) is comming from `minikube ip`
       ,shell-into-pod-as-root jenkins-7f6444449b-hdvv9
       ```
 
+References:
+1. [kubectl for Docker Users - Kubernetes][KFDUK]
 * * *
 Creation date: _2019-12-20_
 
@@ -80,3 +82,4 @@ Creation date: _2019-12-20_
 [IASUKK]: https://kubernetes.io/docs/tasks/tools/install-kubectl/
 [STUFFDEIKEI3KKG]: https://github.com/kubernetes/kubernetes/issues/30656#issuecomment-476872519
 [MSIPARADEMG]: https://github.com/existme/MyDotFiles/blob/develop/extras/bin/%2Cshell-into-pod-as-root
+[KFDUK]: https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
