@@ -11,6 +11,7 @@ _Written by: Reza Shams Amiri_
 
 # Deploying app using minikube
 
+_Always make sure to run `eval $(minikube docker-env)` and subsequently a `docker ps` which should return lots of runnning containers. Otherwise your custom build docker images will never be pulled_{.note .red}
 1. deploy the image
     ``` sh
     kubectl create deployment ghost --image=ghost:latest
