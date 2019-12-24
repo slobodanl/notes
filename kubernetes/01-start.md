@@ -74,6 +74,8 @@ The ip(192.168.39.44) is comming from `minikube ip`
 
 References:
 1. [kubectl for Docker Users - Kubernetes][KFDUK]
+2. [Configure Access to Multiple Clusters - Kubernetes][CATMCK]
+
 * * *
 Creation date: _2019-12-20_
 
@@ -83,3 +85,4 @@ Creation date: _2019-12-20_
 [STUFFDEIKEI3KKG]: https://github.com/kubernetes/kubernetes/issues/30656#issuecomment-476872519
 [MSIPARADEMG]: https://github.com/existme/MyDotFiles/blob/develop/extras/bin/%2Cshell-into-pod-as-root
 [KFDUK]: https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
+[CATMCK]: https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
