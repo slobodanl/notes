@@ -57,9 +57,31 @@ spec:
 2. If, instead, you want to create a YAML file from scratch, you can just run: ( using `--o yaml --dry-run` )
    ``` sh
    kubectl run hello-node-app --image=reza/node:latest -o yaml --dry-run > deployment.yaml
+   
+   kubectl create service nodeport hello-node-service --tcp=8080:8080 --node-port=3001 -o yaml --dry-run > service.yaml
    ```
+
+# Imparative way of managing the cluster ( [ref][IDAAFKTBPM] )
+1. **Create**:
+    For example to create a namespace, a quota, a deployment and a service we can use the following four CLI commands:
+    ``` sh
+    kubectl create ns ghost
+    kubectl create quota blog --hard=pods=1 -n ghost
+    kubectl run ghost --image=ghost -n ghost
+    kubectl expose deployments ghost --port 2368 --type LoadBalancer -n ghost
+    ```
+1. **Edit**:
+    To modify any of the objects you can use the `kubectl edit` command or use any of the convenience wrappers
+    ``` sh
+    kubectl edit service hello-node-service
+    kubectl edit replicasets.apps  hello-node-app-85b4b7fb69
+
+    kubectl scale deployment hello-node-app --replicas 2
+    ```
+
 
 * * *
 Creation date: _2019-12-24_
 
 [UKTJAYFH]: https://blog.heptio.com/using-kubectl-to-jumpstart-a-yaml-file-heptioprotip-6f5b8a63a3ea
+[IDAAFKTBPM]: https://medium.com/bitnami-perspectives/imperative-declarative-and-a-few-kubectl-tricks-9d6deabdde
