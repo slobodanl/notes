@@ -43,16 +43,17 @@ The port(32468) is comming from `kubectl describe services ghost`  `NodePort`
 The ip(192.168.39.44) is comming from `minikube ip`
 
 ## Manage the minikube
-1. Delete a deployment and its service
+1. **Delete** a deployment and its service
     ``` sh
     kubectl delete deployment hello-nginx
     kubectl delete service hello-nginx
     ```
-1. Checking the logs
+1. Checking the **logs**
    ``` sh
    kubectl logs -f jenkins-7f6444449b-hdvv9
+   kubectl logs -f curity-master-app-5d799b59df-86x9g
    ```
-1. Login to minikube
+1. **Login** to minikube
    1. Using minikube itself:
       ``` sh
       minikube ssh
@@ -61,7 +62,7 @@ The ip(192.168.39.44) is comming from `minikube ip`
       ``` sh
       ssh -i ~/.minikube/machines/minikube/id_rsa docker@$(minikube ip)
       ```      
-2. Login to a container
+1. **Login** to a container
    1. Login as the default user:
       ``` sh
       kubectl exec -it jenkins-7f6444449b-hdvv9 -- /bin/bash
