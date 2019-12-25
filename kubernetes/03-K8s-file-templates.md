@@ -1,5 +1,5 @@
 _Written by: Reza Shams Amiri_
-# 03 K8s file templates
+# K8s file templates
 
 _Deployment Sample_{.ct}
 ``` yml
