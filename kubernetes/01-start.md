@@ -1,5 +1,5 @@
 _Written by: Reza Shams Amiri_
-# Getting started
+# K8s Getting started
 
 1. Install from [Linux | minikube][LM]
 2. Check kvm2 is supported: `egrep -q 'vmx|svm' /proc/cpuinfo && echo yes || echo no`
@@ -79,6 +79,7 @@ References:
 2. [Configure Access to Multiple Clusters - Kubernetes][CATMCK]
 3. [Getting Started with Kubernetes Ingress-Nginx on Minikube][GSWKINOM]
 4. [kubectl Cheat Sheet - Kubernetes][KCSK]
+5. [Docker & Kubernetes : NodePort vs LoadBalancer vs Ingress - 2019][DKNVLVI2]
 
 * * *
 Creation date: _2019-12-20_
@@ -92,3 +93,4 @@ Creation date: _2019-12-20_
 [CATMCK]: https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
 [GSWKINOM]: https://medium.com/@awkwardferny/getting-started-with-kubernetes-ingress-nginx-on-minikube-d75e58f52b6c
 [KCSK]: https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+[DKNVLVI2]: https://www.bogotobogo.com/DevOps/Docker/Docker_Kubernetes_NodePort_vs_LoadBalancer_vs_Ingress.php
