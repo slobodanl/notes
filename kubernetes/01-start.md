@@ -73,6 +73,26 @@ The ip(192.168.39.44) is comming from `minikube ip`
       ``` sh
       ,shell-into-pod-as-root jenkins-7f6444449b-hdvv9
       ```
+## Networking
+1. **Local Tunnel**
+    In minikube there is a magic command:
+    ``` sh
+    minikube tunnel
+    ```
+    when you run this commmand the cluster IPs like the ones you get through `kubectl get service` are reachable locally:
+    ``` sh
+    kubectl get service --watch
+
+    NAME                          TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)                         AGE
+    curity-admin-service          LoadBalancer   10.96.102.211   192.168.39.48   6749:30614/TCP,6789:30575/TCP   31h
+    curity-runtime-loadbalancer   LoadBalancer   10.96.120.19    192.168.39.44   8445:32153/TCP                  81m
+    curity-runtime-service        NodePort       10.96.242.99    <none>          6789:32240/TCP,2024:31809/TCP   22m
+    hello-minikube                NodePort       10.96.237.62    <none>          8080:30219/TCP                  5d15h
+    kubernetes                    ClusterIP      10.96.0.1       <none>          443/TCP                         5d15h
+    curity-admin-service          LoadBalancer   10.96.102.211   10.96.102.211,192.168.39.48   6749:30614/TCP,6789:30575/TCP   31h
+    curity-runtime-loadbalancer   LoadBalancer   10.96.120.19    10.96.120.19,192.168.39.44    8445:32153/TCP                  85m
+    ```
+    Which means that now you can browse `10.96.102.211`!
 
 References:
 1. [kubectl for Docker Users - Kubernetes][KFDUK]
