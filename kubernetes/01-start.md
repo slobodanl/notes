@@ -9,9 +9,32 @@ _Written by: Reza Shams Amiri_
 5. `minikube config set vm-driver kvm2`
 6. Install `kubectl` from [Install and Set Up kubectl - Kubernetes][IASUKK]
 
+# Minikube config
+1. kubectl config:
+   ``` sh
+   kubectl config use-context minikube
+   ```
+1. docker config:
+   ``` sh
+   eval $(minikube docker-env)
+   # build docker images afterwards
+   ```
+   If `docker ps` fails with `proxy: unknown scheme: socks` makesure to run:
+   ``` sh
+   unset ALL_PROXY
+   unset all_proxy
+   ```
+
+1. Minikube memory config:
+   ``` sh
+   minikube config set memory 8192     # in megabytes
+   minikube delete
+   minikube start                      # The ip of minikube might change
+   ```
+
 # Deploying app using minikube
 
-_Always make sure to run `eval $(minikube docker-env)` and subsequently a `docker ps` which should return lots of runnning containers. Otherwise your custom build docker images will never be pulled_{.note .red}
+_Always make sure to run `eval $(minikube docker-env)` and subsequently a `docker ps` which should return lots of runnning containers. Otherwise your custom build docker images will never be pulled._{.note .red}
 1. deploy the image
     ``` sh
     kubectl create deployment ghost --image=ghost:latest
