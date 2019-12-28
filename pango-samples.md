@@ -5,7 +5,7 @@ Pango supports named colors as well as normal RGB colors. See the following refe
 [Web colors - Wikipedia][WCW]
 
 ``` sh
-<span color='Beige'>A text in Beige</span>
+<span color='Beige' background='LightSlateGray'>A text in Beige</span>
 ```
 
 # markup renderer
