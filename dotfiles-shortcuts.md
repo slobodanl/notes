@@ -86,7 +86,7 @@ _Written by: Reza Shams Amiri_
 | ,deploy-config   | Copy the MyDotFiles to a remote machine |
 |                   |  `,install-config myserver:` |
 
-## Web Search
+## Web Search (_disabled_{.red})
 
 | Command | Desc |
 | ------- | ---- |
@@ -100,10 +100,6 @@ _Written by: Reza Shams Amiri_
 | map       | Search Google maps for a specific term |
 | image     | Search images.google.com for a specific term |
 
-##  Commands for working with Packages!
-
-| Command | Desc |
-| ------- | ---- |
 
 ## Browser lunch commands
 | Command | Desc |
@@ -142,11 +138,11 @@ _Written by: Reza Shams Amiri_
 |||
 |_Package_{.f1}||
 | `,pkg-graph`    | Visualizes the dependency graph for a package |
-|               |  `,dpkg-graph ssh` |
+|               |  `,pkg-graph ssh` |
 | `,pkg-info`     | Shows information about a **not installed** package |
 |               |  `,pkg-info wmpinboard` |
 |               |  `,pkg-info` <kbd>enter</kbd> |
-| `,pkg-info{.hl}`| Tries to find a file within **not installed** packages |
+| `,pkg-find`{.hl}| Tries to find a file within **not installed** packages |
 |               |  `,pkg-find otfinfo` |
 |               |  `,pkg-find` <kbd>enter</kbd> (very slow) |
 |               | **EQ:** `apt-file search $1` |
