@@ -31,7 +31,30 @@ _Written by: Reza Shams Amiri_
    minikube delete
    minikube start                      # The ip of minikube might change
    ```
+# Stoping all the services
 
+``` sh
+ minikube stop
+```
+Sometimes stopping minikube is not enough and there might be residual clusters remaining which could consume a lot of resources. To kill them, the `virsh` command can be used:
+
+_Going into `virsh` and killing the cluster intractively_{.ct}
+``` sh
+ virsh -c qemu:///system
+
+virsh # list
+Id   Name       State
+--------------------------
+ 4    cluster2   running
+
+virsh # destroy cluster2  
+```
+or
+_killing domains directly_{.ct}
+``` sh
+ virsh -c qemu:///system list
+ virsh -c qemu:///system virsh -c qemu:///system list
+``` 
 # Deploying app using minikube
 
 _Always make sure to run `eval $(minikube docker-env)` and subsequently a `docker ps` which should return lots of runnning containers. Otherwise your custom build docker images will never be pulled._{.note .red}

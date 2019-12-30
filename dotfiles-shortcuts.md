@@ -44,6 +44,8 @@ _Written by: Reza Shams Amiri_
 |           | **EQ:** eq. to `chmod u+x` |
 | elocate   | Searches for executable files using locate |
 |           |  `elocate vim` |
+| ff        | Search current folder for a partial filename |
+|           |  `$ ff .json` |
 | rgrep     | Search current folder for a specific keyword |
 |           | including all subfolders |
 |           |  `$ rgrep alias` |
@@ -84,7 +86,7 @@ _Written by: Reza Shams Amiri_
 | ,deploy-config   | Copy the MyDotFiles to a remote machine |
 |                   |  `,install-config myserver:` |
 
-## Web Search
+## Web Search (_disabled_{.red})
 
 | Command | Desc |
 | ------- | ---- |
@@ -98,10 +100,6 @@ _Written by: Reza Shams Amiri_
 | map       | Search Google maps for a specific term |
 | image     | Search images.google.com for a specific term |
 
-##  Commands for working with Packages!
-
-| Command | Desc |
-| ------- | ---- |
 
 ## Browser lunch commands
 | Command | Desc |
@@ -140,11 +138,11 @@ _Written by: Reza Shams Amiri_
 |||
 |_Package_{.f1}||
 | `,pkg-graph`    | Visualizes the dependency graph for a package |
-|               |  `,dpkg-graph ssh` |
+|               |  `,pkg-graph ssh` |
 | `,pkg-info`     | Shows information about a **not installed** package |
 |               |  `,pkg-info wmpinboard` |
 |               |  `,pkg-info` <kbd>enter</kbd> |
-| `,pkg-info{.hl}`| Tries to find a file within **not installed** packages |
+| `,pkg-find`{.hl}| Tries to find a file within **not installed** packages |
 |               |  `,pkg-find otfinfo` |
 |               |  `,pkg-find` <kbd>enter</kbd> (very slow) |
 |               | **EQ:** `apt-file search $1` |
@@ -155,10 +153,14 @@ _Written by: Reza Shams Amiri_
 | `dq`            | Query an installed package and list its files |
 |               |  `dq yelp` |
 |||
-|_Service_{.f1}||
+|_Services_{.f1}||
 | `sc`     | `sc` is alias for `sudo PATH=\"$PATH\" -E systemctl --no-pager `|
 | `,s`     | Show/rotate logs for different services using a rofi dialog|
 | `,ss`     | services state change script |
+|||
+|_Processes_{.f1}||
+| `,ps`     | Equivalent to `ps -aux | grep $@` |
+|               |  `,ps perl` |
 |||
 | _Misc_{.f1}||
 | `,se`     | Translate Swedish -> English using Google translate |
