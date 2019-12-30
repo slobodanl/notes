@@ -153,10 +153,14 @@ _Written by: Reza Shams Amiri_
 | `dq`            | Query an installed package and list its files |
 |               |  `dq yelp` |
 |||
-|_Service_{.f1}||
+|_Services_{.f1}||
 | `sc`     | `sc` is alias for `sudo PATH=\"$PATH\" -E systemctl --no-pager `|
 | `,s`     | Show/rotate logs for different services using a rofi dialog|
 | `,ss`     | services state change script |
+|||
+|_Processes_{.f1}||
+| `,ps`     | Equivalent to `ps -aux | grep $@` |
+|               |  `,ps perl` |
 |||
 | _Misc_{.f1}||
 | `,se`     | Translate Swedish -> English using Google translate |
