@@ -44,6 +44,8 @@ _Written by: Reza Shams Amiri_
 |           | **EQ:** eq. to `chmod u+x` |
 | elocate   | Searches for executable files using locate |
 |           |  `elocate vim` |
+| ff        | Search current folder for a partial filename |
+|           |  `$ ff .json` |
 | rgrep     | Search current folder for a specific keyword |
 |           | including all subfolders |
 |           |  `$ rgrep alias` |
