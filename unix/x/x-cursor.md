@@ -33,6 +33,8 @@ gsettings set org.mate.peripherals-mouse cursor-theme Numix-Cursor
 gsettings set org.mate.peripherals-mouse cursor-size 96
 ```
 
+A script named `,set-cursor` (`doti3/bini3/,set-cursor`) is created based on the above notes which can be used to change the cursor.
+
 References:
 1. [Cursor themes - ArchWiki][CTA]
 2. [Xcursor(3) — Arch manual pages][X3AMP]
