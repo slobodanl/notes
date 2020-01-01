@@ -32,5 +32,14 @@ XCURSOR_PATH="/usr/share/icons" firefox          # will work and FF uses what ha
 gsettings set org.mate.peripherals-mouse cursor-theme Numix-Cursor
 gsettings set org.mate.peripherals-mouse cursor-size 96
 ```
+
+References:
+1. [Cursor themes - ArchWiki][CTA]
+2. [Xcursor(3) — Arch manual pages][X3AMP]
+
+
 * * *
 Creation date: _2020-01-01_
+
+[CTA]: https://wiki.archlinux.org/index.php/Cursor_themes
+[X3AMP]: https://jlk.fjfi.cvut.cz/arch/manpages/man/Xcursor.3
