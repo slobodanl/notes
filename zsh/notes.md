@@ -10,7 +10,11 @@ You need to invoke some other widget first to clear the line. You could use kill
 Alt-q is a common, albeit emacsy, binding for push-input. I use vi-mode but rebind a lot of the emacs widgets in the main (viins) keymap.
 
 And for what it's worth Ctrl-O is commonly used for something like infer-next-history or accept-line-and-down-history which is really useful for repetitive steps like a git bisect or make, install, test steps.
+
+To look:
+1. [dotfiles/zsh at master · sgeb/dotfiles · GitHub][DZAMSDG]
 * * *
 Creation date: _2020-01-02_
 
 [ZG]: https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
+[DZAMSDG]: https://github.com/sgeb/dotfiles/tree/master/zsh
