@@ -42,6 +42,7 @@ _Written by: Reza Shams Amiri_
     </fontconfig>
     ```
 1. Run `fc-cache -frv`
+2. To tell chrome to use the font you can install this [extension][AFSC], how ever if a page instructs to use a specific font this extension will not override it.
 
 _Other good Persian fonts are also available at [rastikerdar (Saber Rastikerdar) · GitHub][RSRG]_{.note .green}
 * * *
@@ -49,3 +50,4 @@ Creation date: _2020-01-03_
 
 [RRVFG]: https://github.com/rastikerdar/vazir-font/releases
 [RSRG]: https://github.com/rastikerdar
+[AFSC]: https://chrome.google.com/webstore/detail/advanced-font-settings/caclkomlalccbpcdllchkeecicepbmbm
