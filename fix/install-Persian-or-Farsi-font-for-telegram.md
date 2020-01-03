@@ -2,7 +2,7 @@ _Written by: Reza Shams Amiri_
 # Install Persian font for telegram
 
 
-1. [Install Persian font][IPF]
+1. [[Install Persian font][IPF]]
 2. Add/edit the following file `~/.local/share/TelegramDesktop/tdata/fc-custom-1.conf`:
     ``` xml
     <?xml version='1.0'?>
@@ -45,4 +45,4 @@ _Written by: Reza Shams Amiri_
 * * *
 Creation date: _2020-01-03_
 
-[IPF]: /fix/install-farsi-font
+[IPF]: /fix/install-Persian-or-Farsi-font
