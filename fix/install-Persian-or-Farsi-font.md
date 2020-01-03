@@ -8,6 +8,9 @@ _Written by: Reza Shams Amiri_
     ``` xml
     <?xml version="1.0"?><!DOCTYPE fontconfig SYSTEM "fonts.dtd">
     <fontconfig>
+       <dir>/usr/share/fonts</dir>
+       <dir>/usr/local/share/fonts</dir>
+       <dir>~/.fonts</dir>
        <match target="pattern">
           <test name="family" qual="any">
              <string>sans serif</string>
@@ -16,9 +19,6 @@ _Written by: Reza Shams Amiri_
              <string>Vazir</string>
           </edit>
        </match>
-       <dir>/usr/share/fonts</dir>
-       <dir>/usr/local/share/fonts</dir>
-       <dir>~/.fonts</dir>
        <match target="font">
           <edit mode="assign" name="antialias">
               <bool>true</bool>
