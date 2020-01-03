@@ -4,10 +4,13 @@ _Written by: Reza Shams Amiri_
 
 1. [[Install Persian font][IPF]]
 2. Add/edit the following file `~/.local/share/TelegramDesktop/tdata/fc-custom-1.conf`:
+    _`~/.local/share/TelegramDesktop/tdata/fc-custom-1.conf`_{.ct}
     ``` xml
     <?xml version='1.0'?>
     <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
     <fontconfig>
+       <dir>/usr/share/fonts</dir>
+       <dir>/usr/local/share/fonts</dir>
        <dir>~/.fonts</dir>
        <dir prefix="xdg">fonts</dir>
        <match target="pattern">
