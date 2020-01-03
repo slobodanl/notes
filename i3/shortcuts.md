@@ -7,6 +7,7 @@ _Written by: Reza Shams Amiri_
 |  Mouse actions |  |
 | <kbd>Mod</kbd> + <kbd>middle click</kbd> | toggle fullscreen view |
 | <kbd>Mod</kbd> + <kbd>shift</kbd> + <kbd>middle click</kbd> | toggle floating |
+| <kbd>MouseWheel Up</kbd> on the title bar | toggle floating |
 | ﬑ Layout actions |  |
 | <kbd>Mod</kbd> + <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>``</kbd> | Increase width by 10px |
 | <kbd>Mod</kbd> + <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>``</kbd> | Decrease width by 10px |
