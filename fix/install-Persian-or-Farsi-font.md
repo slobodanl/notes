@@ -43,7 +43,9 @@ _Written by: Reza Shams Amiri_
     ```
 1. Run `fc-cache -frv`
 
+_Other good Persian fonts are also available at [rastikerdar (Saber Rastikerdar) · GitHub][RSRG]_{.note .green}
 * * *
 Creation date: _2020-01-03_
 
 [RRVFG]: https://github.com/rastikerdar/vazir-font/releases
+[RSRG]: https://github.com/rastikerdar
