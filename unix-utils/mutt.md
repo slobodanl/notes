@@ -98,6 +98,8 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>i</kbd> |  Mark as read |
 | <kbd>I</kbd> |  Mark as unread |
 | <kbd>Esc</kbd><kbd>e</kbd> | 凌 Resend the message |
+| <kbd>l</kbd> |  Limit messages AKA limit ( see [ref][TMEMC] for patterns) |
+| <kbd>L</kbd> |  unfilter messages |
 | **View** |  |
 | <kbd>b</kbd> or <kbd>Ctrl + </kbd> |  Toggle sidebar visibility |
 | <kbd>Ctrl + </kbd> | 玲 Previous item in sidebar |
@@ -163,3 +165,4 @@ Creation date: _2018-11-11_
 [MWMAMLMWG]: https://github.com/LukeSmithxyz/mutt-wizard/blob/master/muttrc
 [MGQ]: https://qiita.com/iorionda/items/c48355770ae689ca1896
 [MSSSNS]: http://nosubstance.me/post/mutt-secret-sauce/
+[TMEMC]: http://www.mutt.org/doc/manual/#patterns
