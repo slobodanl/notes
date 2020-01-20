@@ -172,7 +172,8 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
    bat supports syntax highlighting for a large number of programming and markup languages  
    ![](https://camo.githubusercontent.com/9d3d89364f2cc83ace8f29646a6236bc15ea1da0/68747470733a2f2f696d6775722e636f6d2f724773646e44652e706e67)  
 
-1. [mdcat][HCICM]
+1. mdcat: [installation page][HCICM]
+   [GitHub - lunaryorn/mdcat: cat for markdown][GLMCFM]
     ``` sh
     # first remove rust if you have installed it via package manager
     curl https://sh.rustup.rs -sSf | sh
@@ -273,3 +274,4 @@ Some nice websites to download MIDI files:
 [GBGMGMIAMPGPOTOGDATIEGAWSPAOAIALFTIPSIUTXEWA]: https://github.com/bk138/gromit-mpx
 [GSBAC1CWW]: https://github.com/sharkdp/bat
 [HCICM]: https://crates.io/crates/mdcat
+[GLMCFM]: https://github.com/lunaryorn/mdcat
