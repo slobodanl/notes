@@ -168,9 +168,18 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
    ```
    Either use it in python scripts or use the cli by `cmark`
 
-1. [bat][https://github.com/sharkdp/bat]  
+1. [bat][GSBAC1CWW]
    bat supports syntax highlighting for a large number of programming and markup languages  
    ![](https://camo.githubusercontent.com/9d3d89364f2cc83ace8f29646a6236bc15ea1da0/68747470733a2f2f696d6775722e636f6d2f724773646e44652e706e67)  
+
+1. [mdcat][HCICM]
+    ``` sh
+    # first remove rust if you have installed it via package manager
+    curl https://sh.rustup.rs -sSf | sh
+    rustup update
+    cargo install mdcat
+    ```
+
 
 # Desktop Markdown editor:
 
@@ -262,3 +271,5 @@ Some nice websites to download MIDI files:
 [IFM]: /install/fontmatrix
 [HWTCSIABAWBSTTARLS]: https://www.tecmint.com/shell-in-a-box-a-web-based-ssh-terminal-to-access-remote-linux-servers/
 [GBGMGMIAMPGPOTOGDATIEGAWSPAOAIALFTIPSIUTXEWA]: https://github.com/bk138/gromit-mpx
+[GSBAC1CWW]: https://github.com/sharkdp/bat
+[HCICM]: https://crates.io/crates/mdcat
