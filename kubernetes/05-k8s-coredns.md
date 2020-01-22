@@ -1,5 +1,5 @@
 _Written by: Reza Shams Amiri_
-# 05 k8s coredns
+# Configuring k8s coredns
 
 
 _Deploy dnsutils_{.ct}
@@ -15,6 +15,11 @@ kubectl get pods --namespace=kube-system -l k8s-app=kube-dns
 _see the logs of coredns_{.ct}
 ```
 for p in $(kubectl get pods --namespace=kube-system -l k8s-app=kube-dns -o name); do kubectl logs --namespace=kube-system $p; done
+```
+
+_edit coredns parameters_{.ct}
+```
+kubectl edit configmap -n kube-system coredns
 ```
 
 * * *
