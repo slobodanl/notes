@@ -5,6 +5,8 @@ _Written by: Reza Shams Amiri_
 _Deploy dnsutils_{.ct}
 ``` sh
 kubectl apply -f https://k8s.io/examples/admin/dns/dnsutils.yaml
+
+kubectl exec -ti dnsutils -- nslookup userapi01-dev.se.axis.com
 ```
 
 _Get pods for coredns_{.ct}
@@ -22,5 +24,11 @@ _edit coredns parameters_{.ct}
 kubectl edit configmap -n kube-system coredns
 ```
 
+## References
+1. [Debugging DNS Resolution - Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)
+2. [DNS for Services and Pods - Kubernetes][DFSAPK]
+
 * * *
 Creation date: _2020-01-22_
+
+[DFSAPK]: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
