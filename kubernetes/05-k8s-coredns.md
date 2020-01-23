@@ -1,6 +1,10 @@
 _Written by: Reza Shams Amiri_
 # Configuring k8s coredns
 
+Determine the current cluster DNS provider. In the following example, KubeDNS is the current cluster DNS provider.
+``` sh
+kubectl cluster-info
+```
 
 _Deploy dnsutils_{.ct}
 ``` sh
@@ -22,6 +26,10 @@ for p in $(kubectl get pods --namespace=kube-system -l k8s-app=kube-dns -o name)
 _edit coredns parameters_{.ct}
 ```
 kubectl edit configmap -n kube-system coredns
+
+kubectl exec -n kube-system coredns-980047985-g2748 -- kill -SIGUSR1 1
+
+for p in $(kubectl get pods --namespace=kube-system -l k8s-app=kube-dns -o name); do kubectl exec -n kube-system $p -- kill -SIGUSR1 1 ; done
 ```
 
 ## References
