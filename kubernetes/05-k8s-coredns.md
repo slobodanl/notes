@@ -1,6 +1,7 @@
 _Written by: Reza Shams Amiri_
 # Configuring k8s coredns
 
+_All example pods could be found here: [https://github.com/kubernetes/website/tree/master/content/en/examples][WCEEAMKWG]<br>and you can install them for example by issuing `kubectl apply -f https://k8s.io/examples/admin/dns/dnsutils.yaml`_{.info .ok}
 Determine the current cluster DNS provider. In the following example, KubeDNS is the current cluster DNS provider.
 ``` sh
 kubectl cluster-info
@@ -40,3 +41,4 @@ for p in $(kubectl get pods --namespace=kube-system -l k8s-app=kube-dns -o name)
 Creation date: _2020-01-22_
 
 [DFSAPK]: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
+[WCEEAMKWG]: https://github.com/kubernetes/website/tree/master/content/en/examples
