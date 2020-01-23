@@ -8,7 +8,7 @@ _Written by: Reza Shams Amiri_
     1. Default output format [None]: json
 
 2. `eval $(aws ecr get-login --region eu-west-1 --no-include-email)`
-3. 
+3. ![push_commands.png](/img/docker/push_commands.png)
 
 * * *
 Creation date: _2020-01-23_
