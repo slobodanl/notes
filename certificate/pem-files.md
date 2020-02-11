@@ -1,8 +1,13 @@
 _Written by: Reza Shams Amiri_
 # PEM files
-
-Start your content here...
-
+1. Generate key unencrypted
+    ``` sh
+    openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 -out key.pem
+    ```
+1. Generate key encrypted with password
+    ``` sh
+    openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 -out key.pem -pass pass:mypassword123
+    ```
 
 
 ## References:
