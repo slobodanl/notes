@@ -12,7 +12,7 @@ brew install git-crypt
 2. enter your repo and type: `git-crypt init`
 3. `git-crypt export-key ~/gitcrypt.key`
 4. (Share this file with collaborators)
-5. On the collaborator machine run: `git crypt unlock ~/gitcrypt.key`
+5. On the collaborator machine run: `git-crypt unlock ~/gitcrypt.key`
 
 ## Adding encrypted files
 1. Inside repo: `vim .gitattributes`
