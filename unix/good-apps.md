@@ -114,6 +114,14 @@ See what's available at https://medium.com/@likid.geimfari/the-list-of-interesti
    4. **tldr** : Simplified man pages. Usage: `tldr wget`
    5. **shellinabox**: use it to perform ssh over http, see [this page for more info][HWTCSIABAWBSTTARLS]
 
+# Calculators
+- **Qalculate:**
+  [Qalculate! - the ultimate desktop calculator][QTUDC]
+  ![qalculate.png](/img/unix/qalculate.png)
+  ``` sh
+  sudo snap install qalculate
+  ```
+
 # Font previewers
 1. **FontBase**: [https://fontba.se/downloads/linux#][FDFL]
    After downloading the `AppImage` file just make it executable and move it to `/opt` folder and run it.
@@ -275,3 +283,4 @@ Some nice websites to download MIDI files:
 [GSBAC1CWW]: https://github.com/sharkdp/bat
 [HCICM]: https://crates.io/crates/mdcat
 [GLMCFM]: https://github.com/lunaryorn/mdcat
+[QTUDC]: http://qalculate.github.io/downloads.html
