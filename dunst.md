@@ -1,6 +1,7 @@
 # Dunst
 ## Pango
-For information about `Pango` syntax look at [Pango Reference Manual: Pango Reference Manual][PRMPRM]
+For information about `Pango` syntax look at [Markup: Pango Reference Manual][MPRM]
+
 _Pango example_{.ct}
 ``` sh
 <span font='Balcony Angels Regular 32' underline='low'>Current Agendas</span>
@@ -92,4 +93,4 @@ Some of the notification services that are safe to be removed are:
 -----------------------------------------
 2017-11-30 00:35:23
 
-[PRMPRM]: https://developer.gnome.org/pango/unstable/
+[MPRM]: https://developer.gnome.org/pango/unstable/pango-Markup.html
