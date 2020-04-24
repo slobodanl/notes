@@ -1,5 +1,5 @@
 # Mafia
-
+![image.png](/img/games/image.png)
 ## Rules
 In general, you can lie and say pretty much whatever you want during a game of Mafia. However, there are some ground rules:
 
