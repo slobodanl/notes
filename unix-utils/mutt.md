@@ -148,6 +148,7 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 ## References
 1. [Reference - NeoMutt][RN]
 1. [neomuttrc(5) — neomutt — Debian unstable — Debian Manpages][N5NDUDM]
+2. [The Mutt E-Mail Client Functions][TMEMC]
 
 - - -
 
@@ -173,3 +174,4 @@ Creation date: _2018-11-11_
 [TMEMC]: http://www.mutt.org/doc/manual/#patterns
 [N5NDUDM]: https://manpages.debian.org/unstable/neomutt/neomuttrc.5.en.html
 [RN]: https://neomutt.org/guide/reference#4-1-%C2%A0generic-menu
+[TMEMC]: https://muttmua.gitlab.io/mutt/manual-dev.html#functions
