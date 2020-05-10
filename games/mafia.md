@@ -1,5 +1,7 @@
 # Mafia
+
 ![image.png](/img/games/godfather.png)
+
 Mafia is a party game of bluffing and suspicion. It is designed for seven to seventeen players, in Mafia some players take on the roles of Mafia members, others become the civilians of a crime-filled community.
 Every night the Mafia kills another person, every day the civilians have a chance to discuss the murder, choose suspects, and condemn one of them to death. Since every role is secret, you never know who is an innocent bystander, and who is part of the Mafia. If the Mafia kill off enough civilians, the community becomes a permanent haven for crime, but if the civilians rid their community of the Mafia, they win.
 
