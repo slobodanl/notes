@@ -144,6 +144,11 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 
 ## Cheet sheets
 1. [Mutt Cheat Sheet - Kapeli][MCSK]
+
+## References
+1. [Reference - NeoMutt][RN]
+1. [neomuttrc(5) — neomutt — Debian unstable — Debian Manpages][N5NDUDM]
+
 - - -
 
 Creation date: _2018-11-11_
@@ -166,3 +171,5 @@ Creation date: _2018-11-11_
 [MGQ]: https://qiita.com/iorionda/items/c48355770ae689ca1896
 [MSSSNS]: http://nosubstance.me/post/mutt-secret-sauce/
 [TMEMC]: http://www.mutt.org/doc/manual/#patterns
+[N5NDUDM]: https://manpages.debian.org/unstable/neomutt/neomuttrc.5.en.html
+[RN]: https://neomutt.org/guide/reference#4-1-%C2%A0generic-menu
