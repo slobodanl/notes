@@ -100,6 +100,7 @@ Inside mutt run `:exec what-key` and you get the equivalent sequence
 | <kbd>Esc</kbd><kbd>e</kbd> | 凌 Resend the message |
 | <kbd>l</kbd> |  Limit messages AKA limit ( see [ref][TMEMC] for patterns) |
 | <kbd>L</kbd> |  unfilter messages |
+| <kbd>k</kbd> |  Filter messages like this (by sender's email) |
 | **View** |  |
 | <kbd>b</kbd> or <kbd>Ctrl + </kbd> |  Toggle sidebar visibility |
 | <kbd>Ctrl + </kbd> | 玲 Previous item in sidebar |
