@@ -44,7 +44,15 @@ _Written by: Reza Shams Amiri_
     </fontconfig>
     ```
 1. Restart Telegram
-
+1. If the above didn't work, use:
+   ``` sh
+   FONTCONFIG_FILE=~/.local/share/TelegramDesktop/tdata/fc-custom-1.conf /usr/bin/telegram-desktop
+   ```
+   and modify `/usr/share/applications/telegramdesktop.desktop`
+   _/usr/share/applications/telegramdesktop.desktop_{.ct}
+   ``` sh
+   Exec=env FONTCONFIG_FILE=/home/existme/.local/share/TelegramDesktop/tdata/fc-custom-1.conf telegram-desktop -- %u
+   ```
 * * *
 Creation date: _2020-01-03_
 
