@@ -1,4 +1,5 @@
 [Mafia.pdf](/img/games/Mafia.pdf)
+[rules-ext.pdf](/img/games/rules-ext.pdf)
 
 رلهای مافیای اصلی
 ---------------
