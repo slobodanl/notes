@@ -1,3 +1,8 @@
+# Check free space 
+```bash
+sudo vgs
+```
+
 # Resize Logical Volumes
 
 ----------------------------------------- 
